@@ -1,0 +1,3 @@
+## Credits
+
+- This format is based on [Christian Lempa's Cheatsheets](https://github.com/ChristianLempa/cheat-sheets/blob/main/linux/awk.md).
