@@ -10,8 +10,9 @@ This is a TEMPLATE that will likely be adjusted as new ideas are incorporated. U
 
 ## Weaknesses
 
+## History
 
-
+### The Problem this Solves
 
 ## Credits
 

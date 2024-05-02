@@ -10,6 +10,10 @@ This is a TEMPLATE that will likely be adjusted as new ideas are incorporated. U
 
 ## Weaknesses
 
+## History
+
+### The Problem this Solves
+
 ## Credits
 
 - This format is based on [Christian Lempa's Cheatsheets](https://github.com/ChristianLempa/cheat-sheets/blob/main/linux/awk.md).
