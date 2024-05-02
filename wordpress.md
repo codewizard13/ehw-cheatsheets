@@ -6,6 +6,12 @@ This is a TEMPLATE that will likely be adjusted as new ideas are incorporated. U
 
 // TO-DO
 
+## Strengths
+
+## Weaknesses
+
+
+
 
 ## Credits
 
