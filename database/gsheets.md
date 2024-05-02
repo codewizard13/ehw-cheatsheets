@@ -6,15 +6,22 @@ This is a TEMPLATE that will likely be adjusted as new ideas are incorporated. U
 
 ## Useful Functions
 
+**[Google Sheets function list](https://support.google.com/docs/table/25273)**
+
 - ArrayFormula()
 - Filter()
 - Unique()
 - Left()
+- IfError()
+- IsNA()
+- Match()
+- Not()
+- IsBlank()
 
 ## Keyboard Shortcuts
 
 - CTRL + R: Fill across
-- 
+- ALT + Down Arrow: Next Tab
 
 ## Strengths
 
