@@ -1,4 +1,4 @@
-# TECHNOLOGY_OR_CONCEPT_NAME
+# Google Sheets
 
 Google Sheets is a cloud-based spreadsheet application, similar to Microsoft Excel. Learn about its features and how it differs from Excel.
 
@@ -9,6 +9,12 @@ This is a TEMPLATE that will likely be adjusted as new ideas are incorporated. U
 - ArrayFormula()
 - Filter()
 - Unique()
+- Left()
+
+## Keyboard Shortcuts
+
+- CTRL + R: Fill across
+- 
 
 ## Strengths
 
