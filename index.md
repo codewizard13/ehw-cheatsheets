@@ -13,8 +13,10 @@ Coding, programming, software development, scripting
 
 Databases, MySQL, spreadsheets
 
-- [gsheets.md](/database/gsheets.md)
-- [mysql.md](/database/mysql.md)
+- [Google Sheets](/database/gsheets.md)
+- [MySQL](/database/mysql.md)
+- [SQL](/database/sql.md)
+- [LibreOffice Base](/database/lo-base.md)
 
 ## DESIGN
 
@@ -28,6 +30,8 @@ Networking, CCNA, etc.
 
 Operating systems
 
+- [Linux](/os/linux.md)
+
 ## RCHAIX
 
 Notes from when I worked at IBM in Rochester, MN (2000-2002)
@@ -38,4 +42,4 @@ Notes from when I worked at IBM in Rochester, MN (2000-2002)
 
 WordPress stuff
 
-- [wordpress.md](/wp/wordpress.md)
+- [WordPress](/wp/wordpress.md)
