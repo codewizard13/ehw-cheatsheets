@@ -5,6 +5,11 @@ This is the main index / directory / kiosk for navigating the rest of the files 
 Folders are indicated with H2 `##`, subfolders with H3 `###`, and files are just bolded.
 
 
+## [HOW TO](/how-to/index.md)
+
+How-to articles
+
+
 ## CODING
 
 Coding, programming, software development, scripting
