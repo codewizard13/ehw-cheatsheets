@@ -1,6 +1,4 @@
-# Index for: WHATEVER
-
-####  [[This is a stub]]
+# Index for: EMAIL/
 
 [HOME](../README.md)
 
@@ -8,4 +6,4 @@ Here you will find links to all the other documents in this folder.
 
 ## In this Folder:
 
-- [TITLE](/sub-dir/file.md)
+- [Mozilla Thunderbird](/email/thunderbird.md)

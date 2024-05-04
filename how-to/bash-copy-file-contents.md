@@ -1,6 +1,6 @@
 # Bash: How to Overwrite Contents of One File with Another
 
-[HOME](../README.md) | [SUBDIR_NAME](/sub-dir-path/index.md)
+[HOME](../README.md) | [How To](/how-to/index.md)
 
 Use the **[cat](/shell/cat.md)** command to copy the contents of one file into another, (overwriting, not appending) like this:
 
@@ -8,4 +8,8 @@ Use the **[cat](/shell/cat.md)** command to copy the contents of one file into a
 
 For example, to copy the contents of the article stub into the `javascript.md` file, use this command:
 
-    cat _tmpl/_stub-command.md > coding/javascript.md 
+    cat _tmpl/_stub-command.md > coding/javascript.md
+
+## References
+
+- https://www.cyberciti.biz/faq/how-to-copy-one-file-contents-to-another-file-in-linux/
