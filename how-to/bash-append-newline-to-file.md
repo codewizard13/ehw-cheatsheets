@@ -1,6 +1,6 @@
 # Bash: How to Add a Newline Character to End of File
 
-[HOME](../README.md) | [How To](/how-to/index.md)
+[🏚️](../README.md) | [How To](/how-to/index.md)
 
 A newline or line-feed character is commonly represented as "\n" in many C-based programming languages. Use the **[echo](/shell/echo.md)** command to append a newline character to the end of a file:
 

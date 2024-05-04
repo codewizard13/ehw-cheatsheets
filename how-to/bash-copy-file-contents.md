@@ -1,6 +1,6 @@
 # Bash: How to Overwrite Contents of One File with Another
 
-[HOME](../README.md) | [How To](/how-to/index.md)
+[🏚️](../README.md) | [How To](/how-to/index.md)
 
 Use the **[cat](/shell/cat.md)** command to copy the contents of one file into another, (overwriting, not appending) like this:
 

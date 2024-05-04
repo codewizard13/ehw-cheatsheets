@@ -1,6 +1,6 @@
 # Index for: HOW TO
 
-[HOME](../README.md)
+[🏚️](../README.md)
 
 Here you will find links to all the other documents in this folder.
 

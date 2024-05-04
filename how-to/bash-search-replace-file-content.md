@@ -1,6 +1,6 @@
 # Bash: How to Search and Replace Text in File
 
-[HOME](../README.md) | [How To](/how-to/index.md)
+[🏚️](../README.md) | [How To](/how-to/index.md)
 
 Use the **[sed](/shell/sed.md)** command to search and replace text in a file like this:
 

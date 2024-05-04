@@ -1,6 +1,6 @@
 # Linux
 
-[HOME](../README.md) | [Operating Systems](/os/index.md)
+[🏚️](../README.md) | [Operating Systems](/os/index.md)
 
 ####  [[This is a stub]]
 

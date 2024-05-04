@@ -1,5 +1,7 @@
 # Google Sheets
 
+[🏚️](../README.md) | [Email](/email/index.md)
+
 **Google Sheets** is a cloud-based spreadsheet application, similar to Microsoft Excel. Learn about its features and how it differs from Excel.
 
 This is a TEMPLATE that will likely be adjusted as new ideas are incorporated. Use this as starter file for each new term

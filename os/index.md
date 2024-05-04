@@ -1,6 +1,6 @@
 # Index for: OPERATING SYSTEMS (OS)/
 
-[HOME](../README.md)
+[🏚️](../README.md)
 
 Here you will find links to all the other documents in this folder.
 

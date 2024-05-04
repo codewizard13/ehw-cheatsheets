@@ -2,7 +2,7 @@
 
 ####  [[This is a stub]]
 
-[HOME](../README.md) | [Coding](/coding/index.md)
+[🏚️](../README.md) | [Coding](/coding/index.md)
 
 TECHNOLOGY_NAME (TECH_ABBREV) is a ... description of this concept. Other technologies that this description references can link to the appropriate cheatsheet for that **[other tech](/_stub_01.md)**.
 
