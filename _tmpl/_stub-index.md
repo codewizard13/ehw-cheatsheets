@@ -1,5 +1,7 @@
 # Index for: HOW TO
 
+####  [[This is a stub]]
+
 [HOME](../README.md)
 
 Here you will find links to all the other documents in this folder.
