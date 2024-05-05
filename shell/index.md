@@ -10,3 +10,4 @@ Here you will find links to all the other documents in this folder.
 - [Awk](/shell/awk.md)
 - [Cat](/shell/cat.md)
 - [PowerShell](/shell/powershell.md)
+- [SSH](/shell/ssh.md)
