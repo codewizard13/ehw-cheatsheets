@@ -12,6 +12,7 @@ This is the main index / directory / kiosk for navigating the rest of the files 
 - [Networking](/networking/index.md): Networking, CCNA, etc.
 - [Operating Systems](/os/index.md): Linux, Windows, Mac, etc.
 - [Productivity](/productivity/index.md): Office suites & productivity software
+- [Shell](/shell/index.md): Command line (CLI) and shell-scripting
 
 ## MISC
 
