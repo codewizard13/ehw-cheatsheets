@@ -17,3 +17,4 @@ This is the main index / directory / kiosk for navigating the rest of the files 
 ## MISC
 
 - [RCHAIX](/rchaix/index.md): Notes from when I worked at IBM in Rochester, MN (2000-2002)
+- [Christians](/christians/index.md): Christian coders, apps, tech-adjacent groups, etc.
