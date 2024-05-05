@@ -1,4 +1,4 @@
-# Index for: RCHAIX/
+# Index for: PRODUCTIVITY/
 
 [🏚️](../README.md)
 
@@ -6,5 +6,4 @@ Here you will find links to all the other documents in this folder.
 
 ## In this Folder:
 
-- [rchaix.md](/rchaix/rchaix.md)
-- [helpfuld.md](/rchaix/helpfuld.md)
+- [LibreOffice](/productivity/libre-office.md)

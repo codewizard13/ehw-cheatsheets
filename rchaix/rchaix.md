@@ -1,5 +1,7 @@
 # AIX Helpdesk - Rochester, MN
 
+[🏚️](../README.md) | [RCHAIX](/rchaix/index.md)
+
 - These are Eric Hepperle's notes from his time employed as an AIX Helpdesk Representative at IBM, Rochester, MN from 2000-2002.
 
 ---

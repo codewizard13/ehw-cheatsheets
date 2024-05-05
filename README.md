@@ -11,7 +11,8 @@ This is the main index / directory / kiosk for navigating the rest of the files 
 - [Design](/design/index.md): Graphic design, digital design
 - [Networking](/networking/index.md): Networking, CCNA, etc.
 - [Operating Systems](/os/index.md): Linux, Windows, Mac, etc.
+- [Productivity](/productivity/index.md): Office suites & productivity software
 
-## RCHAIX
+## MISC
 
-- [helpfuld.md](/rchaix/helpfuld.md): Notes from when I worked at IBM in Rochester, MN (2000-2002)
+- [RCHAIX](/rchaix/index.md): Notes from when I worked at IBM in Rochester, MN (2000-2002)
