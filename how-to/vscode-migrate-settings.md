@@ -7,11 +7,35 @@
 There are two ways you can migrate **[VSCODE](/coding/vscode.md)** settings to another computer:
 
 1. Manually copy everything over
-2. Export / Import Settings
+2. Export / Import Profile
+
+
+## Manually copy everything over
+
+## Export Profile
+
+- File > Preferences > Profiles (Default) > Export Profile
+- Click "Export" button at bottom left
+- Enter a file name to save as
+- Chose to save as a local file (the GitHub option is a bit confusing)
+
+## Import Profile
+
+- File > Preferences > Profiles (Default) > Import Profile
+- Click "Select File" in the dropdown
+- Select a .code-profile file
+- Click "Create Profile" button in lower left to confirm
+
+!!! #GOTCHA: You must click "Create Profile" or your extensions won't be installed.
 
 ...
 
 ## References
 
-- https://www.reddit.com/r/ProWordPress/comments/1cmml5t/comment/l31r6ag/?context=3
-- https://elementor.com/help/caching-prevents-live-site-from-showing-changes-in-editor/
+- https://www.youtube.com/watch?v=lRVzOV6Azts&ab_channel=WebStylePress
+- https://www.reddit.com/r/vscode/comments/16gyrd3/export_settings_extensions/
+- https://github.com/microsoft/vscode/issues/168867
+- https://github.com/microsoft/vscode/issues/168867#issuecomment-1836645797
+- https://github.com/microsoft/vscode/issues/168867#issuecomment-1913760854
+- https://github.com/microsoft/vscode/issues/168867#issuecomment-2027581941
+- https://code.visualstudio.com/docs/editor/profiles#_save-as-a-github-gist
