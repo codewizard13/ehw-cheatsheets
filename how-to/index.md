@@ -12,6 +12,8 @@ Here you will find links to all the other documents in this folder.
 
 ### WordPress
 
+### Browsers
+
 - [How to Create an ASCII Folder Tree](/how-to/create-ascii-folder-tree.md)
 - [How to Add CSS Styles to Markdown](/how-to/style-markdown.md)
 - [Bash: How to Overwrite Contents of One File with Another](/how-to/bash-copy-file-contents.md)
@@ -19,3 +21,4 @@ Here you will find links to all the other documents in this folder.
 - [Bash: How to Add a Newline Character to End of File](/how-to/bash-append-newline-to-file.md)
 - [WordPress: Site Loads But Layout is Messed Up](/how-to/wp-site-missing-css.md)
 - [VSCODE: How to Migrate Settings to Another Computer](/how-to/vscode-migrate-settings.md)
+- [Google Chrome: How to Migrate and Sync Profiles](/how-to/chrome-sync-profile.md)
