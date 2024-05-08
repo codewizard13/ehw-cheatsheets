@@ -2,9 +2,9 @@
 
 [🏚️](../README.md) | [How To](/how-to/index.md)
 
-Sometimes after migrating a site, to [localhost](/coding/local-dev.md) , the site data all seems to be there, and the content. But, the layout is wonky / messed up. In many cases, this is because during the URL replacement phase of a [manual WordPress migration](../wp-manual-migration.md), I migrated to "http" instead of "https".
+Sometimes after migrating a site, to [📛localhost](/coding/local-dev.md) , the site data all seems to be there, and the content. But, the layout is wonky / messed up. In many cases, this is because during the URL replacement phase of a [📛manual WordPress migration](../wp-manual-migration.md), I migrated to "http" instead of "https".
 
-The solution in that case is to replace the HTTP URLS with HTTPS and **clear cache**. In addition, if using a visual [page builder](/wp/page-builders.md) like Elementor, the plugin cache will need to be refreshed. For Elementor, do the following, starting from the wpadmin (Dashboard) sidebar:
+The solution in that case is to replace the HTTP URLS with HTTPS and **clear cache**. In addition, if using a visual [📛page builder](/wp/page-builders.md) like Elementor, the plugin cache will need to be refreshed. For Elementor, do the following, starting from the wpadmin (Dashboard) sidebar:
 
 1. Elementor > Tools
 2. Click **Regenerate Files & Data**
