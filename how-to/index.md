@@ -28,6 +28,7 @@ Here you will find links to all the other documents in this folder.
 ### Productivity
 
 - [Google Drive Desktop: How to Sync to Cloud](/how-to/gdrive-sync.md)
+- [Google Sheets: How to Batch Convert URLs to Hyperlinks](/how-to/gsheets-batch-hyperlinks.md)
 
 ### Browsers
 
