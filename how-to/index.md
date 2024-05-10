@@ -25,6 +25,10 @@ Here you will find links to all the other documents in this folder.
 
 - [WordPress: Site Loads But Layout is Messed Up](/how-to/wp-site-missing-css.md)
 
+### Productivity
+
+- [Google Drive Desktop: How to Sync to Cloud](/how-to/gdrive-sync.md)
+
 ### Browsers
 
 - [Google Chrome: How to Migrate and Sync Profiles](/how-to/chrome-sync-profile.md)
