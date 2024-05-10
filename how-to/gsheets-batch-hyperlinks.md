@@ -15,4 +15,5 @@ To display the first 32 URLs as clickable hyperlinks starting in the first cell 
 
 ## References
 
-- https://www.youtube.com/watch?v=sp7FwCGn2Rk&ab_channel=StephenKwiecinski
+- https://support.google.com/docs/thread/35540244/using-arrayformula-with-hyperlinks?hl=en
+- https://webapps.stackexchange.com/questions/97285/how-to-convert-non-clickable-links-into-clickable-in-google-sheets
