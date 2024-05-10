@@ -19,3 +19,10 @@ This is the main index / directory / kiosk for navigating the rest of the files 
 - [RCHAIX](/rchaix/index.md): Notes from when I worked at IBM in Rochester, MN (2000-2002)
 - [Christians](/christians/index.md): Christian coders, apps, tech-adjacent groups, etc.
 - [Eric's Projects](/my-projects/index.md): My code, designs, and projects I've contributed to
+
+
+## Notes & Resources
+
+### Credits
+
+- This format is based on [Christian Lempa's Cheatsheets](https://github.com/ChristianLempa/cheat-sheets/blob/main/linux/awk.md).
