@@ -20,8 +20,6 @@ This is a TEMPLATE STUB to be used for commands and tools (e.g., awk, perl, pear
 
 ## Credits
 
-- This format is based on [Christian Lempa's Cheatsheets](https://github.com/ChristianLempa/cheat-sheets/blob/main/linux/awk.md).
-
 ## References
 
 - https://kinsta.com/knowledgebase/content-management-system/
