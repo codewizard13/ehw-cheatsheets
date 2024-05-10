@@ -14,3 +14,9 @@
 ## References
 
 - https://edu.gcfglobal.org/en/googledriveanddocs/all-about-google-drive/1/
+
+---
+
+## Related Articles
+
+- [Google Drive Desktop: How to Sync to Cloud](/how-to/gdrive-sync.md)

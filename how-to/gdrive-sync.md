@@ -4,6 +4,8 @@
 
 [🏚️](../README.md) | [How To](/how-to/index.md)
 
+How to setup **[Google Drive](/productivity/google-drive.md)** to sync cloud to your desktop computer and vice-versa.
+
 - Download Google Desktop
 - Click on Backup and Sync in system tray
 - Sign into Google account
@@ -33,13 +35,6 @@ In this screen we choose the folders to continously backup to Gdrive
 - **Ignore files with these extensions:** Add whatever you want here (e.g., WAV, .MACOS, etc.)
 
 !!! #GOTCHA: Uncheck the 'Sync My Drive to this computer' to stop syncing to your laptop
-
-
-
-
-
-
-
 
 
 ## References
