@@ -13,7 +13,7 @@ However, LibreOffice faces criticisms for its complex interface and occasional p
 
 Here's a list of programs in the LibreOffice productivity suite, with their Microsoft Office counterparts (in parentheses):
 
-- **Calc** (Excel)
+- **[Calc](/productivity/lo-calc.md)** (Excel)
 - **Writer** (Word)
 - **Impress** (PowerPoint)
 - **Base** (Access)
