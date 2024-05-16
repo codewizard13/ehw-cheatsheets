@@ -20,8 +20,16 @@ This is the main index / directory / kiosk for navigating the rest of the files 
 - [Christians](/christians/index.md): Christian coders, apps, tech-adjacent groups, etc.
 - [Eric's Projects](/my-projects/index.md): My code, designs, and projects I've contributed to
 
+## MY OTHER COLLECTIONS & WIKIS
+
+- **Ministry**: ([local](/../_ministry/), [GitHub](https://github.com/codewizard13/ehw-ministry)) My experiences with finding Jesus, Christianity, atheism, world religions, cults, belief systems, etc.
+
+- **Music**: ([local](/../_music/), [GitHub](https://github.com/codewizard13/ehw-music-docs.git)) My knowledge about and with music including songs, artists, theory, instruments, genres, playing styles, worship music, guitar ministry, etc.
+
 
 ## Notes & Resources
+
+- N/A
 
 ### Credits
 
