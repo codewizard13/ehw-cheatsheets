@@ -26,6 +26,10 @@ This is the main index / directory / kiosk for navigating the rest of the files 
 
 - **Music**: ([local](/../_music/), [GitHub](https://github.com/codewizard13/ehw-music-docs.git)) My knowledge about and with music including songs, artists, theory, instruments, genres, playing styles, worship music, guitar ministry, etc.
 
+## My Online Contributions & Writings in the Tech Space
+
+- [My ChatGPT Posts](/my-projects/chat-gpt.md)
+
 
 ## Notes & Resources
 
