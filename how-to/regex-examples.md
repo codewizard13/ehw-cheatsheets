@@ -8,14 +8,14 @@ This is a list of examples of different regexes (**regular expressions**) I find
 
 ---
 
-### Notepad++
+## Notepad++
 
 REPLACE tab dialog settings enabled:
 
 - Wraparound
 - Regular expression
 
-#### Convert WordPress "plugins to be updated" list to a minimized bullet list
+### Convert WordPress "plugins to be updated" list to a minimized bullet list
 
 **Search:**
 
@@ -67,9 +67,9 @@ The result will be something like this:
 
 
 
-### VSCode
+## VSCode
 
-### Bulk Rename Utility
+## Bulk Rename Utility
 
 
 ---
