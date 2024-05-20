@@ -14,7 +14,11 @@ Here you will find links to all the other documents in this folder.
 
 ### Coding
 
-### Documentation & Text Editors
+#### Regex (regular expressions)
+
+- [Regex: Useful Examples](/how-to/regex-examples.md)
+
+#### Documentation & Text Editors
 
 - [How to Create an ASCII Folder Tree](/how-to/create-ascii-folder-tree.md)
 - [How to Add CSS Styles to Markdown](/how-to/style-markdown.md)
