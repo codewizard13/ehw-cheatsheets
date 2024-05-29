@@ -34,6 +34,8 @@ Here you will find links to all the other documents in this folder.
 - [Google Drive Desktop: How to Sync to Cloud](/how-to/gdrive-sync.md)
 - [Google Sheets: How to Batch Convert URLs to Hyperlinks](/how-to/gsheets-batch-hyperlinks.md)
 - [LibreOffice Calc: How to Render Video Embeds in Cells](/how-to/lo-calc-render-vids.md)
+- [Google Sheets: How to Autofill the Alphabet (A-Z)](/how-to/gsheets-autofill-alphabet.md)
+
 
 ### Browsers
 
