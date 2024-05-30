@@ -2,10 +2,6 @@
 
 [🏚️](../README.md) | [How To](/how-to/index.md)
 
-In many "how-to" articles about creating custom post types (CPTs), the authors seem to assume that the reader has been making CPTs for years and so leaves out some -- I think -- important information, namely "Where do you put the code"?
-
-They will usually say something like "you can add it to a plugin or put it in your functions.php", which is technically true. However, it is an incomplete instruction for a beginner to WordPress custom post types.
-
 One key thing to understand is that any code that is in a plugin, could just as well be added to functions.php instead, and vice versa. What is a WordPress plugin anyway? Basically, it is a folder with at least one file: the main plugin file. Customarily, the main plugin file name is the same as the plugin folder name. Often the company, brand, or author name (or abbreviation, or acronyn) is prepended onto both.
 
 **Example**:
