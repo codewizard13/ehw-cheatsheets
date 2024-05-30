@@ -35,11 +35,13 @@ So, for the manage admin bar plugin, it might look something like this:
     Author: Eric Hepperle
     */
 
-And that's it! Now you have a plugin!
+And that's it! Now you have a plugin! (Hostinger has a great **[article](https://www.hostinger.com/tutorials/how-to-create-wordpress-plugin)** that gives several custom plugin examples.)
 
-But, you may wonder "how does WordPress know about my plugin?". The way you tell your website about your plugin is to put the plugin folder in the wp-content/plugins/ folder. Then, you have to click "Activate" on the Plugins page or nothing will happen.
+But, you may wonder "how does WordPress know about my plugin?". The way you tell your website about your plugin is to put the plugin folder in the wp-content/plugins/ folder. But, you still have to click "Activate" on the Plugins page or nothing will happen.
 
-Hostinger has a great **[article](https://www.hostinger.com/tutorials/how-to-create-wordpress-plugin)** that goes even deeper.
+As soon as you type the plugin file header comment, WordPress knows to treat that folder as a plugin. In fact, if you are troubleshooting a brand new plugin that should be working, check that your file header comment is correctly formatted and that there are no blank lines or whitespace before the comment.
+
+
 
 ## References
 
