@@ -28,6 +28,7 @@ Here you will find links to all the other documents in this folder.
 ### WordPress
 
 - [WordPress: Site Loads But Layout is Messed Up](/how-to/wp-site-missing-css.md)
+- [WordPress: How to Create a Basic Plugin](/how-to/wp-create-plugin.md)
 
 ### Productivity
 
