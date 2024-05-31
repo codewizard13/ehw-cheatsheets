@@ -97,6 +97,8 @@ Refresh the Plugins page and your plugin entry should look like this:
 
 ![Our wiki CPT plugin on the Plugins page after adding other plugin details](/_pix/screens/screen-wpadmin-plugins__custom-plugin_02.jpg)
 
+**Note**: *The Author URI doesn't require the "https" part, and URLS are not case sensiteve, so I use upper camel to make the individual words in the URL stand out better.*
+
 ## Generate the Custom Post Type Plugin Code
 
 Next, navigate to https://metabox.io/post-type-generator/. Let's create a custom post type for a knowledgebase / wiki. The post type is often called "doc" or "article" or even "kb". We'll call ours "doc" because it's short and makes sense. But, basically a doc is a wiki article.
