@@ -80,7 +80,7 @@ Good. Now, we need to add the plugin header like this (don't forget the `<?php` 
 
 As long as you have the correct path, you can go to the "Plugins" page in the WordPress admin and your new plugin will show up in the list. Simply by adding the "Plugin Name:" property, _**you have now registered your plugin!**_
 
-![Our new plugin is registered and viewable on the Plugins page](../_pix/screens/screen-wpadmin-plugins__custom-plugin_01.jpg)
+![Our new plugin is registered and viewable on the Plugins page](../_pix/screens/screen--01--wpadmin-plugins__custom-plugin.jpg)
 
 Our plugin doesn't do anything useful at this point, so we still have more to do. Let's fill out the rest of the common header comment properties. After we add a description, version, and author information, the plugin header should look something like this:
 
@@ -95,7 +95,7 @@ Our plugin doesn't do anything useful at this point, so we still have more to do
 
 Refresh the Plugins page and your plugin entry should look like this:
 
-![Our wiki CPT plugin on the Plugins page after adding other plugin details](/_pix/screens/screen-wpadmin-plugins__custom-plugin_02.jpg)
+![Our wiki CPT plugin on the Plugins page after adding other plugin details](/_pix/screens/screen--02--wpadmin-plugins__custom-plugin.jpg)
 
 **Note**: *The Author URI doesn't require the "https" part, and URLS are not case sensiteve, so I use upper camel to make the individual words in the URL stand out better.*
 
@@ -103,11 +103,69 @@ Refresh the Plugins page and your plugin entry should look like this:
 
 Next, navigate to https://metabox.io/post-type-generator/. Let's create a custom post type for a knowledgebase / wiki. The post type is often called "doc" or "article" or even "kb". We'll call ours "doc" because it's short and makes sense. But, basically a doc is a wiki article.
 
+**NOTE:** The text-domain is usually the name of the plugin folder and serves as a form of namespacing.
 
+Let's fill out the post type generator form fields with the following information:
 
+- **Plural name**: Docs
+- **Singular name**: Doc
+- **Slug**: doc
+- **Function name**: register_cpt_doc
+- **Text domain**: elh-wiki-plugins
 
+![Metabox online custom post type generator fields](/_pix/screens/screen--03--metabox--cpt-gen--doc.jpg)
 
+Now, click the "Generate Code" button and you should have something like this:
 
+```php
+<?php
+add_action( 'init', 'register_cpt_doc' );
+function register_cpt_doc() {
+	$args = [
+		'label'  => esc_html__( 'Docs', 'text-domain' ),
+		'labels' => [
+			'menu_name'          => esc_html__( 'Docs', 'elh-wiki-plugin' ),
+			'name_admin_bar'     => esc_html__( 'Doc', 'elh-wiki-plugin' ),
+			'add_new'            => esc_html__( 'Add Doc', 'elh-wiki-plugin' ),
+			'add_new_item'       => esc_html__( 'Add new Doc', 'elh-wiki-plugin' ),
+			'new_item'           => esc_html__( 'New Doc', 'elh-wiki-plugin' ),
+			'edit_item'          => esc_html__( 'Edit Doc', 'elh-wiki-plugin' ),
+			'view_item'          => esc_html__( 'View Doc', 'elh-wiki-plugin' ),
+			'update_item'        => esc_html__( 'View Doc', 'elh-wiki-plugin' ),
+			'all_items'          => esc_html__( 'All Docs', 'elh-wiki-plugin' ),
+			'search_items'       => esc_html__( 'Search Docs', 'elh-wiki-plugin' ),
+			'parent_item_colon'  => esc_html__( 'Parent Doc', 'elh-wiki-plugin' ),
+			'not_found'          => esc_html__( 'No Docs found', 'elh-wiki-plugin' ),
+			'not_found_in_trash' => esc_html__( 'No Docs found in Trash', 'elh-wiki-plugin' ),
+			'name'               => esc_html__( 'Docs', 'elh-wiki-plugin' ),
+			'singular_name'      => esc_html__( 'Doc', 'elh-wiki-plugin' ),
+		],
+		'public'              => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'show_ui'             => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'show_in_rest'        => true,
+		'capability_type'     => 'post',
+		'hierarchical'        => false,
+		'has_archive'         => true,
+		'query_var'           => true,
+		'can_export'          => true,
+		'rewrite_no_front'    => false,
+		'show_in_menu'        => false,
+		'supports' => [
+			'title',
+			'editor',
+			'thumbnail',
+		],
+		
+		'rewrite' => true
+	];
+
+	register_post_type( 'doc', $args );
+}
+```
 
 
 
