@@ -210,8 +210,12 @@ For our CPT project, we will use these settings:
 
 
 
-|                                   |
-| --------------------------------- |
+
+
+
+
+| Label                             | Value                                                                                                                                     |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | Description                       | Custom post type for wiki articles. This is the main CPT that<br> others will inherit from. Thus, we will need to make this hierarchical. |
 | Public?                           | true                                                                                                                                      |
 | Exclude from search?              | false                                                                                                                                     |
@@ -231,7 +235,6 @@ For our CPT project, we will use these settings:
 | Can export?                       | true                                                                                                                                      |
 | Custom rewrite slug               | docs                                                                                                                                      |
 | No prepended permalink structure? | false                                                                                                                                     |
-
 
 
 
