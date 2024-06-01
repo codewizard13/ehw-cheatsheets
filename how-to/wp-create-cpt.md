@@ -169,6 +169,148 @@ function register_cpt_doc() {
 
 
 
+Now, go into the Plugins page and activate your plugin.
+
+Refresh the page ... but wait ... the menu for our "Doc" isn't showing up in the left sidebar! What to do?
+
+We need to go back to the generator.
+
+Click the "Advanced" tab. Under "Show in menu?" select "Show as top level menu". Copy the code and replace the previous version... or ... you could just change one line of code.
+
+Let's take the "change one line" option and save a bit of unnecessary clicks.
+
+Find the `show_in_menu` property and change the value from false to true.
+
+![Set show_in_menu to true](/_pix/screens/screen--04--metabox--cpt-gen--doc.jpg)
+
+Now refresh the wpadmin page and you should see the "Docs" in the sidebar.
+
+Let's also change `hierarchical` to true. This way we can use our "Doc" CPT as the base and we can create various doc (article) types including "Person", "Place", "Historical-Event", "Thing", etc. later.
+
+---
+
+
+Ok, those were easy ones, but for the next changes, we need to go back to the generator because it will need to add some properties that we don't have yet.
+
+Here are some things we need still:
+
+- Select an appropriate menu dashicon ("dashicon" is just WordPress' proprietary icon set, similar to FontAwesome or emojis, but with less options)
+- Select where in the menu we want our Docs item to display
+- Enable archive
+- Change the archive from "doc" to "docs"
+- Change the custom rewrite slug from "doc" to "docs"
+
+### Advanced Tab
+
+The "Advanced" tab has a lot of interesting settings. This is where we can select the menu icon, where our menu item should be in the menu (after "Dashboard", after "Media", etc.). We can even choose in this generator to have it be a sub-menu to existing menus like Dashboard or Settings, for instance. This tab is also where we can determine if we want an **archive** (a special page that formats a list of posts instead of a single post) and whether we want to change the default URL structure.
+
+For our CPT project, we will use these settings:
+
+
+Description
+Custom post type for wiki articles. This is the main CPT that others will inherit from. Thus, we will need to make this hierarchical.
+Public?
+ Controls how the type is visible to authors and readers.
+Exclude from search?
+ Whether to exclude posts with this post type from frontend search results.
+Publicly queryable?
+ Whether queries can be performed on the frontend.
+Show UI?
+ Whether queries can be performed on the frontend.
+Show in nav menus?
+ Whether queries can be performed on the frontend.
+Show in menu?
+
+Show as top-level menu
+Where to show the post type in the admin menu. show_ui must be true.
+Show in admin bar?
+ Whether to make this post type available in the WordPress admin bar.
+Show in admin bar?
+ Whether to add the post type in the REST API.
+REST API base slug
+Slug to use in REST API URL
+Leave empty to use the post type slug.
+Menu position after
+
+Dashboard
+Menu icon
+
+Capability type
+PostPageCustom
+Hierarchical?
+ Whether the post type is hierarchical.
+Has archive?
+ Enables post type archives.
+Custom archive slug
+docs
+Default is the post type slug.
+Query var
+ Enables request the post via URL: example.com/?post_type=slug
+Can export?
+ Can this post type be exported?
+Custom rewrite slug
+docs
+Leave empty to use the post type slug.
+---
+
+
+
+### Supports Tab
+
+In the supports tab, we'll add revisions so go ahead and enable that.
+
+### Taxonomies Tab
+
+Finally, let's add support for categories and tags.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
