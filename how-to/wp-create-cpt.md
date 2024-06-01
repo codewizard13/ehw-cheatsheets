@@ -236,7 +236,9 @@ For our CPT project, we will use these settings:
 | Custom rewrite slug               | docs                                                                                                                                      |
 | No prepended permalink structure? | false                                                                                                                                     |
 
+Let's quickly cover some important points:
 
+**Exclude from search**: In some cases you might want to have a CPT connected to another CPT through relationships. For example, maybe we have an "author" CPT and each author is related to a "business" CPT. If we want to display information from the business, but we don't want the public to be able to search for business posts, we can set exclude to `true`. However, most often we will leave this unchecked or `false`.
 
 ### Supports Tab
 
