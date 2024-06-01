@@ -240,13 +240,106 @@ Let's quickly cover some important points:
 
 **Exclude from search**: In some cases you might want to have a CPT connected to another CPT through relationships. For example, maybe we have an "author" CPT and each author is related to a "business" CPT. If we want to display information from the business, but we don't want the public to be able to search for business posts, we can set exclude to `true`. However, most often we will leave this unchecked or `false`.
 
+**Has archive**: If for some reason you wanted to not share an archive (either with the public or with search engines), then we would leave it unchecked in the generator (or type `false` in the code).
+
+On the other hand, if you ***do*** want an archive (as with our project and most others) then you have two options: either set to `true` or a custom archive URL slug. For instance, if we set to `true`, then our URL endpoint will look like this:
+
+	[sitename]/doc
+
+Why? Because that's the default slug (singular) that we have set at the end of the code on the line that looks like this:
+
+	register_post_type( 'doc', $args );
+
+However, if we want our URL endpoint to be plural like this,
+
+	[sitename]/docs
+
+then we set the `has_archive` value to `docs`.
+
+We could actually set it to anything - we could set it to 'clown-tears' if we wanted:
+
+	[sitename]/clown-tears
+
+Perhaps a more practical example is that while having a really short base slug of `doc`, we could set `has_archive` to `articles` and it would look like this:
+
+	[sitename]/articles
+
+
 ### Supports Tab
 
-In the supports tab, we'll add revisions so go ahead and enable that.
+In the supports tab, we'll add revisions so go ahead and enable that. In your own projects you can enable/disable whatever you need.
 
 ### Taxonomies Tab
 
-Finally, let's add support for categories and tags.
+Finally, let's add support for categories and tags. Go ahead and enable those checkboxes for now.
+
+### Final CPT Code
+
+Here's the final code you should end up with in our custom post type plugin:
+
+```php
+<?php
+/*
+Plugin Name:    ELH Wiki Custom Post Type Plugin
+Description:    A plugin that registers the "doc" custom post type (CPT) for a wiki or knowledgebase website.
+Version:        0.00.00
+Author:         Eric Hepperle
+Author URI:     https://EricHepperle.com
+*/
+
+add_action( 'init', 'register_cpt_doc' );
+function register_cpt_doc() {
+	$args = [
+		'label'  => esc_html__( 'Docs', 'text-domain' ),
+		'labels' => [
+			'menu_name'          => esc_html__( 'Docs', 'elh-wiki-plugin' ),
+			'name_admin_bar'     => esc_html__( 'Doc', 'elh-wiki-plugin' ),
+			'add_new'            => esc_html__( 'Add Doc', 'elh-wiki-plugin' ),
+			'add_new_item'       => esc_html__( 'Add new Doc', 'elh-wiki-plugin' ),
+			'new_item'           => esc_html__( 'New Doc', 'elh-wiki-plugin' ),
+			'edit_item'          => esc_html__( 'Edit Doc', 'elh-wiki-plugin' ),
+			'view_item'          => esc_html__( 'View Doc', 'elh-wiki-plugin' ),
+			'update_item'        => esc_html__( 'View Doc', 'elh-wiki-plugin' ),
+			'all_items'          => esc_html__( 'All Docs', 'elh-wiki-plugin' ),
+			'search_items'       => esc_html__( 'Search Docs', 'elh-wiki-plugin' ),
+			'parent_item_colon'  => esc_html__( 'Parent Doc', 'elh-wiki-plugin' ),
+			'not_found'          => esc_html__( 'No Docs found', 'elh-wiki-plugin' ),
+			'not_found_in_trash' => esc_html__( 'No Docs found in Trash', 'elh-wiki-plugin' ),
+			'name'               => esc_html__( 'Docs', 'elh-wiki-plugin' ),
+			'singular_name'      => esc_html__( 'Doc', 'elh-wiki-plugin' ),
+		],
+		'public'              => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'show_ui'             => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'show_in_rest'        => true,
+		'capability_type'     => 'post',
+		'hierarchical'        => true,
+		'has_archive'         => 'docs',
+		'query_var'           => true,
+		'can_export'          => true,
+		'rewrite_no_front'    => false,
+		'show_in_menu'        => true,
+		'menu_position'       => 2,
+		'menu_icon'           => 'dashicons-media-text',
+		'supports' => [
+			'title',
+			'editor',
+			'thumbnail',
+			'revisions',
+		],
+		'taxonomies' => [
+			'category',
+			'post_tag',
+		],
+		'rewrite' => [ 'slug' => 'docs' ]
+	];
+
+	register_post_type( 'doc', $args );
+}
+```
 
 
 
