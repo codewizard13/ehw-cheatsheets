@@ -207,51 +207,31 @@ The "Advanced" tab has a lot of interesting settings. This is where we can selec
 For our CPT project, we will use these settings:
 
 
-Description
-Custom post type for wiki articles. This is the main CPT that others will inherit from. Thus, we will need to make this hierarchical.
-Public?
- Controls how the type is visible to authors and readers.
-Exclude from search?
- Whether to exclude posts with this post type from frontend search results.
-Publicly queryable?
- Whether queries can be performed on the frontend.
-Show UI?
- Whether queries can be performed on the frontend.
-Show in nav menus?
- Whether queries can be performed on the frontend.
-Show in menu?
 
-Show as top-level menu
-Where to show the post type in the admin menu. show_ui must be true.
-Show in admin bar?
- Whether to make this post type available in the WordPress admin bar.
-Show in admin bar?
- Whether to add the post type in the REST API.
-REST API base slug
-Slug to use in REST API URL
-Leave empty to use the post type slug.
-Menu position after
 
-Dashboard
-Menu icon
 
-Capability type
-PostPageCustom
-Hierarchical?
- Whether the post type is hierarchical.
-Has archive?
- Enables post type archives.
-Custom archive slug
-docs
-Default is the post type slug.
-Query var
- Enables request the post via URL: example.com/?post_type=slug
-Can export?
- Can this post type be exported?
-Custom rewrite slug
-docs
-Leave empty to use the post type slug.
----
+|                                   |
+| --------------------------------- |
+| Description                       | Custom post type for wiki articles. This is the main CPT that<br> others will inherit from. Thus, we will need to make this hierarchical. |
+| Public?                           | true                                                                                                                                      |
+| Exclude from search?              | false                                                                                                                                     |
+| Publicly queryable?               | true                                                                                                                                      |
+| Show UI?                          | true                                                                                                                                      |
+| Show in nav menus?                | true                                                                                                                                      |
+| Show in menu?                     | Show as top-level menu                                                                                                                    |
+| Show in admin bar?                | true                                                                                                                                      |
+| REST API base slug                | docs                                                                                                                                      |
+| Menu position after               | Dashboard                                                                                                                                 |
+| Menu icon                         | dashicons-media-text                                                                                                                      |
+| Capability type                   | Post                                                                                                                                      |
+| Hierarchical?                     | true                                                                                                                                      |
+| Has archive?                      | true                                                                                                                                      |
+| Custom archive slug               | docs                                                                                                                                      |
+| Query var                         | true                                                                                                                                      |
+| Can export?                       | true                                                                                                                                      |
+| Custom rewrite slug               | docs                                                                                                                                      |
+| No prepended permalink structure? | false                                                                                                                                     |
+
 
 
 
@@ -334,5 +314,5 @@ Finally, let's add support for categories and tags.
 
 ## References
 
-- https://www.youtube.com/watch?v=XTkbDBhXBQI&list=PLriKzYyLb28kR_CPMz8uierDWC2y3znI2&index=5&ab_channel=AlessandroCastellani
+- https://regex101.com/r/gNnOze/1
 - 
