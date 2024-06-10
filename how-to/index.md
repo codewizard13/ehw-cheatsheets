@@ -16,6 +16,7 @@ Here you will find links to all the other documents in this folder.
 
 #### Regex (regular expressions)
 
+- [Regex - Index](/coding/regex.md)
 - [Regex: Useful Examples](/how-to/regex-examples.md)
 
 #### Documentation & Text Editors

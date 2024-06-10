@@ -18,8 +18,8 @@ In **JavaScript**, regular expressions are objects used with various methods suc
 
 ## Related Articles
 
-[Regex: For Use with Chrome OneTab Extension](/how-to/regex-onetab.md)
-[Regex: Perl / PCRE](/how-to/regex-perl-pcre.md)
+- [Regex: For Use with Chrome OneTab Extension](/how-to/regex-onetab.md)
+- [Regex: Perl / PCRE](/how-to/regex-perl-pcre.md)
 
 
 ## References
