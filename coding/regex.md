@@ -19,9 +19,16 @@ In **JavaScript**, regular expressions are objects used with various methods suc
 ## Related Articles
 
 [Regex: For Use with Chrome OneTab Extension](/how-to/regex-onetab.md)
+[Regex: Perl / PCRE](/how-to/regex-perl-pcre.md)
 
 
 ## References
 
 - https://chatgpt.com/c/f4ef75f2-fbb2-47e0-b1af-730981608676
 - https://regex101.com/r/NrSBDw/1
+- https://www.youtube.com/watch?v=rhzKDrUiJVk
+- https://coderpad.io/blog/development/the-complete-guide-to-regular-expressions-regex/
+- https://www.regular-expressions.info/
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions
+- https://chatgpt.com/c/f4ef75f2-fbb2-47e0-b1af-730981608676
+- 
