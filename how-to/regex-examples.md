@@ -80,3 +80,10 @@ The result will be something like this:
 - https://forum.openoffice.org/en/forum/viewtopic.php?t=7694
 - https://ask.libreoffice.org/t/playing-embedded-videos/98362
 - https://www.youtube.com/watch?v=xBGYEu2pHkY&ab_channel=LibreOffice-TheDocumentFoundation
+
+
+## INDEX
+
+*Migrate link to this doc to regex/index.md.*
+
+Regex: For Use with Chrome OneTab Extension
