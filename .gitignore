@@ -138,36 +138,6 @@ junk/
 
 
 
-# WordPress Specific #
-#######################################################
-
-# Ignore everything in the root directory
-/*
-
-# Except wp-content
-!wp-content/
-
-# Ignore everything in wp-content
-wp-content/*
-
-# Except themes and plugins directories
-!wp-content/themes/
-!wp-content/plugins/
-
-# Ignore everything in the themes directory
-wp-content/themes/*
-
-# Except the specific theme
-!wp-content/themes/ehw-gp-child-wiki/
-!wp-content/themes/ehw-gp-child-wiki/**
-
-# Ignore everything in the plugins directory
-wp-content/plugins/*
-
-# Except the specific plugin
-!wp-content/plugins/ehw-site-plugin/
-!wp-content/plugins/ehw-site-plugin/**
-
 # Additional common ignores
 
 # OS generated files
