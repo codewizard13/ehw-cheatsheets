@@ -31,6 +31,10 @@ Here you will find links to all the other documents in this folder.
 - [WordPress: How to Create a Basic Plugin](/how-to/wp-create-plugin.md)
 - [WordPress: How to Create a Custom Post type](/how-to/wp-create-cpt.md)
 
+### Graphic Design
+
+- [InDesign: How to Create a Wall Calendar with Custom Dates](/how-to/indesign-calendar.md)
+
 ### Productivity
 
 - [Google Drive Desktop: How to Sync to Cloud](/how-to/gdrive-sync.md)
