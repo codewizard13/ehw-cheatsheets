@@ -4,24 +4,26 @@
 
 [🏚️](../README.md) | [Email](/email/index.md)
 
-TECHNOLOGY_NAME (TECH_ABBREV) is a ... description of this concept. Other technologies that this description references can link to the appropriate cheatsheet for that **[other tech](/_stub_01.md)**.
+Mozilla Thunderbird is a free, open-source email client and personal information manager that's part of the Mozilla family. It's available on multiple platforms and includes features like:
 
-This is a TEMPLATE STUB to be used for commands and tools (e.g., awk, perl, pear, vim, etc. ) Use this as starter file for each new term.
+- Email: Access messages, filter and organize them, and manage accounts separately or in a unified inbox
+- Calendar: Access calendars
+- Contacts: Access contacts
+- Newsfeed: Read RSS feeds
+- Chat: Use IRC/XMPP/Matrix chat clients
 
-// TO-DO
+## Helpful Tips
 
-## Strengths
+### How can I view who I receive the most email from?
 
-## Weaknesses
+A Thunderbird extension called **Sender Frequency**
 
-## History
+## Related Articles
 
-### The Problem this Solves
+- [Regex: For Use with Chrome OneTab Extension](/how-to/regex-onetab.md)
+- [Regex: Perl / PCRE](/how-to/regex-perl-pcre.md)
 
-## Credits
-
-- This format is based on [Christian Lempa's Cheatsheets](https://github.com/ChristianLempa/cheat-sheets/blob/main/linux/awk.md).
 
 ## References
 
-- https://kinsta.com/knowledgebase/content-management-system/
+- 
