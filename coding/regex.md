@@ -21,6 +21,17 @@ In **JavaScript**, regular expressions are objects used with various methods suc
 - [Regex: For Use with Chrome OneTab Extension](/how-to/regex-onetab.md)
 - [Regex: Perl / PCRE](/how-to/regex-perl-pcre.md)
 
+## Useful Tips
+
+Use with **Bulk Rename Utility** to rename screenshots:
+
+**Find:**
+
+    ^(\d{2})__(screen.*615--)(@@|\d{2})(.*)$
+
+**Replace:**
+
+    \2\1\4
 
 ## References
 
@@ -31,4 +42,3 @@ In **JavaScript**, regular expressions are objects used with various methods suc
 - https://www.regular-expressions.info/
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions
 - https://chatgpt.com/c/f4ef75f2-fbb2-47e0-b1af-730981608676
-- 
