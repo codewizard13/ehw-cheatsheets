@@ -8,3 +8,4 @@ Here you will find links to all the other documents in this folder.
 
 - [WordPress](/wp/wordpress.md)
 - [Elementor](/wp/elementor.md)
+- [WP-CLI](/wp/wp-cli.md)
