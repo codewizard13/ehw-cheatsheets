@@ -694,6 +694,7 @@ These examples illustrate how WP-CLI can streamline database management tasks. A
 
 ## References
 
+- https://www.youtube.com/watch?v=Mt1-WJpa48Q&t=3s&ab_channel=AaronReimann
 - https://chatgpt.com/c/7df912eb-fcb5-4ed5-aae7-2d1c7dc4448a
 - https://wp-cli.org/#:~:text=WP%2DCLI%20is%20the%20command,without%20using%20a%20web%20browser.
 - https://www.dreamhost.com/blog/guide-to-wp-cli/
@@ -702,3 +703,4 @@ These examples illustrate how WP-CLI can streamline database management tasks. A
 - https://www.siteground.com/tutorials/wordpress/wp-cli/
 - https://www.hostinger.com/tutorials/wp-cli
 - https://www.scalahosting.com/blog/what-is-wp-cli-a-beginners-guide/
+- https://aaron.kr/content/development/git-wp-cli-windows/
