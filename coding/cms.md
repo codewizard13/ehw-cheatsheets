@@ -1,5 +1,9 @@
 # Content Management System
 
+####  [[This is a stub]]
+
+[🏚️](../README.md) | [Coding](/coding/index.md)
+
 A **content management system** (CMS) is software that helps businesses manage and organize digital content. CMSs can be used to create, edit, organize, and publish content. They can also help keep content organized and accessible so it can be used and repurposed effectively.
 
 On a more technical level, a content management system is made up of two core parts:
