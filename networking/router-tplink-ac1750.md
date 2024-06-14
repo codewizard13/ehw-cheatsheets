@@ -40,6 +40,14 @@ After successfully changinng your user name and password, go ahead and login and
 
 ![Status page after change password](/_pix/screens/screen--10--wifi--tplink-ac1750.jpg)
 
+!!! #GOTCHA: After changing SSID name, network asks for a password to connect. This is NOT the same password you changed in `System > Password`. Instead, the `Network Key` Windows asks for will be listed on your router as `Wireless Password/PIN` and will likely be a string of numbers.
+
+You will see the wifi connection dialog says something like "Verifying and connecting"; That is a good sign.
+
+![Windows 10 wifi connection says 'Verifying and connecting'](/_pix/screens/screen--16--wifi--tplink-ac1750.jpg)
+
+When you see "No internet, secured", you have successfully connected to the router.
+
 
 
 ---
