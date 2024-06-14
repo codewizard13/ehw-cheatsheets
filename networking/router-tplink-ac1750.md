@@ -2,7 +2,7 @@
 
 ####  [[This is a stub]]
 
-[🏚️](../README.md) | [How To](/how-to/index.md)
+[🏚️](../README.md) | [Networking](/networking/index.md)
 
 These are my notes dealing with the **TP-Link Archer AC1750** Dual Band Wireless Gigabit Router.
 
