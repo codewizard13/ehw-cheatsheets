@@ -46,8 +46,42 @@ You will see the wifi connection dialog says something like "Verifying and conne
 
 ![Windows 10 wifi connection says 'Verifying and connecting'](/_pix/screens/screen--16--wifi--tplink-ac1750.jpg)
 
-When you see "No internet, secured", you have successfully connected to the router.
+When you see "No internet, secured" under your new SSID name, you have successfully connected to the router
 
+!['No internet, Secured' means you are connected to the router](/_pix/screens/screen--17--wifi--tplink-ac1750.jpg)
+
+
+### Disable DHCP
+
+Navigate to **DHCP > DHCP Settings** in the admin sidebar and set to "Disable". Follow the prompts to reboot the router.
+
+![DHCP Disabled](/_pix/screens/screen--18--wifi--tplink-ac1750.jpg)
+
+### Connect to the Main Router
+
+!!! #NOTE: Here I'm showing the settings for the **Wireless 2.4GHz** menu, but you'll need to go through and do the same process for the 5GHz network if you want that to be bridged also.
+
+!!! #NOTE: I changed the SSID names and added `Bridge` to the end
+
+Make sure the "Enable WDS Bridging" checkbox is checked. Then click the "Survey" or "Scan" button to detect available networks. 
+
+![Table of available networks](/_pix/screens/screen--19--wifi--tplink-ac1750.jpg)
+
+Click "Connect" in the table of available networks next to your main network. You will quickly be returned back to the previous "Wireless Settings" page. If the Key type did not auto-fill, manually select it (WPA2-PSK is a pretty safe choice with routers after 2016)
+
+
+In my case, notice the key type auto-selects as
+`WPA-PSK/WPA2-PSK`
+
+![Wireless Settings 2.4GHz after selecting SSID to be bridged](/_pix/screens/screen--20--wifi--tplink-ac1750.jpg)
+
+Enter the password for the main router you are trying to extend.
+
+!!! #GOTCHA: After entering the password you may see an alert popup that says `Channel can not be auto while WDS Bridging enabled, do you want to change you channel to the Bridged AP's channel?`. Click OK and relogin to the AC1750 admin dashboard. The router may also require a reboot.
+
+![The channel for the bridge has to be the same as for the main router](/_pix/screens/screen--21--wifi--tplink-ac1750.jpg)
+
+!!! GOTCHA: If you plan to extend the 5GHz network also, you may want to set that up before rebooting the router. Once you reboot, you will not be in bridged mode and will no longer have access to the settings admin dialogue.
 
 
 ---
