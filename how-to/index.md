@@ -43,6 +43,7 @@ Here you will find links to all the other documents in this folder.
 - [LibreOffice Calc: How to Render Video Embeds in Cells](/how-to/lo-calc-render-vids.md)
 - [Google Sheets: How to Autofill the Alphabet (A-Z)](/how-to/gsheets-autofill-alphabet.md)
 - [LibreOffice Calc: How to Autofill Left-Right across a Row](/how-to/lo-calc-autofill-ltr.md)
+- [Windows: How to Copy File List from Explorer into Clipboard](/how-to/win-copy-files-clipboard.md)
 
 ### Browsers
 
