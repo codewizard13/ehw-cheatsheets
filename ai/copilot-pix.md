@@ -10,6 +10,13 @@ This file will display graphics I've created with Bing Copilot.
 
 ---
 
+### [2024-06-18] Jesus the Lord of Heaven's Armies with Sword and Fish Tattoo
+
+!!! #GOTCHA: Copilot was unable to draw a 'Jesus fish` or 'Icythys Fish' no matter what input I tried.
+
+![](/_pix/ai/copilot/ehdai__20240618_Copilot__JesusSwordFish__01.png)
+![](/_pix/ai/copilot/ehdai__20240618_Copilot__JesusSwordFish__02.png)
+![](/_pix/ai/copilot/ehdai__20240618_Copilot__JesusSwordFish__03.png)
 
 ## References
 
