@@ -8,7 +8,7 @@ This section is kind of a "junk drawer" for code and answers I generated with AI
 
 ---
 
-#### AI AGENT: Ella on Discord: Elementor
+## AI AGENT: Ella on Discord: Elementor
 
 :speech_balloon: **Conversation Starter:**
 
@@ -79,3 +79,60 @@ https://developers.elementor.com/docs/hooks/custom-query-filter/
 
 By following these steps, you can create a custom filter for your "videos" post type with the "episodes" taxonomy and apply it to a Loop Grid on a custom search page.
 Ella Mentor AI•Today at 11:39 AM
+
+---
+
+## AI AGENT: (Maybe) ChatGPT ???
+
+To create a sort filter to order videos by the most recent guest's publish date, you can follow these steps using Elementor and custom post types in WordPress. Here's a comprehensive guide:
+
+Step 1: Create Custom Post Types
+Install Required Plugins:
+Elementor and Elementor Pro
+Advanced Custom Fields (ACF)
+Custom Post Type UI (CPT UI)
+
+Create Custom Post Types:
+Go to CPT UI and create two custom post types: videos and guests.
+For videos, set the slug to videos, and for guests, set the slug to guests.
+
+Step 2: Set Up Relationships
+Create Relationship Fields:
+Use ACF to create a relationship field in both post types.
+In videos, create a relationship field called guests to link multiple guests.
+In guests, create a relationship field called videos to link multiple videos.
+
+Step 3: Create and Populate Posts
+Add Video and Guest Posts:
+Add posts under videos and guests and link them using the relationship fields.
+
+Step 4: Create a Custom Query
+Custom Query for Sorting:
+You will need to create a custom query to sort videos by the most recent guest's publish date. This requires custom code.
+
+Step 5: Implement Custom Code
+Add Custom Code:
+Add the following code to your theme's functions.php file or a custom plugin:
+
+```php
+function sort_videos_by_recent_guest($query) {
+    if (!is_admin() && $query->is_main_query() && is_post_type_archive('videos')) {
+        $query->set('meta_key', 'guests');
+        $query->set('orderby', 'meta_value_num');
+        $query->set('order', 'DESC');
+    }
+}
+add_action('pre_get_posts', 'sort_videos_by_recent_guest');
+```
+
+Step 6: Display Sorted Videos
+Create an Archive Template:
+Use Elementor to create an archive template for your videos post type.
+Use the Posts widget or Loop Grid widget to display the videos sorted by the custom query.
+
+Additional Resources
+Elementor Theme Builder: https://elementor.com/help/what-is-the-elementor-theme-builder/
+Elementor and ACF Integration: https://elementor.com/blog/acf-vs-pods-vs-toolset/
+Creating Custom Post Types: https://elementor.com/blog/wordpress-custom-post-types/
+
+By following these steps, you can create a sort filter that orders videos by the most recent guest's publish date using Elementor and custom post types in WordPress. If you need further assistance, feel free to ask!
