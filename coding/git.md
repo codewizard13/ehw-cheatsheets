@@ -14,10 +14,58 @@
 git show [oldcommitnum]:some_file.cpp > new_file.cpp
 ```
 
+### Checkout file from specific previous commit
+
+You can revert a particular commit's state of the file back to the workspace with the following git command:
+
+```sh
+git checkout <COMMIT#> <relative/path/to/your/file>
+```
+
+Example:
+
+```sh
+git checkout 22864c16a5647d3b4ccb034aa5698f196a648a38 Gemfile
+```
+
+### Recover deleted file where no commit made after delete
+
+Here are different cases as a reference to help others: 
 
 
+If the deletion has **not been committed**, the command below will restore the deleted file in the working tree.
+
+    $ git checkout -- <file>
+
+You can get a **list of all the deleted files** in the working tree using the command below.
+
+    $ git ls-files --deleted
 
 
+If the deletion has **been committed**, find the commit where it happened, then recover the file from this commit.
+
+    #find the commit hash where it had this file deleted
+    $ git rev-list -n 1 HEAD -- <file>
+
+It should give you something like `c46e81aa403ecb8a0f7a323a358068345`, now use this commit hash with the parent operator (`^`) like so:
+
+    $ git checkout <commit>^ -- <file>
+
+Example: 
+
+    $ git checkout c46e81aa403ecb8a0f7a323a358068345^ -- <file> 
+
+In case you are looking for the path of the file to recover, the following command will display a summary of all deleted files.
+
+    $ git log --diff-filter=D --summary
+
+If you want to just display the list of files: 
+
+    git log --diff-filter=D --summary | grep "delete mode"
+
+I had a case where `git rev-list -n 1 HEAD -- <file>` didn't work, maybe because `<file>` only ever existed on a feature branch. Adding `--all` helped: `git rev-list --all -n 1 HEAD -- <file>` – 
+Abdull
+ CommentedOct 19, 2022 at 10:46
 
 ## Gotchas and Pitfalls
 
@@ -26,3 +74,5 @@ git show [oldcommitnum]:some_file.cpp > new_file.cpp
 ## References
 
 - https://stackoverflow.com/questions/888414/git-checkout-older-revision-of-a-file-under-a-new-name
+- https://stackoverflow.com/questions/75973864/git-how-to-checkout-file-from-specific-commit
+- https://stackoverflow.com/questions/11956710/git-recover-deleted-file-where-no-commit-was-made-after-the-delete
