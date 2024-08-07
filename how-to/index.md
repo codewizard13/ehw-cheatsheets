@@ -14,6 +14,8 @@ Here you will find links to all the other documents in this folder.
 
 ### Coding
 
+- [LocalWP: Without WordPress](/how-to/localwp-non-wp-site.md)
+
 #### Regex (regular expressions)
 
 - [Regex - Index](/coding/regex.md)
