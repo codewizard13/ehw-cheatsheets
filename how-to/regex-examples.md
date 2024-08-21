@@ -1,6 +1,5 @@
 # Regex: Useful Examples
 
-####  [[This is a stub]]
 
 [🏚️](../README.md) | [How To](/how-to/index.md)
 
@@ -66,6 +65,17 @@ The result will be something like this:
     Unlimited Elements for Elementor: 1.5.106 -> 1.5.107
 
 
+### Find lines starting with -, :, or \#
+
+This is a useful regex to use in a markdown document when you want to find bullet list items, headings, and lines starting with colon (`:`), double-colon (`::`), etc. It also excludes blank lines. It is helpful for listing a quick summary of tasks in my daily work logs.
+
+In Notepad++ make sure to enable the "Find all in current document" option.
+
+**Search:**
+
+    ^[\-:#]
+
+---
 
 ## VSCode
 
