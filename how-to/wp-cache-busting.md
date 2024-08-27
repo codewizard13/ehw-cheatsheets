@@ -1,0 +1,37 @@
+# WordPress: Cache Busting
+
+[🏚️](../README.md) | [How To](/how-to/index.md)
+
+To set up cache busting, you can use techniques like appending a version number or a hash to your file names. This ensures that when you update a file, the browser fetches the new version instead of using the cached one. Here are some common methods:
+
+Query Strings: Append a version number or a hash to the file URL. html <link rel="stylesheet" href="style.css?v=1.0"> <script src="script.js?v=1.0"></script>
+
+File Name Versioning: Rename the file with a version number or a hash. html <link rel="stylesheet" href="style.v1.0.css"> <script src="script.v1.0.js"></script>
+
+Build Tools: Use build tools like Webpack, Gulp, or Grunt to automate cache busting by generating unique file names based on content hashes.
+
+## Automate Cache Busting without Build Tools in WordPress
+
+To automate cache busting in WordPress without using build tools, you can use plugins or custom code. Here are a couple of methods:
+
+Using a Plugin:
+
+WP Asset CleanUp: This plugin helps you manage and optimize your CSS and JS files, including cache busting.
+Autoptimize: This plugin can aggregate, minify, and cache scripts and styles, and it also includes cache busting features.
+Custom Code: You can add a version number to your enqueued scripts and styles in your theme's functions.php file. Here's an example:
+
+```php
+function my_theme_enqueue_styles() {
+    $theme_version = wp_get_theme()->get('Version');
+    wp_enqueue_style('my-theme-style', get_stylesheet_uri(), array(), $theme_version);
+    wp_enqueue_script('my-theme-script', get_template_directory_uri() . '/js/script.js', array(), $theme_version, true);
+}
+add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
+```
+
+This code will append the theme version to your CSS and JS files, ensuring that the browser fetches the latest version whenever you update your theme.
+
+
+## References
+
+- WPEngine AI Chatbot
