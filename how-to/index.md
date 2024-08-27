@@ -34,6 +34,7 @@ Here you will find links to all the other documents in this folder.
 - [WordPress: How to Create a Basic Plugin](/how-to/wp-create-plugin.md)
 - [WordPress: How to Create a Custom Post type](/how-to/wp-create-cpt.md)
 - [WordPress: Cache Busting](./wp-cache-busting.md)
+- [WordPress: How to Debug Out to Admin Notices Hook](./wp-admin-debug.md)
 
 ### Graphic Design
 
