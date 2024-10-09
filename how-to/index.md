@@ -53,3 +53,7 @@ Here you will find links to all the other documents in this folder.
 ### Browsers
 
 - [Google Chrome: How to Migrate and Sync Profiles](/how-to/chrome-sync-profile.md)
+
+### Email
+
+- [Thunderbird: How to Archive Emails](/how-to/tbird-archive-emails.md)
