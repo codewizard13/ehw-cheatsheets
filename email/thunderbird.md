@@ -22,6 +22,7 @@ A Thunderbird extension called **Sender Frequency**
 
 - [Regex: For Use with Chrome OneTab Extension](/how-to/regex-onetab.md)
 - [Regex: Perl / PCRE](/how-to/regex-perl-pcre.md)
+- [Thunderbird: How to Archive Emails](/how-to/tbird-archive-emails.md)
 
 
 ## References
