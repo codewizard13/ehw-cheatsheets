@@ -52,12 +52,12 @@ To organize Local Folders effectively:
 By following these steps, you'll create a comprehensive archive of your Google Account folders while preserving tags and labels. The suggested organization methods will help you manage your Local Folders effectively[1][2][3][4][5].
 
 Citations:
-[1] https://mdaemon.com/community/forums/topic/85432/tags-in-thunderbird-have-disappeared-after-upgrade-to-2300
-[2] https://support.mozilla.org/en-US/questions/1241821
-[3] https://ma.tt/2007/05/thunderbird-tags/
-[4] https://connect.mozilla.org/t5/ideas/tag-ordering-sorting-in-thunderbird/idi-p/35696
-[5] https://support.mozilla.org/en-US/kb/message-tags
-[6] http://forums.mozillazine.org/viewtopic.php?t=2793197
+- [1] https://mdaemon.com/community/forums/topic/85432/tags-in-thunderbird-have-disappeared-after-upgrade-to-2300
+- [2] https://support.mozilla.org/en-US/questions/1241821
+- [3] https://ma.tt/2007/05/thunderbird-tags/
+- [4] https://connect.mozilla.org/t5/ideas/tag-ordering-sorting-in-thunderbird/idi-p/35696
+- [5] https://support.mozilla.org/en-US/kb/message-tags
+- [6] http://forums.mozillazine.org/viewtopic.php?t=2793197
 
 ## Related Articles
 
