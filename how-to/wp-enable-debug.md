@@ -21,6 +21,24 @@ define( 'WP_DEBUG_DISPLAY', false );
 @ini_set( 'display_errors', 0 );
 ```
 
+!!! #GOTCHA: Make sure to set the values back to disable debugging before deploying to PROD / LIVE site!
+
+Before pushing to PROD:
+
+- Disabled debugging by replacing the above section in `wp-config.php` with:
+
+```
+// Enable WP_DEBUG mode
+define( 'WP_DEBUG', false );
+// Enable Debug logging to the /wp-content/debug.log file
+define( 'WP_DEBUG_LOG', false );
+// Disable display of errors and warnings
+define( 'WP_DEBUG_DISPLAY', false );
+@ini_set( 'display_errors', 0 );
+```
+
+- Delete the **debug.log** file (usually in `wp-content/debug.log`)
+
 ## Related Articles
 
 - [Thunderbird: How to Archive Emails Complete Guide [Needs EDITING]](/how-to/tbird-archive-emails-v2.md)
