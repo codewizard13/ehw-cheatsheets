@@ -4,6 +4,8 @@
 
 [🏚️](../README.md) | [How To](/how-to/index.md)
 
+#### Related Articles: [Mozilla Thunderbird](/email/thunderbird.md)
+
 To archive your Google Account folders in Thunderbird while preserving the structure, content, tags, and labels, follow these steps:
 
 1. Create a new Local Folder structure:
@@ -61,8 +63,7 @@ Citations:
 
 ## Related Articles
 
-- [Regex: For Use with Chrome OneTab Extension](/how-to/regex-onetab.md)
-- [Regex: Perl / PCRE](/how-to/regex-perl-pcre.md)
+- [Thunderbird: How to Archive Emails Complete Guide [Needs EDITING]](/how-to/tbird-archive-emails-v2.md)
 
 
 ## References
