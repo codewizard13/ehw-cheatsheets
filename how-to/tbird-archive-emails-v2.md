@@ -4,6 +4,8 @@
 
 [🏚️](../README.md) | [How To](/how-to/index.md)
 
+#### Related Articles: [Mozilla Thunderbird](/email/thunderbird.md)
+
 # The Definitive Guide to Importing & Exporting Thunderbird Emails: Backup Your Emails, Restore, and Search, All with a FREE Extension!
 
 For anyone who uses Thunderbird for email, managing, backing up, and restoring emails can be a critical task. This guide will walk you through using the *ImportExportTools NG* extension to export, backup, restore, and search your Thunderbird emails seamlessly. This free tool allows you to create organized email backups, retain folder structures, and import or export with just a few clicks—no technical expertise required!
@@ -110,7 +112,8 @@ Happy emailing!
 
 ## Related Articles
 
-- N/A
+- [Thunderbird: How to Archive Emails](/how-to/tbird-archive-emails.md)
+- [Email: Thunderbird]
 
 
 ## References

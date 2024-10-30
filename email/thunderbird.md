@@ -21,6 +21,7 @@ A Thunderbird extension called **Sender Frequency**
 ## Related Articles
 
 - [Thunderbird: How to Archive Emails](/how-to/tbird-archive-emails.md)
+- [Thunderbird: How to Archive Emails Complete Guide [Needs EDITING]](/how-to/tbird-archive-emails-v2.md)
 
 
 ## References
