@@ -4,7 +4,7 @@
 
 [🏚️](../README.md) | [How To](/how-to/index.md)
 
-#### Related Articles: [Mozilla Thunderbird](/email/thunderbird.md)
+#### Related Topics: [WordPress](/wp/wordpress.md)
 
 To enable debugging in WordPress, add the following to `wp-config` (replace existing values if necessary):
 
@@ -41,9 +41,9 @@ define( 'WP_DEBUG_DISPLAY', false );
 
 ## Related Articles
 
-- [Thunderbird: How to Archive Emails Complete Guide [Needs EDITING]](/how-to/tbird-archive-emails-v2.md)
+- N/A
 
 
 ## References
 
-- https://www.perplexity.ai/search/using-mozilla-thunderbird-with-uF7GSW3qQwe6GXx12w.93A
+- https://www.perplexity.ai/search/wordpress-suppress-php-warning-3D0SATBgRSy_.jIa_g4s1Q
