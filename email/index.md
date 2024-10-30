@@ -10,3 +10,4 @@ Here you will find links to all the other documents in this folder.
 ## Elsewhere:
 
 - [Thunderbird: How to Archive Emails](/how-to/tbird-archive-emails.md)
+- [Thunderbird: How to Archive Emails Complete Guide [Needs EDITING]](/how-to/tbird-archive-emails-v2.md)
