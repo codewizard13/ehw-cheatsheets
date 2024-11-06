@@ -1,14 +1,29 @@
+body {
+  max-width: 1200px;
+}
+
 .ehw-doc-descr {
   background: aliceblue;
   padding: 1rem;
   margin: 1rem auto;
+  border-radius: .6rem;
+  border: solid gainsboro .5px;
 }
 
 /* Main topic index file headers */
 
-[id*="index-for"] {
+h1[id*="index-for"] {
   color: cadetblue;
 }
-[id*="index-for"]::before {
+h1[id*="index-for"]::before {
   content: '📑';
+}
+
+/* Main topic PLUGIN index headers */
+
+h1[id*="plugin"] {
+  color: red;
+}
+h1[id*="plugin"]::before {
+  content: '🔌';
 }

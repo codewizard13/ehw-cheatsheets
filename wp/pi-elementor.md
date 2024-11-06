@@ -1,8 +1,10 @@
-# Elementor
+<link rel="stylesheet" href="../_css/main.css">
 
-####  [[This is a stub]]
+# Plugin: Elementor
 
-[🏚️](../README.md) | [WordPress](/wp/index.md)
+[🏚️ README](../README.md)
+
+<section class="ehw-doc-descr">
 
 **Elementor** is a WordPress **page-builder plugin** designed to simplify the process of building, managing, and hosting websites using a visual editor and drag-and-drop interface. This intuitive tool allows users to create dynamic websites quickly without writing code, making it accessible to anyone, regardless of technical skills. With Elementor, users can add, move, and style elements with ease, seeing the results in real-time, which enables the creation of professional-looking pages effortlessly.
 
@@ -14,7 +16,7 @@ Whether building a simple blog or a complex e-commerce site, Elementor provides 
 - **Responsive Design:** Ensure your website looks great on all devices with responsive design options, previewing how it will appear on desktop, tablet, and mobile screens.
 - **Templates and Blocks:** Choose from pre-designed templates or create reusable blocks to save time and customize to match your brand.
 
----
+</section>
 
 ## Useful Tips
 
