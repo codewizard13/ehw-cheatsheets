@@ -1,0 +1,14 @@
+.ehw-doc-descr {
+  background: aliceblue;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+/* Main topic index file headers */
+
+[id*="index-for"] {
+  color: cadetblue;
+}
+[id*="index-for"]::before {
+  content: '📑';
+}

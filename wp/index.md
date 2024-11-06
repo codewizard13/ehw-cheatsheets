@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="../_css/main.css">
 
-# Index for: WORDPRESS/
+# Index for: WORDPRESS
 
 [🏚️ README](../README.md)
 
