@@ -2,7 +2,7 @@
 
 # Plugin: Elementor
 
-[🏚️ README](../README.md)
+[🏚️](../README.md) | [WordPress](index.md)
 
 <section class="ehw-doc-descr">
 

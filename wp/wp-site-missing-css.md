@@ -1,6 +1,6 @@
 # WordPress: Site Loads But Layout is Messed Up
 
-[🏚️](../README.md) | [How To](/how-to/index.md)
+[🏚️](../README.md) | [WordPress](index.md)
 
 Sometimes after migrating a site, to [📛localhost](/coding/local-dev.md) , the site data all seems to be there, and the content. But, the layout is wonky / messed up. In many cases, this is because during the URL replacement phase of a [📛manual WordPress migration](../wp-manual-migration.md), I migrated to "http" instead of "https".
 

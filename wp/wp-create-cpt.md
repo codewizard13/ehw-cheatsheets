@@ -1,6 +1,6 @@
 # WordPress: How to Create a Custom Post type
 
-[🏚️](../README.md) | [How To](/how-to/index.md)
+[🏚️](../README.md) | [WordPress](index.md)
 
 Custom post types (CPTs) is a concept that many new to WordPress development may find intimidating. If you ever look at the code for a CPT, or try to follow tutorials from the talented **[Alecaddd](https://www.youtube.com/watch?v=XTkbDBhXBQI&list=PLriKzYyLb28kR_CPMz8uierDWC2y3znI2&index=5&ab_channel=AlessandroCastellani)**, you may find yourself asking things like:
 

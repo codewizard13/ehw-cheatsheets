@@ -1,6 +1,6 @@
 # WordPress: How to Debug Out to Admin Notices Hook
 
-[🏚️](../README.md) | [How To](/how-to/index.md)
+[🏚️](../README.md) | [WordPress](index.md)
 
 Add this code into your functions.php:
 

@@ -1,6 +1,6 @@
 # WordPress: How to Create a Basic Plugin
 
-[🏚️](../README.md) | [How To](/how-to/index.md)
+[🏚️](../README.md) | [WordPress](index.md)
 
 One key thing to understand is that any code that is in a plugin, could just as well be added to functions.php instead, and vice versa. What is a WordPress plugin anyway? Basically, it is a folder with at least one file: the main plugin file. Customarily, the main plugin file name is the same as the plugin folder name. Often the company, brand, or author name (or abbreviation, or acronyn) is prepended onto both.
 

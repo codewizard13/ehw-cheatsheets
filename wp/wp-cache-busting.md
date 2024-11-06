@@ -1,6 +1,6 @@
 # WordPress: Cache Busting
 
-[🏚️](../README.md) | [How To](/how-to/index.md)
+[🏚️](../README.md) | [WordPress](index.md)
 
 To set up cache busting, you can use techniques like appending a version number or a hash to your file names. This ensures that when you update a file, the browser fetches the new version instead of using the cached one. Here are some common methods:
 

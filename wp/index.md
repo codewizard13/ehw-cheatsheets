@@ -15,14 +15,14 @@
 
 ## Articles
 
-- [](wp-admin-debug.md)
-- [](wp-cache-busting.md)
-- [](wp-cli.md)
-- [](wp-create-cpt.md)
-- [](wp-create-plugin.md)
-- [](wp-deploy-bp.md)
-- [](wp-enable-debug.md)
-- [](wp-site-missing-css.md)
+- [WordPress: How to Debug Out to Admin Notices Hook](wp-admin-debug.md)
+- [WordPress: Cache Busting](wp-cache-busting.md)
+- [WordPress: WP-CLI Command Line](wp-cli.md)
+- [WordPress: How to Create a Custom Post type](wp-create-cpt.md)
+- [WordPress: How to Create a Basic Plugin](wp-create-plugin.md)
+- [WordPress: Deploy from Dev/ Staging to Prod Best Practices](wp-deploy-bp.md)
+- [WordPress: Enable Debug Mode for Troubleshooting](wp-enable-debug.md)
+- [WordPress: Site Loads But Layout is Messed Up](wp-site-missing-css.md)
 
 
 ### Plugins
@@ -32,13 +32,3 @@
 ## References
 
 - https://kinsta.com/knowledgebase/content-management-system/
-
-## In this Folder:
-
-- [WordPress](/wp/wordpress.md)
-- [Elementor](/wp/elementor.md)
-- [WP-CLI](/wp/wp-cli.md)
-
-## Related Posts:
-
-- [WordPress: Enable Debug Mode for Troubleshooting](/how-to/wp-enable-debug.md)

@@ -1,6 +1,6 @@
 # WordPress: Deploy from Dev/ Staging to Prod Best Practices
 
-[🏚️](../README.md) | [How To](/how-to/index.md)
+[🏚️](../README.md) | [WordPress](index.md)
 
 #### Related Topics: [WordPress](/wp/wordpress.md)
 

@@ -2,9 +2,7 @@
 
 ####  [[This is a stub]]
 
-[🏚️](../README.md) | [How To](/how-to/index.md)
-
-#### Related Topics: [WordPress](/wp/wordpress.md)
+[🏚️](../README.md) | [WordPress](index.md)
 
 To enable debugging in WordPress, add the following to `wp-config` (replace existing values if necessary):
 
