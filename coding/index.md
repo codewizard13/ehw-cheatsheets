@@ -1,14 +1,41 @@
-# Index for: CODING/
 
-[🏚️](../README.md)
+<link rel="stylesheet" href="../_css/main.css">
 
-Here you will find links to all the other documents in this folder.
+# Index for: CODING
 
-## In this Folder:
+[🏚️ README](../README.md)
 
-- [JavaScript](/coding/javascript.md)
-- [Markdown](/coding/markdown.md)
-- [Visual Studio Code (VSCode)](/coding/vscode.md)
-- [Content Management System (CMS)](/coding/cms.md)
-- [Regular Expressions (Regex)](/coding/regex.md)
-- [Git](/coding/git.md)
+## Description:
+
+
+<section class="ehw-doc-descr">
+
+**Coding**, programming, web dev &ndash; these topics are all related and often synonymous. Here you'll find things like **web development** (_although WordPress lives elsewhere_), **JavaScript**, **PHP**, **MySQL** databases, **HTML/CSS**, etc.
+</section>
+
+## ARTICLES
+
+### HTML/CSS
+
+### [JavaScript](javascript.md)
+
+
+### PHP/LAMP
+
+
+### Linux: Bash
+
+
+### Windows: CMD/CLI
+
+
+### Windows: PowerShell
+
+
+### Laravel
+
+
+### [WordPress](../wp/index.md)
+
+
+### [Regular Expressions (Regex)](regex.md)

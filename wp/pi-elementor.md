@@ -20,6 +20,8 @@ Whether building a simple blog or a complex e-commerce site, Elementor provides 
 
 ## Useful Tips
 
+- N/A
+
 ### How to Create Elementor Custom Query?
 
 
