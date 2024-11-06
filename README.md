@@ -15,6 +15,13 @@ This is the main index / directory / kiosk for navigating the rest of the files 
 - [Shell](/shell/index.md): Command line (CLI) and shell-scripting
 - [WordPress](/wp/index.md): WordPress CMS
 
+## Quick Links
+
+**[Hex color chart:](coding/html-hex-colors.md)** (named colors)
+
+![Hex color chart: (named colors)](_pix/hex-colors-01.jpg)
+
+
 ## MISC
 
 - [RCHAIX](/rchaix/index.md): Notes from when I worked at IBM in Rochester, MN (2000-2002)

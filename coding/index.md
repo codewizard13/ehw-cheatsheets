@@ -17,6 +17,8 @@
 
 ### HTML/CSS
 
+- [HTML: Named Hex Color Chart](html-hex-colors.md)
+
 ### [JavaScript](javascript.md)
 
 
