@@ -2,8 +2,6 @@
 
 [🏚️](../README.md) | [WordPress](index.md)
 
-#### Related Topics: [WordPress](/wp/wordpress.md)
-
 Here is the updated table with the "Category" column bolded.
 
 ---
