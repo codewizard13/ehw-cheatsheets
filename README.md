@@ -9,6 +9,7 @@ This is the main index / directory / kiosk for navigating the rest of the files 
 - [Coding](/coding/index.md): Coding, programming, software development (see also [Shell](/shell/index.md))
 - [Database](/database/index.md): Databases, SQL, spreadsheets
 - [Design](/design/index.md): Graphic design, digital design
+- [Email](/email/index.md)
 - [Networking](/networking/index.md): Networking, CCNA, etc.
 - [Operating Systems](/os/index.md): Linux, Windows, Mac, etc.
 - [Productivity](/productivity/index.md): Office suites & productivity software
