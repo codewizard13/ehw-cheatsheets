@@ -22,6 +22,7 @@ A Thunderbird extension called **Sender Frequency**
 
 - [Thunderbird: How to Archive Emails](/how-to/tbird-archive-emails.md)
 - [Thunderbird: How to Archive Emails Complete Guide [Needs EDITING]](/how-to/tbird-archive-emails-v2.md)
+- [Thunderbird: How to Import Google Calendars](tbird-google-calendar.md)
 
 
 ## References
