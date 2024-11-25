@@ -2,7 +2,7 @@
 
 [🏚️](../README.md) | [How To](/how-to/index.md)
 
-#### Related Articles: [Mozilla Thunderbird](/email/thunderbird.md)
+#### Related Articles: [Plesk [not created yet]](#)
 
 To put your website online with IONOS
 Log in to IONOS.
