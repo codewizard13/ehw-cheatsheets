@@ -15,12 +15,15 @@ These docs cover **web server administration** and includes topics like **[apach
 </section>
 
 
-## Articles
+## Articles in this folder
 
 - N/A
 
+## Related Posts
+
+- [SERVER: How to Properly Configure Server Settings when Migrating to New Host](/how-to/server-settings-migrate.md)
+
 ## References
 
-- https://kinsta.com/knowledgebase/content-management-system/
 
 
