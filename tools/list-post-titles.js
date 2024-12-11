@@ -16,7 +16,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const folderPath = 'path/to/your/folder';
+const start_dir = __dirname;
+console.log(`start_dir: ${start_dir}`)
+
+const folderPath = start_dir;
 const files = fs.readdirSync(folderPath);
 
 files.forEach(file => {
