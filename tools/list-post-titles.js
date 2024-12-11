@@ -7,6 +7,10 @@
  * Purpose:
  * 
  * Usage:
+ * - node tools/list-post-titles.js --sourceDir "how-to"
+ * - #GOTCHA: Ensure that you are referencing from the current folder in
+ *   the bash terminal, NOT the current folder int VSCode Explorer sidebar.
+ * - quotes may or may note be required around the sourceDir path
  * 
  * Sample Output:
  * 
@@ -18,21 +22,26 @@ const path = require('path');
 const { program } = require('commander');
 
 program
-  .option('-sd, --sourceDir <sourceDir>', 'Source Directory')
+  .option('-sd, --sourceDir <sourceDir>', 'Source Directory');
 
 program.parse(process.argv);
 
 const options = program.opts();
-console.log(`Hello, ${options.name}! You are ${options.age} years old.`);
-
 
 const start_dir = __dirname;
-console.log(`start_dir: ${start_dir}`)
+console.log(`start_dir: ${start_dir}`);
 
-console.log(`options:`, options.sourceDir)
+console.log(`options:`, options.sourceDir);
 
 const folderPath = options.sourceDir ? options.sourceDir : start_dir;
-const files = fs.readdirSync(folderPath);
+
+try {
+  const files = fs.readdirSync(folderPath);
+  console.log('Files:', files);
+} catch (error) {
+  console.error(`Error reading directory: ${folderPath}`, error);
+}
+
 // const files = fs.readdir(folderPath);
 
 // files.forEach(file => {
