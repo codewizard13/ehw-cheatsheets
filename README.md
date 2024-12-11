@@ -43,7 +43,7 @@ This is the main index / directory / kiosk for navigating the rest of the files 
 
 ## Notes & Resources
 
-- N/A
+- [Scripts & Tools](/tools/)
 
 ### Credits
 
