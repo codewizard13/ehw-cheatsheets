@@ -4,7 +4,8 @@
  * Category: Tools
  * Date Created: 2024-12-11
  * 
- * Purpose:
+ * Purpose: Generates list of markdown formatted links for any folder's 
+ *  index page, listing all md posts in the folder.
  * 
  * Usage:
  * - node tools/list-post-titles.js --sourceDir "how-to"
@@ -52,8 +53,8 @@ try {
 
         if (match) {
             const post_title = match[1];
-            // console.log(`File: ${file} - Post Title: ${post_title}`);
-            console.log(post_title);
+            console.log(`- [${post_title}](${file})`);
+            // console.log(post_title);
         }
     });
 
