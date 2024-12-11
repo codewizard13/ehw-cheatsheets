@@ -22,7 +22,7 @@ const path = require('path');
 const { program } = require('commander');
 
 program
-  .option('-sd, --sourceDir <sourceDir>', 'Source Directory');
+    .option('-sd, --sourceDir <sourceDir>', 'Source Directory');
 
 program.parse(process.argv);
 
@@ -36,23 +36,29 @@ console.log(`options:`, options.sourceDir);
 const folderPath = options.sourceDir ? options.sourceDir : start_dir;
 
 try {
-  const files = fs.readdirSync(folderPath);
-  console.log('Files:', files);
+    
+    // Define files
+    const files = fs.readdirSync(folderPath);
+    console.log('Files:', files);
+
+    console.log(`////////// POST TITLES ///////////\n`)
+
+    files.forEach(file => {
+        const filePath = path.join(folderPath, file);
+        const data = fs.readFileSync(filePath, 'utf8');
+
+        const regex = /^# (.*)/m;
+        const match = data.match(regex);
+
+        if (match) {
+            const post_title = match[1];
+            // console.log(`File: ${file} - Post Title: ${post_title}`);
+            console.log(post_title);
+        }
+    });
+
 } catch (error) {
-  console.error(`Error reading directory: ${folderPath}`, error);
+    console.error(`Error reading directory: ${folderPath}`, error);
 }
 
-// const files = fs.readdir(folderPath);
 
-// files.forEach(file => {
-//     const filePath = path.join(folderPath, file);
-//     const data = fs.readFileSync(filePath, 'utf8');
-
-//     const regex = /^# (.*)/m;
-//     const match = data.match(regex);
-
-//     if (match) {
-//         const post_title = match[1];
-//         console.log(`File: ${file} - Post Title: ${post_title}`);
-//     }
-// });
