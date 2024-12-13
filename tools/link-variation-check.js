@@ -52,6 +52,10 @@ console.log("thisMonthNum", thisMonthNum);
 const thisYear2dig = today.getFullYear() % 100;
 console.log(`thisYear2dig: ${thisYear2dig}`)
 
+
+const monthName = today.toLocaleString('default', { month: 'long' }); // 'December'
+console.log(monthName); 
+
 // Get parse command line args with commander
 program
     .option('-url, --domain <domain>', 'URL Domain');
