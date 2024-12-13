@@ -46,6 +46,12 @@
 // const path = require('path');
 const { program } = require('commander');
 
+const today = new Date()
+const thisMonthNum = today.getMonth() + 1;
+console.log("thisMonthNum", thisMonthNum);
+const thisYear2dig = today.getFullYear() % 100;
+console.log(`thisYear2dig: ${thisYear2dig}`)
+
 // Get parse command line args with commander
 program
     .option('-url, --domain <domain>', 'URL Domain');
@@ -64,6 +70,7 @@ const variations = [
 console.table(variations)
 
 donate_vars = ''
+month_donate_vars = ''
 
 try {
 
