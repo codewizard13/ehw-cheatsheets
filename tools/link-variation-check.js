@@ -36,6 +36,8 @@ const variations = [
 ]
 console.table(variations)
 
+donate_vars = ''
+
 try {
 
     console.log(`////////// URL VARIATIONS ///////////\n`)
@@ -47,10 +49,17 @@ try {
         const anchor = `<a href="${fullUrl}" target="_blank">${fullUrl}</a>`
 
         // console.log(`Variation [${variation}]:  ${fullUrl}`)
+        // console.log(`Variation [${variation}]:  ${anchor}`)
         console.log(`Variation [${variation}]:  ${anchor}`)
+
+        // Create 'Donate' variations
+        donate_vars += `${fullUrl}/Donate\n`
 
 
     });
+
+    console.log(`\n//////////// DONATE VARIATIONS\n`)
+    console.log(donate_vars)
 
 } catch (error) {
     console.error(`Error reading directory: ${folderPath}`, error);
