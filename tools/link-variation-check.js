@@ -12,6 +12,33 @@
  * 
  * Sample Output:
  * 
+ * domain: elijahstreams.com
+ * ┌─────────┬────────────────┐
+ * │ (index) │ Values         │
+ * ├─────────┼────────────────┤
+ * │ 0       │ 'http://'      │
+ * │ 1       │ 'https://'     │
+ * │ 2       │ 'http://www.'  │
+ * │ 3       │ 'https://www.' │
+ * └─────────┴────────────────┘
+ * ////////// URL VARIATIONS ///////////
+ * 
+ * DOMAIN: elijahstreams.com
+ * 
+ * Variation [http://]:  <a href="http://elijahstreams.com" target="_blank">http://elijahstreams.com</a>   
+ * Variation [https://]:  <a href="https://elijahstreams.com" target="_blank">https://elijahstreams.com</a>
+ * Variation [http://www.]:  <a href="http://www.elijahstreams.com" target="_blank">http://www.elijahstream
+ * s.com</a>
+ * Variation [https://www.]:  <a href="https://www.elijahstreams.com" target="_blank">https://www.elijahstr
+ * eams.com</a>
+ * 
+ * //////////// DONATE VARIATIONS
+ * 
+ * http://elijahstreams.com/Donate
+ * https://elijahstreams.com/Donate
+ * http://www.elijahstreams.com/Donate
+ * https://www.elijahstreams.com/Donate
+ * 
  * References:
  * - 
  */
