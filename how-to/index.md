@@ -14,6 +14,10 @@ Here you will find links to all the other documents in this folder.
 
 ### Coding
 
+- [HTML Named Hex Color Shades](/coding/html-hex-colors.md)
+
+#### LAMP Servers
+
 - [LocalWP: Without WordPress](/how-to/localwp-non-wp-site.md)
 
 #### Regex (regular expressions)
@@ -26,6 +30,8 @@ Here you will find links to all the other documents in this folder.
 - [How to Create an ASCII Folder Tree](/how-to/create-ascii-folder-tree.md)
 - [How to Add CSS Styles to Markdown](/how-to/style-markdown.md)
 - [VSCODE: How to Migrate Settings to Another Computer](/how-to/vscode-migrate-settings.md)
+
+#### 📂 [Git](/coding/git.md)
 
 
 ### WordPress
