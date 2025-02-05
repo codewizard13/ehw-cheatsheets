@@ -67,6 +67,25 @@ I had a case where `git rev-list -n 1 HEAD -- <file>` didn't work, maybe because
 Abdull
  CommentedOct 19, 2022 at 10:46
 
+
+### Push local branch to remote
+
+```sh
+git push origin <branch-name>
+```
+
+### Delete remote branch
+
+```sh
+git push origin --delete <branch-name>
+```
+
+### Rename current local branch
+
+```sh
+git branch -m <new-branch-name>
+```
+
 ## Gotchas and Pitfalls
 
 - N/A
