@@ -1,40 +1,54 @@
+<link rel="stylesheet" href="../_css/main.css">
+
 # Index for: HOW TO
 
-[🏚️](../README.md)
+[🏚️ HOME](../README.md)
+
+<section class="ehw-doc-descr">
 
 Here you will find links to all the other documents in this folder.
 
-## In this Folder:
+</section>
 
-### Bash / Linux
+**In this Folder:**
+
+## Bash / Linux
 
 - [Bash: How to Overwrite Contents of One File with Another](/how-to/bash-copy-file-contents.md)
 - [Bash: How to Search and Replace Text in File](/how-to/bash-search-replace-file-content.md)
 - [Bash: How to Add a Newline Character to End of File](/how-to/bash-append-newline-to-file.md)
 
-### Coding
+## Coding
 
 - [HTML Named Hex Color Shades](/coding/html-hex-colors.md)
 
-#### LAMP Servers
+### 📂 [Git](/coding/git.md)
+### 📂 [JavaScript](/coding/javascript.md)
+
+### LAMP Servers
 
 - [LocalWP: Without WordPress](/how-to/localwp-non-wp-site.md)
 
-#### Regex (regular expressions)
+### Regex (regular expressions)
 
 - [Regex - Index](/coding/regex.md)
 - [Regex: Useful Examples](/how-to/regex-examples.md)
 
-#### Documentation & Text Editors
+### Documentation & Text Editors
 
 - [How to Create an ASCII Folder Tree](/how-to/create-ascii-folder-tree.md)
 - [How to Add CSS Styles to Markdown](/how-to/style-markdown.md)
+
+
+### 📂 [VSCode](/coding/vscode.md)
+
 - [VSCODE: How to Migrate Settings to Another Computer](/how-to/vscode-migrate-settings.md)
 
-#### 📂 [Git](/coding/git.md)
+## CMS & FRAMEWORKS
 
+### 📂 [LocalWP](/coding/git.md)
 
-### WordPress
+### 📂 [WordPress](/wp/index.md)
 
 - [WordPress: Site Loads But Layout is Messed Up](/how-to/wp-site-missing-css.md)
 - [WordPress: How to Create a Basic Plugin](/how-to/wp-create-plugin.md)
@@ -42,11 +56,11 @@ Here you will find links to all the other documents in this folder.
 - [WordPress: Cache Busting](./wp-cache-busting.md)
 - [WordPress: How to Debug Out to Admin Notices Hook](./wp-admin-debug.md)
 
-### Graphic Design
+## Graphic Design
 
 - [InDesign: How to Create a Wall Calendar with Custom Dates](/how-to/indesign-calendar.md)
 
-### Productivity
+## Productivity
 
 - [Google Drive Desktop: How to Sync to Cloud](/how-to/gdrive-sync.md)
 - [Google Sheets: How to Batch Convert URLs to Hyperlinks](/how-to/gsheets-batch-hyperlinks.md)
@@ -56,10 +70,10 @@ Here you will find links to all the other documents in this folder.
 - [Windows: How to Copy File List from Explorer into Clipboard](/how-to/win-copy-files-clipboard.md)
 - [Windows: Which Process is Using A File or Folder?](/how-to/win-process-using-folder.md)
 
-### Browsers
+## Browsers
 
 - [Google Chrome: How to Migrate and Sync Profiles](/how-to/chrome-sync-profile.md)
 
-### Email
+## Email
 
 - [Thunderbird: How to Archive Emails](/how-to/tbird-archive-emails.md)
