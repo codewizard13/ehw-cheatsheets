@@ -1,6 +1,6 @@
-# Git
+<link rel="stylesheet" href="../_css/main.css">
 
-####  [[This is a stub]]
+# Git
 
 [🏚️](../README.md) | [Coding](/coding/index.md)
 
