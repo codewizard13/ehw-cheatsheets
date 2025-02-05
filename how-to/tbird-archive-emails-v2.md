@@ -10,6 +10,14 @@
 
 For anyone who uses Thunderbird for email, managing, backing up, and restoring emails can be a critical task. This guide will walk you through using the *ImportExportTools NG* extension to export, backup, restore, and search your Thunderbird emails seamlessly. This free tool allows you to create organized email backups, retain folder structures, and import or export with just a few clicks—no technical expertise required!
 
+<blockquote>
+Here's a real quick answer:
+
+#SOLVED: #PROCESS_STEPS:  How to export/import Thunderbird emails with folder structure to Local Folders?  Export to EML with structure, and import EML messages with structure
+
+#GOTCHA: The above process only saves the particular folder (e.g., Inbox). To export the sent folder, drafts, trash, etc. you need to export the ACCOUNT (Export MBOX with flattened folders)
+</blockquote>
+
 ## Why Use ImportExportTools NG for Thunderbird?
 
 ImportExportTools NG provides Thunderbird users with powerful export and import functionalities. Whether you’re looking to save emails for archival purposes, transfer emails to another computer, or simply back them up to keep your data safe, this tool makes it easy. Let’s dive into how you can set it up and use it effectively.
