@@ -67,6 +67,36 @@ I had a case where `git rev-list -n 1 HEAD -- <file>` didn't work, maybe because
 Abdull
  CommentedOct 19, 2022 at 10:46
 
+### List remote branches
+
+```sh
+git branch -r
+```
+
+### Pull all the remote branches
+
+```sh
+git pull --all
+```
+
+### Pull a single remote branch to local
+
+Create a local branch with the same name as the remote branch:
+
+```sh
+git checkout -b <remote-branch-name>
+```
+**#GOTCHA:** Always make sure you are on the target branch before doing the next step!
+
+```sh
+git pull origin <remote-branch-name>
+```
+Here's an easier way -- especially if the remote branch doesn't already exist on your local machine:
+
+```sh
+git fetch origin
+git checkout -b <remote-branch-name> origin/<remote-branch-name>
+```
 
 ### Push local branch to remote
 
@@ -95,3 +125,4 @@ git branch -m <new-branch-name>
 - https://stackoverflow.com/questions/888414/git-checkout-older-revision-of-a-file-under-a-new-name
 - https://stackoverflow.com/questions/75973864/git-how-to-checkout-file-from-specific-commit
 - https://stackoverflow.com/questions/11956710/git-recover-deleted-file-where-no-commit-was-made-after-the-delete
+- https://graphite.dev/guides/git-pull-remote-branches
