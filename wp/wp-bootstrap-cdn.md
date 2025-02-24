@@ -280,6 +280,8 @@ Optional Enhancements
 
 That’s it! Your WordPress site now uses Bootstrap via a CDN with reliable local fallbacks, balancing performance and dependability.
 
+**_Grok/TwitterX showing how to enqueue Bootstrap CDN in WordPress_**
+![Grok/TwitterX showing how to enqueue Bootstrap CDN in WordPress](/_pix/screens/screen--22--wp-bootstrap-grok.jpg)
 ---
 
 
