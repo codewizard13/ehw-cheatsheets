@@ -26,6 +26,7 @@
 - [WordPress: Enable Debug Mode for Troubleshooting](wp-enable-debug.md)
 - [WordPress: Site Loads But Layout is Messed Up](wp-site-missing-css.md)
 - [WordPress: Debugging & Optimizing ACF Imports (Plesk, PHP, MySQL)](wp-acf-imports-php.md)
+- [WordPress: Enqueue Boostrap CDN with Local Fallback](wp-bootstrap-cdn.md)
 
 
 ### Plugins
