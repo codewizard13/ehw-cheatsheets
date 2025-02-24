@@ -27,6 +27,7 @@
 - [WordPress: Site Loads But Layout is Messed Up](wp-site-missing-css.md)
 - [WordPress: Debugging & Optimizing ACF Imports (Plesk, PHP, MySQL)](wp-acf-imports-php.md)
 - [WordPress: Enqueue Boostrap CDN with Local Fallback](wp-bootstrap-cdn.md)
+- [WordPress: Grok's answer to how to set up relationships between two custom post types](wp-cpt-relationships-grok.md)
 
 
 ### Plugins
