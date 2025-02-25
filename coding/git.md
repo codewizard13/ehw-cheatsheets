@@ -116,6 +116,24 @@ git push origin --delete <branch-name>
 git branch -m <new-branch-name>
 ```
 
+### Reset all changes after last commit
+
+**First, reset any changes**
+
+This will undo any changes you've made to tracked files and restore deleted files:
+
+    git reset HEAD --hard
+
+**Second, remove new files**
+
+This will delete any new files that were added since the last commit:
+
+    git clean -fd
+
+Files that are not tracked due to `.gitignore` are preserved; they will not be removed
+
+*Warning*:  using `-x` instead of `-fd` *would* delete ignored files.  You probably don't want to do this.
+
 ## Gotchas and Pitfalls
 
 - N/A
@@ -126,3 +144,4 @@ git branch -m <new-branch-name>
 - https://stackoverflow.com/questions/75973864/git-how-to-checkout-file-from-specific-commit
 - https://stackoverflow.com/questions/11956710/git-recover-deleted-file-where-no-commit-was-made-after-the-delete
 - https://graphite.dev/guides/git-pull-remote-branches
+- https://stackoverflow.com/questions/4630312/reset-all-changes-after-last-commit-in-git#answer-4630316
