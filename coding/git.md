@@ -134,6 +134,16 @@ Files that are not tracked due to `.gitignore` are preserved; they will not be r
 
 *Warning*:  using `-x` instead of `-fd` *would* delete ignored files.  You probably don't want to do this.
 
+### Git log show only filenames
+
+Show only filenames in git log output
+To see only the names of files that changed with git log, use the --name-only flag.
+
+    git log --name-only 
+To show name and status (modified, added, etc.) of the files, use --name-status
+
+    git log ---name-status
+
 ## Gotchas and Pitfalls
 
 - N/A
