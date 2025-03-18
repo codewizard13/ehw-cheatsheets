@@ -27,3 +27,13 @@ h1[id*="plugin"] {
 h1[id*="plugin"]::before {
   content: '🔌';
 }
+
+/* Add WordPress logo before wordpress titles */
+h1[id*="wordpress"]::before {
+  content: url('../_pix/logos/wordpress-logo.svg');
+  transform: scale(0.5) !important;
+  display: inline-block;
+  flex-direction: row;
+  position: relative;
+  top: 1.2rem;
+}

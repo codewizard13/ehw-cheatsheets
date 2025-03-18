@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>wp-theme-prod-ready.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<link rel="stylesheet" href="../_css/main.css">
+<h1 id="wordpress-production-ready-wordpress-themes">WordPress: Production-Ready WordPress Themes</h1>
+<p><a href="../README.md">🏚️</a> | <a href="index.md">WordPress</a></p>
+<hr>
+<p>When deploying your WordPress theme from development to production, there are indeed files and settings that should be handled differently. Here's what you should consider:</p>
+<h2 id="files-to-exclude-from-production">Files to Exclude from Production</h2>
+<ol>
+<li>
+<p>Development dependencies:</p>
+<ul>
+<li><code>/node_modules</code> directory[6]</li>
+<li><code>package.json</code> and <code>package-lock.json</code>[1]</li>
+<li><code>webpack.mix.js</code> or other build configuration files[1]</li>
+</ul>
+</li>
+<li>
+<p>Source files:</p>
+<ul>
+<li><code>/src</code> directory containing your raw SCSS and JS files[1]</li>
+</ul>
+</li>
+<li>
+<p>Development-specific files:</p>
+<ul>
+<li><code>tailwind.config.json</code> or similar configuration files[1]</li>
+<li>Any local environment configuration files</li>
+</ul>
+</li>
+<li>
+<p>Version control files:</p>
+<ul>
+<li><code>.git</code> directory</li>
+<li><code>.gitignore</code></li>
+</ul>
+</li>
+</ol>
+<h2 id="settings-to-change">Settings to Change</h2>
+<ol>
+<li>
+<p>Debug settings:</p>
+<ul>
+<li>Set <code>WP_DEBUG</code> to <code>false</code> in your <code>wp-config.php</code> file[8]</li>
+<li>Disable any development-specific logging or error reporting</li>
+</ul>
+</li>
+<li>
+<p>Environment type:</p>
+<ul>
+<li>Set <code>WP_ENVIRONMENT_TYPE</code> to <code>production</code> in <code>wp-config.php</code>[8]</li>
+</ul>
+</li>
+<li>
+<p>Performance optimizations:</p>
+<ul>
+<li>Enable caching mechanisms</li>
+<li>Ensure all assets are minified and optimized</li>
+</ul>
+</li>
+<li>
+<p>Security measures:</p>
+<ul>
+<li>Disable file editing in the WordPress admin:<pre class="hljs"><code><div>define(<span class="hljs-string">'DISALLOW_FILE_EDIT'</span>, <span class="hljs-keyword">true</span>);
+</div></code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="best-practices-for-deployment">Best Practices for Deployment</h2>
+<ol>
+<li>
+<p>Use version control (Git) to manage your theme files[9]</p>
+</li>
+<li>
+<p>Implement a deployment pipeline or use a deployment tool to automate the process[9]</p>
+</li>
+<li>
+<p>Always test your theme thoroughly on a staging environment before deploying to production[5]</p>
+</li>
+<li>
+<p>Use Composer to manage WordPress core, plugins, and themes as dependencies[10]</p>
+</li>
+<li>
+<p>Consider using a child theme for customizations if you're building upon an existing theme[7]</p>
+</li>
+</ol>
+<p>By following these guidelines, you'll ensure that only necessary production files are deployed, and your live site is optimized for performance and security.</p>
+<p>Citations:</p>
+<ul>
+<li>[1] https://www.reddit.com/r/ProWordPress/comments/1e68oa6/best_practices_for_deploying_a_wordpress_theme/</li>
+<li>[2] https://developer.wordpress.org/themes/advanced-topics/build-process/</li>
+<li>[3] https://wordpress.stackexchange.com/questions/339882/how-to-deploy-a-new-theme-theme-options-from-staging-to-production-site</li>
+<li>[4] https://deliciousbrains.com/best-practices-for-wordpress-themes-in-2025/</li>
+<li>[5] https://developer.wordpress.com/docs/get-started/deploy/</li>
+<li>[6] https://support.getshifter.io/en/articles/2766480-excluding-folders-while-migrating-with-all-in-one-wp-migration</li>
+<li>[7] https://wpengine.com/resources/developer-best-practices/</li>
+<li>[8] https://developer.wordpress.org/advanced-administration/wordpress/wp-config/</li>
+<li>[9] https://reigntheme.com/best-practices-for-dev-staging-and-production-in-wordpress/</li>
+<li>[10] https://spinupwp.com/wordpress-deployment-workflow-preparing/</li>
+<li>[11] https://stackoverflow.com/questions/3484884/web-deployment-exclude-directories-depending-on-project-configuration-name</li>
+<li>[12] https://stackoverflow.com/questions/13328505/wordpress-development-vs-production-environments</li>
+<li>[13] https://wordpress.stackexchange.com/questions/138769/how-to-exclude-certain-files-from-the-plugin-editor</li>
+<li>[14] https://roconpaas.com/blog/wordpress-push-staging-site-without-overwriting-database/</li>
+<li>[15] https://buddy.works/guides/how-introduce-continuous-deployment-to-wordpress</li>
+</ul>
+<hr>
+<p>Answer from Perplexity: https://www.perplexity.ai/search/i-m-not-finding-many-good-sour-s6kB5FNAQGOz_mJtlotiDw?utm_source=copy_output</p>
+<hr>
+<h2 id="references">References</h2>
+<ul>
+<li>https://www.perplexity.ai/search/i-m-not-finding-many-good-sour-s6kB5FNAQGOz_mJtlotiDw#1</li>
+</ul>
+
+</body>
+</html>
