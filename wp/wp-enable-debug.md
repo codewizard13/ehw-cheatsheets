@@ -1,6 +1,5 @@
 # WordPress: Enable Debug Mode for Troubleshooting
 
-####  [[This is a stub]]
 
 [🏚️](../README.md) | [WordPress](index.md)
 
@@ -19,9 +18,23 @@ define( 'WP_DEBUG_DISPLAY', false );
 @ini_set( 'display_errors', 0 );
 ```
 
+### Increase Memory Limit for Large WordPress Sites
+
+Add the following immediately after the `Add any custom values between this line` line:
+
+```php
+/*MEMCACHED_ENV_START*/ if (isset($_ENV['WPE_CACHE_HOST'])) $memcached_servers=array ( 'default' =>  array ( 0 => $_ENV['WPE_CACHE_HOST'], ), ); /*MEMCACHED_ENV_END*/
+define('WPLANG','');
+define('WP_MEMORY_LIMIT', '512M');
+define( 'WP_MAX_MEMORY_LIMIT', '512M' );
+```
+
+
+---
+
 !!! #GOTCHA: Make sure to set the values back to disable debugging before deploying to PROD / LIVE site!
 
-Before pushing to PROD:
+## Before pushing to PROD:
 
 - Disabled debugging by replacing the above section in `wp-config.php` with:
 
