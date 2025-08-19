@@ -1,0 +1,119 @@
+<!--
+/**
+ * @file index.htm
+ * @description
+ * This HTML file serves as a demonstration page for the EHW ES6 Library functions related to date and time.
+ * It integrates HTML structure, inline CSS styles, and inline JavaScript to showcase dynamic usage of the library methods:
+ * - Displays the current date/time via getCurrentDateTime()
+ * - Shows detailed date/time components via getDateTime()
+ * - Dynamically creates and updates a results box with sample messages
+ * 
+ * The page is designed for easy understanding of how the EHW library functions can be used in a front-end context,
+ * including dynamic content updates and JSON formatted output display.
+ * 
+ * @package EHW_ES6_Demo
+ * @subpackage DateTimeDisplay
+ * @author EHW Development Team
+ * @since 2025-01-01
+ * @last_modified 2025-08-19
+ * @copyright Copyright (c) 2025 EHW Inc. All rights reserved.
+ * @todo
+ * - Determine why the #ehw-content is appended twice at top
+ * - Add error handling for missing or malformed date-time data.
+ * - Extend demo to include additional EHW library utilities.
+ * - Improve accessibility and responsive layout.
+ */
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EHW ES6 Library Demo</title>
+    <style>
+      /* Base styling for body with font and margin */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      /* Styling for the dynamically created results box */
+      #ehw-content {
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin-bottom: 20px;
+        background: #feffcb;
+      }
+      /* Section heading spacing */
+      h2 {
+        margin-top: 40px;
+      }
+      /* Style for preformatted text blocks */
+      pre {
+        background: #efefef;
+        padding: 10px;
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>EHW ES6 Library Functions Demo</h1>
+
+    <section id="last-sync">
+      <h2>getCurrentDateTime()</h2>
+      <p>Output:</p>
+      <pre id="lastSyncOutput"></pre>
+    </section>
+
+    <section id="detailed-date-time">
+      <h2>getDateTime()</h2>
+      <p>Full Date:</p>
+      <pre id="fullDateOutput"></pre>
+      <p>Formatted 12-hour Time:</p>
+      <pre id="timeOutput"></pre>
+      <p>Raw Output Object (JSON):</p>
+      <pre id="rawDateTimeJSON"></pre>
+    </section>
+
+    <section id="results-box">
+      <h2>create_results_box() & update_results()</h2>
+      <p>The results box at top is created dynamically. The content will be updated programmatically.</p>
+    </section>
+
+    <section id="notes">
+      <h2>Notes</h2>
+      <p>This demo shows creation of a results box, updating it with several sample messages including date/time strings.</p>
+    </section>
+
+    <script src="../ehw.lib.js"></script>
+
+    <script>
+      /**
+       * Initialize and run demo functions after DOMContentLoaded event.
+       * Displays current date/time, detailed date/time info, and updates a dynamic results box.
+       * 
+       * @async
+       * @throws {Error} If EHW library functions are not available.
+       */
+      document.addEventListener("DOMContentLoaded", () => {
+        // Display getCurrentDateTime output
+        document.getElementById("lastSyncOutput").textContent = getCurrentDateTime();
+
+        // Get detailed date/time and display key parts
+        const today = getDateTime();
+
+        // Set full date string
+        document.getElementById("fullDateOutput").textContent = today["EN-12"].date.date_full;
+        // Set formatted 12-hour time string
+        document.getElementById("timeOutput").textContent = today["EN-12"].time.fmt_12hr;
+        // Set JSON string representation of full date-time object
+        document.getElementById("rawDateTimeJSON").textContent = JSON.stringify(today, null, 2);
+
+        // Create a results box dynamically on the page
+        create_results_box();
+        // Update the results box with the current full date string
+        update_results("Current Date/Time: " + today["EN-12"].date.date_full);
+      });
+    </script>
+  </body>
+</html>
