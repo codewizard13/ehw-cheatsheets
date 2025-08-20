@@ -1,0 +1,141 @@
+<!--
+/**
+ * @file index.htm
+ * @package DemoColorSwatchComp
+ * @subpackage SingleFileComparison
+ *
+ * @author Eric L. Hepperle
+ * @since 2025-08-20
+ * @last_modified 2025-08-20
+ * @copyright (c) 2025 Eric L. Hepperle. 
+ *
+ * @purpose
+ *   This single-file HTML demo presents a collection of blue color shades, 
+ *   allowing quick visual comparison between variations of blue against 
+ *   a reference tone. 
+ *
+ * @main_features
+ *   - Integrated in one file: HTML structure, CSS styling, and JS logic.
+ *   - Provides a grid of predefined swatches styled through inline <style>.
+ *   - Uses inline <script> for optional dynamic extensions (e.g., adding colors).
+ *
+ * @project_context
+ *   Designed as a lightweight reference and educational tool for developers 
+ *   needing single-file demonstrators with inline documentation.
+ *
+ * @todo
+ *   - Extend to allow custom user-input colors.
+ *   - Add accessibility improvements such as ARIA labels.
+ *   - Provide export-to-image functionality.
+ */
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blue Shades Comparison</title>
+  
+  <style>
+    /* ------------------------------
+       GLOBAL PAGE STYLING
+       ------------------------------ */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding: 20px;
+    }
+
+    /* ------------------------------
+       BASE STYLE FOR COLOR SWATCHES
+       ------------------------------ */
+    .color-swatch {
+      display: inline-block;
+      width: 180px;
+      height: 120px;
+      margin: 10px;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      line-height: 120px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Reference color container */
+    .reference {
+      background: #456F97; /* Example reference shade */
+      padding: 2rem;
+    }
+
+    /* ------------------------------
+       INDIVIDUAL BLUE SHADES
+       ------------------------------ */
+    .wedgewood { background-color: #4C6A92; } /* Muted blue */
+    .steelblue { background-color: steelblue; } /* Named CSS color */
+    .queen-blue { background-color: #436B95; } /* Custom hex */
+    .raf-blue { background: #5D8AA8; } /* RAF blue variant */
+    .cadetblue { background: cadetblue; } /* Named CSS color */
+    .blue-gray { background: #6699CC; } /* Blue-gray tint */
+
+    /* Text label styling */
+    .label {
+      text-align: center;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Blue Shades Comparison</h2>
+
+  <section class="reference">
+    <!-- Predefined swatches -->
+    <div class="color-swatch wedgewood">Wedgewood</div>
+    <div class="color-swatch steelblue">Steel Blue</div>
+    <div class="color-swatch queen-blue">Queen Blue</div>
+    <div class="color-swatch raf-blue">RAF Blue</div>
+    <div class="color-swatch cadetblue">Cadetblue</div>
+    <div class="color-swatch blue-gray">Blue-Gray</div>
+  </section>
+
+  <script>
+    /**
+     * @fileoverview
+     * Inline script adds dynamic interactivity by letting developers 
+     * programmatically append new swatches for testing.
+     */
+
+    /**
+     * Creates and appends a new color swatch div into the reference section.
+     *
+     * @function addColorSwatch
+     * @param {string} name - Text label (and class name) applied to the swatch.
+     * @param {string} hexColor - Hex or named CSS color for the swatch background.
+     * @return {HTMLDivElement} Returns the newly created color-swatch element.
+     *
+     * @example
+     *   addColorSwatch("SkyBlue", "#87CEEB");
+     */
+    function addColorSwatch(name, hexColor) {
+      const swatch = document.createElement("div");
+      swatch.className = "color-swatch";
+      swatch.style.backgroundColor = hexColor;
+      swatch.textContent = name;
+      
+      document.querySelector(".reference").appendChild(swatch);
+      return swatch;
+    }
+
+    /**
+     * Example usage block:
+     * Dynamically add an extra color after DOM load.
+     */
+    document.addEventListener("DOMContentLoaded", () => {
+      /** @example Adding a new shade programmatically */
+      addColorSwatch("SkyBlue", "#87CEEB");
+    });
+  </script>
+</body>
+</html>
