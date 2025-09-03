@@ -23,10 +23,15 @@ This is the main index / directory / kiosk for navigating the rest of the files 
 ![Hex color chart: (named colors)](_pix/hex-colors-01.jpg)
 
 
+
+## PEOPLE
+
+- [Christian Coders](/christians/index.md): Christian coders, apps, tech-adjacent groups, etc.
+
+
 ## MISC
 
 - [RCHAIX](/rchaix/index.md): Notes from when I worked at IBM in Rochester, MN (2000-2002)
-- [Christians](/christians/index.md): Christian coders, apps, tech-adjacent groups, etc.
 - [Eric's Projects](/my-projects/index.md): My code, designs, and projects I've contributed to.
 - [AI Convos](/ai/index.md): A collection of conversations I've had with various AI to help troubleshoot technical issues, but also on pretty much any subject. This includes prompts and responses from generative AI or Chat AIs like ChatGPT, Dall-E, Bing Copilot, Photoshop Generative AI, etc.
 
