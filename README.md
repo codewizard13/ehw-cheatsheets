@@ -26,6 +26,7 @@ This is the main index / directory / kiosk for navigating the rest of the files 
 
 ## PEOPLE
 
+- [Non-Christian Coders]()
 - [Christian Coders](/christians/index.md): Christian coders, apps, tech-adjacent groups, etc.
 
 

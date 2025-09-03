@@ -1,6 +1,6 @@
 # Index for: CHRISTIANS/
 
-[🏚️](../README.md)
+[🏚️](../README.md) | [People](index.md)
 
 This category documents **Christian coders** programmers / coders / software developers who are or were Christians. Also, this covers software designed for Christians, or tech popular with Christans.
 
