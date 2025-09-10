@@ -15,6 +15,7 @@ This is the main index / directory / kiosk for navigating the rest of the files 
 - [Productivity](/productivity/index.md): Office suites & productivity software
 - [Shell](/shell/index.md): Command line (CLI) and shell-scripting
 - [WordPress](/wp/index.md): WordPress CMS
+- [SOP](/sop/index.md): Standards, styleguides, documentation conventions, etc.
 
 ## Quick Links
 
