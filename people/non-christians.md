@@ -1,4 +1,4 @@
-# Index for: CHRISTIANS/
+# Index for: NON-CHRISTIANS/
 
 [🏚️](../README.md) | [People](index.md)
 
