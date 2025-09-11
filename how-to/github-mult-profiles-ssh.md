@@ -5,7 +5,7 @@
 ![Site Logo](/_pix/logos/2022_ElijahStreams-Logo_Hz-FullColor_226x29.png)
 
 <!-- 📝 Title -->
-# HOW-TO: 📘 Switch Between Multiple GitHub Profiles in VSCode on Windows 11 + Git Bash
+# HOW-TO: 📘 Switch Between Multiple GitHub Profiles in VSCode on Windows 11 + Git Bash (SSH)
 
 <!-- 🧭 Navigation -->
 ### [🏚️ Home](../README.md) | [📁 How-To](index.md)
