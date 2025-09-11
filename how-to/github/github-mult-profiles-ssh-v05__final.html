@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>github-mult-profiles-ssh-v05__final.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<!-- 🔗 Custom Stylesheet -->
+<link rel="stylesheet" href="/_css/main.css">
+<!-- 🖼️ Site Logo -->
+<p><img src="/_pix/logos/2022_ElijahStreams-Logo_Hz-FullColor_226x29.png" alt="Site Logo"></p>
+<!-- 📝 Title -->
+<h1 id="how-to-%F0%9F%93%98-using-multiple-github-profiles-on-one-machine">HOW-TO: 📘 Using Multiple GitHub Profiles on One Machine</h1>
+<blockquote>
+<p>Optimized for: VSCode on Windows 11 + Git Bash (SSH)</p>
+</blockquote>
+<p>(Version: 005)</p>
+<!-- 🧭 Navigation -->
+<h3 id="%F0%9F%8F%9A%EF%B8%8F-home--%F0%9F%93%81-how-to"><a href="../README.md">🏚️ Home</a> | <a href="index.md">📁 How-To</a></h3>
+<!-- 👤 Metadata -->
+<table>
+<thead>
+<tr>
+<th><strong>Author</strong>:</th>
+<th>Eric L. Hepperle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Date Created</strong>:</td>
+<td>2025-09-11</td>
+</tr>
+<tr>
+<td><strong>Date Updated</strong>:</td>
+<td>2025-09-11</td>
+</tr>
+<tr>
+<td><strong>AI Assistance</strong>:</td>
+<td>ChatGPT, Perplexity</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<!-- 📚 References (Optional) -->
+<h3 id="references--see-also">References / See Also:</h3>
+<ul>
+<li><a href="#">Placeholder 1</a></li>
+<li><a href="#">Placeholder 2</a></li>
+</ul>
+<hr>
+<!-- 🔍 Content Section Heading -->
+<p>Eric Hepperle, ChatGPT, 2025-09-10  (04)</p>
+<hr>
+<!-- 🔍 Content Section Heading -->
+<p>Managing multiple GitHub accounts (e.g., <strong>personal</strong> and <strong>work</strong>) on the same machine can be a challenge, especially with SSH keys, Git config, and identity settings. This guide will walk you through a foolproof method to set it all up <strong>step-by-step</strong>, without skipping anything.</p>
+<hr>
+<h2 id="%F0%9F%9B%A0%EF%B8%8F-prerequisites">🛠️ Prerequisites</h2>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Required Version</th>
+<th>Install Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Git</td>
+<td>Latest</td>
+<td><a href="https://git-scm.com/">git-scm.com</a></td>
+</tr>
+<tr>
+<td>VSCode</td>
+<td>Latest</td>
+<td><a href="https://code.visualstudio.com/">code.visualstudio.com</a></td>
+</tr>
+<tr>
+<td>Git Bash</td>
+<td>Latest</td>
+<td>Comes with Git on Windows</td>
+</tr>
+<tr>
+<td>GitHub</td>
+<td>Two accounts</td>
+<td>e.g., personal &amp; work profiles</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="%F0%9F%93%8C-overview">📌 Overview</h2>
+<p>We'll use the following structure:</p>
+<pre class="hljs"><code><div>~/
+├── .ssh/
+│   ├── id_ed25519_personal
+│   ├── id_ed25519_personal.pub
+│   ├── id_ed25519_work
+│   ├── id_ed25519_work.pub
+│   └── config
+├── git/
+│   ├── personal.gitconfig
+│   └── work.gitconfig
+</div></code></pre>
+<hr>
+<p><strong>Setup:</strong> Windows 11 · Git Bash · VSCode</p>
+<p>Managing both <strong>personal</strong> and <strong>work</strong> GitHub accounts on the same machine can get messy with conflicting SSH keys and identities. This guide provides a complete, foolproof way to isolate each account and switch between them cleanly.</p>
+<hr>
+<h1 id="%F0%9F%A7%AF-step-0-backup-existing-git--ssh-configs-recommended-before-anything-else">🧯 Step 0: Backup Existing Git &amp; SSH Configs (Recommended Before Anything Else)</h1>
+<p>Before making any changes to your system, it's <strong>strongly recommended</strong> to back up your current Git and SSH configurations. This allows you to <strong>restore a working setup</strong> if something goes wrong. Think of it as version control for your system setup 😉</p>
+<hr>
+<h2 id="%F0%9F%93%A6-what-to-back-up">📦 What to Back Up</h2>
+<table>
+<thead>
+<tr>
+<th>File/Folder</th>
+<th>Location</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>~/.ssh/</code></td>
+<td><code>C:\Users\&lt;YourUser&gt;\.ssh\</code></td>
+<td>SSH keys and configuration</td>
+</tr>
+<tr>
+<td><code>~/.gitconfig</code></td>
+<td><code>C:\Users\&lt;YourUser&gt;\.gitconfig</code></td>
+<td>Global Git configuration</td>
+</tr>
+<tr>
+<td>Any included configs</td>
+<td><code>~/git/</code> or elsewhere (if it exists)</td>
+<td>Custom Git profiles (may not exist yet)</td>
+</tr>
+<tr>
+<td>VSCode settings <em>(optional)</em></td>
+<td><code>%APPDATA%\Code\User\settings.json</code></td>
+<td>If you've customized Git behavior in VSCode</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip</strong>: You can quickly navigate to your home folder in Git Bash using <code>cd ~</code></p>
+</blockquote>
+<hr>
+<h2 id="%F0%9F%93%A5-backup-script-git-bash">📥 Backup Script (Git Bash)</h2>
+<h2 id="%F0%9F%94%A2-step-0-backup-your-current-git--ssh-setup-recommended">🔢 Step 0: Backup Your Current Git &amp; SSH Setup (Recommended)</h2>
+<p>Before making any changes, <strong>back up your current configuration</strong> so you can restore / rollback it if something goes wrong.</p>
+<h3 id="%F0%9F%93%A6-what-to-back-up">📦 What to Back Up</h3>
+<table>
+<thead>
+<tr>
+<th>File/Folder</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>~/.ssh/</code></td>
+<td>Your existing SSH keys and config</td>
+</tr>
+<tr>
+<td><code>~/.gitconfig</code></td>
+<td>Your global Git identity settings</td>
+</tr>
+<tr>
+<td><code>~/git/</code> <em>(if it exists)</em></td>
+<td>Any prior per-profile Git configs you’ve made</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E2%9C%85-backup-script-git-bash">✅ Backup Script (Git Bash)</h3>
+<pre class="hljs"><code><div><span class="hljs-built_in">cd</span> ~
+mkdir -p ~/git-backup-before-multiple-accounts
+
+cp -r ~/.ssh ~/git-backup-before-multiple-accounts/ssh
+cp ~/.gitconfig ~/git-backup-before-multiple-accounts/gitconfig
+
+<span class="hljs-keyword">if</span> [ -d ~/git ]; <span class="hljs-keyword">then</span>
+  cp -r ~/git ~/git-backup-before-multiple-accounts/git-identities
+<span class="hljs-keyword">fi</span>
+
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"✅ Backup completed at ~/git-backup-before-multiple-accounts"</span>
+</div></code></pre>
+<h3 id="%F0%9F%94%81-restore-rollback">🔁 Restore (Rollback)</h3>
+<p>If needed, run:</p>
+<pre class="hljs"><code><div>cp -r ~/git-backup-before-multiple-accounts/ssh ~/.ssh
+cp ~/git-backup-before-multiple-accounts/gitconfig ~/.gitconfig
+cp -r ~/git-backup-before-multiple-accounts/git-identities ~/git
+</div></code></pre>
+<hr>
+<h2 id="%F0%9F%A7%AD-step-1-understand-and-prepare-your-setup">🧭 Step 1: Understand and Prepare Your Setup</h2>
+<h3 id="your-current-situation">Your Current Situation</h3>
+<ul>
+<li>You already have a key: <code>~/.ssh/id_ed25519</code> (likely used for your <strong>work</strong> GitHub account).</li>
+<li>Your <strong>work account works</strong> on this machine.</li>
+<li>Your <strong>personal account does not</strong> (yet).</li>
+<li>You want to add your <strong>personal GitHub profile</strong> cleanly <strong>without breaking</strong> your work setup.</li>
+</ul>
+<h3 id="%E2%9C%85-plan">✅ Plan</h3>
+<p>We’ll:</p>
+<ul>
+<li>Add a <strong>new SSH key</strong> for your personal account.</li>
+<li>Use a <strong>custom SSH host alias</strong> to differentiate them.</li>
+<li>Create <strong>isolated Git identity configs</strong> per project.</li>
+<li>Route Git traffic through the appropriate key <strong>based on the repo’s folder</strong>.</li>
+</ul>
+<hr>
+<h2 id="%F0%9F%94%90-step-2-generate-a-personal-ssh-key">🔐 Step 2: Generate a Personal SSH Key</h2>
+<p>In Git Bash:</p>
+<pre class="hljs"><code><div>ssh-keygen -t ed25519 -C <span class="hljs-string">"your_personal_email@example.com"</span> -f ~/.ssh/id_ed25519_personal
+</div></code></pre>
+<h3 id="should-you-use-a-passphrase">Should You Use a Passphrase?</h3>
+<table>
+<thead>
+<tr>
+<th>Consideration</th>
+<th>Recommendation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🧑‍💻 Personal laptop only</td>
+<td>Skip passphrase for convenience</td>
+</tr>
+<tr>
+<td>💼 Work laptop or shared PC</td>
+<td>Use passphrase for extra security</td>
+</tr>
+<tr>
+<td>🔐 Extra security needed</td>
+<td>Use passphrase with <code>ssh-agent</code> to avoid prompts</td>
+</tr>
+</tbody>
+</table>
+<p><strong>You can add a passphrase later</strong> using:</p>
+<pre class="hljs"><code><div>ssh-keygen -p -f ~/.ssh/id_ed25519_personal
+</div></code></pre>
+<hr>
+<h2 id="%F0%9F%94%93-step-3-add-ssh-keys-to-ssh-agent">🔓 Step 3: Add SSH Keys to SSH Agent</h2>
+<p>Run the following:</p>
+<pre class="hljs"><code><div><span class="hljs-built_in">eval</span> <span class="hljs-string">"<span class="hljs-variable">$(ssh-agent -s)</span>"</span>
+ssh-add ~/.ssh/id_ed25519              <span class="hljs-comment"># Existing work key</span>
+ssh-add ~/.ssh/id_ed25519_personal    <span class="hljs-comment"># New personal key</span>
+</div></code></pre>
+<blockquote>
+<p>If you used a passphrase, you'll be prompted for it here. This stores the key in memory for the session.</p>
+</blockquote>
+<hr>
+<h2 id="%F0%9F%A7%B7-step-4-add-keys-to-github-accounts">🧷 Step 4: Add Keys to GitHub Accounts</h2>
+<h3 id="1-copy-the-public-key">1. Copy the public key:</h3>
+<pre class="hljs"><code><div>cat ~/.ssh/id_ed25519_personal.pub
+</div></code></pre>
+<h3 id="2-add-it-to-your-personal-github-account">2. Add it to your <strong>personal GitHub</strong> account:</h3>
+<ul>
+<li>Go to: <strong>GitHub → Settings → SSH and GPG keys → New SSH key</strong></li>
+<li>Paste the key and name it (e.g., <em>&quot;Windows Laptop - Personal&quot;</em>)</li>
+</ul>
+<p>Repeat this process for your existing work key if needed:</p>
+<pre class="hljs"><code><div>cat ~/.ssh/id_ed25519.pub
+</div></code></pre>
+<hr>
+<h2 id="%E2%9A%99%EF%B8%8F-step-5-create-an-ssh-config-for-host-aliases">⚙️ Step 5: Create an SSH Config for Host Aliases</h2>
+<p>Run:</p>
+<pre class="hljs"><code><div>nano ~/.ssh/config
+</div></code></pre>
+<p>Paste the following:</p>
+<pre class="hljs"><code><div># Work GitHub (existing)
+Host github-work
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519
+    IdentitiesOnly yes
+
+# Personal GitHub (new)
+Host github-personal
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519_personal
+    IdentitiesOnly yes
+</div></code></pre>
+<blockquote>
+<p>🎯 This lets you reference <code>github-work</code> or <code>github-personal</code> instead of <code>github.com</code>, which tells SSH which key to use.</p>
+</blockquote>
+<hr>
+<h2 id="%F0%9F%A7%91%E2%80%8D%F0%9F%94%A7-step-6-set-up-isolated-git-identities">🧑‍🔧 Step 6: Set Up Isolated Git Identities</h2>
+<h3 id="1-create-per-account-git-config-files">1. Create Per-Account Git Config Files</h3>
+<h4 id="work">Work:</h4>
+<pre class="hljs"><code><div>mkdir -p ~/git
+nano ~/git/work.gitconfig
+</div></code></pre>
+<pre class="hljs"><code><div><span class="hljs-section">[user]</span>
+    name = Your Work Name
+    email = your_work_email@company.com
+<span class="hljs-section">[core]</span>
+    sshCommand = ssh -i ~/.ssh/id_ed25519 -F /dev/null
+</div></code></pre>
+<h4 id="personal">Personal:</h4>
+<pre class="hljs"><code><div>nano ~/git/personal.gitconfig
+</div></code></pre>
+<pre class="hljs"><code><div><span class="hljs-section">[user]</span>
+    name = Your Personal Name
+    email = your_personal_email@example.com
+<span class="hljs-section">[core]</span>
+    sshCommand = ssh -i ~/.ssh/id_ed25519_personal -F /dev/null
+</div></code></pre>
+<hr>
+<h3 id="2-update-your-global-git-config-to-use-conditional-includes">2. Update Your Global Git Config to Use Conditional Includes</h3>
+<p>Tell Git to use different identities based on folder path:</p>
+<pre class="hljs"><code><div>git config --global includeIf.gitdir:~/Projects/Work/.path ~/git/work.gitconfig
+git config --global includeIf.gitdir:~/Projects/Personal/.path ~/git/personal.gitconfig
+</div></code></pre>
+<blockquote>
+<p>🗂 Replace paths (<code>~/Projects/Work/</code>, etc.) with your actual repo locations.</p>
+</blockquote>
+<hr>
+<h2 id="%F0%9F%93%A6-step-7-clone-repositories-with-ssh-aliases">📦 Step 7: Clone Repositories with SSH Aliases</h2>
+<h3 id="personal-account">Personal Account:</h3>
+<pre class="hljs"><code><div>git <span class="hljs-built_in">clone</span> git@github-personal:yourusername/your-personal-repo.git
+</div></code></pre>
+<h3 id="work-account">Work Account:</h3>
+<pre class="hljs"><code><div>git <span class="hljs-built_in">clone</span> git@github-work:yourcompany/work-repo.git
+</div></code></pre>
+<blockquote>
+<p>These aliases ensure the right key and identity are used for each account.</p>
+</blockquote>
+<hr>
+<h2 id="%F0%9F%A7%AA-step-8-verify-and-test-everything">🧪 Step 8: Verify and Test Everything</h2>
+<table>
+<thead>
+<tr>
+<th>✅ Check</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SSH connection (personal)</td>
+<td><code>ssh -T git@github-personal</code></td>
+</tr>
+<tr>
+<td>SSH connection (work)</td>
+<td><code>ssh -T git@github-work</code></td>
+</tr>
+<tr>
+<td>Current Git user (in repo)</td>
+<td><code>git config user.name &amp;&amp; git config user.email</code></td>
+</tr>
+<tr>
+<td>Test clone (personal)</td>
+<td><code>git clone git@github-personal:user/repo.git</code></td>
+</tr>
+<tr>
+<td>Test clone (work)</td>
+<td><code>git clone git@github-work:company/repo.git</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>You should see a welcome message from GitHub for the correct user after each SSH test.</p>
+</blockquote>
+<h2 id="%F0%9F%A7%AA-final-testing-checklist">🧪 Final Testing Checklist</h2>
+<table>
+<thead>
+<tr>
+<th>✅ Task</th>
+<th>Command Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Verify SSH connection (personal)</td>
+<td><code>ssh -T git@github-personal</code></td>
+</tr>
+<tr>
+<td>Verify SSH connection (work)</td>
+<td><code>ssh -T git@github-work</code></td>
+</tr>
+<tr>
+<td>Verify Git user in repo</td>
+<td><code>git config user.name &amp;&amp; git config user.email</code></td>
+</tr>
+<tr>
+<td>Test cloning repo</td>
+<td><code>git clone git@github-personal:username/repo.git</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="%F0%9F%A7%B9-troubleshooting-tips">🧹 Troubleshooting Tips</h2>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SSH key not being used</td>
+<td>Check <code>~/.ssh/config</code> and use <code>ssh -vT git@github-xxx</code> to debug</td>
+</tr>
+<tr>
+<td>Wrong identity in Git</td>
+<td>Verify with <code>git config user.email</code> in repo</td>
+</tr>
+<tr>
+<td>Cannot clone</td>
+<td>Make sure the SSH public key is added to the right GitHub account</td>
+</tr>
+<tr>
+<td>SSH key passphrase prompt every time</td>
+<td>Use an SSH agent or consider setting up <code>ssh-agent</code> in your shell profile</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<hr>
+<h2 id="%F0%9F%A7%A0-bonus-git-identity-routing-visualized">🧠 Bonus: Git Identity Routing Visualized</h2>
+<pre><code class="language-mermaid"><div class="mermaid">graph TD
+    A[Global .gitconfig] --> B{Repo Path Matches?}
+    B -->|Yes: Personal| C[personal.gitconfig]
+    B -->|Yes: Work| D[work.gitconfig]
+    B -->|No Match| E[Default Global Identity]
+    C --> F[Uses github-personal SSH key]
+    D --> G[Uses github-work SSH key]
+</div></code></pre>
+<hr>
+<h2 id="%F0%9F%A7%B9-troubleshooting--gotchas">🧹 Troubleshooting &amp; Gotchas</h2>
+<table>
+<thead>
+<tr>
+<th>❗ Problem</th>
+<th>💡 Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub says permission denied</td>
+<td>Check you’re using <code>git@github-personal:</code> or <code>git@github-work:</code></td>
+</tr>
+<tr>
+<td>Wrong Git identity in repo</td>
+<td>Check with <code>git config user.email</code> and relocate repo if needed</td>
+</tr>
+<tr>
+<td>SSH key not being used</td>
+<td>Use <code>ssh -vT git@github-personal</code> to debug SSH key selection</td>
+</tr>
+<tr>
+<td>Asked for passphrase every time</td>
+<td>Use <code>ssh-agent</code> to cache your key</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="%F0%9F%8E%89-youre-all-set">🎉 You’re All Set!</h2>
+<p>You now have a <strong>fully isolated</strong>, <strong>configurable</strong>, and <strong>rollback-safe</strong> setup for using <strong>multiple GitHub profiles</strong> on a single Windows machine using <strong>Git Bash + VSCode</strong>.</p>
+<p>Now you can easily work with multiple GitHub accounts, with clean isolation of identities and SSH keys—all without conflicts or headaches. Happy coding!</p>
+<hr>
+<h2 id="%E2%9C%85-revision-history">✅ Revision History</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Author</th>
+<th>Changes Made</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>2025-09-11</td>
+<td>Eric L. Hepperle</td>
+<td>Initial draft created</td>
+</tr>
+</tbody>
+</table>
+<hr>
+
+</body>
+</html>
