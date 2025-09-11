@@ -28,7 +28,7 @@
 ---
 
 <!-- 🔍 Content Section Heading -->
-## 🧾 Overview
+## 🔎 Overview
 
 This SOP outlines how to create a consistent, professional Markdown header for internal documentation, including SOPs, troubleshooting guides, how-to documents, and technical articles. Using a uniform structure improves readability, brand consistency, and navigation across all documentation.
 
