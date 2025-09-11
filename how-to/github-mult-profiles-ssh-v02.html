@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>github-mult-profiles-ssh-v02.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<!-- 🔗 Custom Stylesheet -->
+<link rel="stylesheet" href="/_css/main.css">
+<!-- 🖼️ Site Logo -->
+<p><img src="/_pix/logos/2022_ElijahStreams-Logo_Hz-FullColor_226x29.png" alt="Site Logo"></p>
+<!-- 📝 Title -->
+<h1 id="how-to-%F0%9F%93%98-switch-between-multiple-github-profiles-in-vscode-on-windows-11--git-bash-ssh">HOW-TO: 📘 Switch Between Multiple GitHub Profiles in VSCode on Windows 11 + Git Bash (SSH)</h1>
+<p>(Version: 02)</p>
+<!-- 🧭 Navigation -->
+<h3 id="%F0%9F%8F%9A%EF%B8%8F-home--%F0%9F%93%81-how-to"><a href="../README.md">🏚️ Home</a> | <a href="index.md">📁 How-To</a></h3>
+<!-- 👤 Metadata -->
+<table>
+<thead>
+<tr>
+<th><strong>Author</strong>:</th>
+<th>Eric L. Hepperle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Date Created</strong>:</td>
+<td>2025-09-11</td>
+</tr>
+<tr>
+<td><strong>Date Updated</strong>:</td>
+<td>2025-09-11</td>
+</tr>
+<tr>
+<td><strong>AI Assistance</strong>:</td>
+<td>ChatGPT, Perplexity</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<!-- 📚 References (Optional) -->
+<h3 id="references--see-also">References / See Also:</h3>
+<ul>
+<li><a href="#">Placeholder 1</a></li>
+<li><a href="#">Placeholder 2</a></li>
+</ul>
+<hr>
+<!-- 🔍 Content Section Heading -->
+<p>Eric Hepperle, ChatGPT, 2025-09-10  (02)</p>
+<hr>
+<p>Great! You're thinking ahead — <strong>backup and rollback planning should absolutely be Step 1</strong>, especially when you're modifying core configuration files like SSH keys and global Git settings.</p>
+<p>Let’s create a new section at the top of the guide and also clarify what you currently have, what it means, and how to proceed <em>safely</em>.</p>
+<hr>
+<h1 id="%F0%9F%A7%AF-step-0-backup-existing-git--ssh-configs-recommended-before-anything-else">🧯 Step 0: Backup Existing Git &amp; SSH Configs (Recommended Before Anything Else)</h1>
+<p>Before making any changes to your system, it's <strong>strongly recommended</strong> to back up your current Git and SSH configurations. This allows you to <strong>restore a working setup</strong> if something goes wrong. Think of it as version control for your system setup 😉</p>
+<hr>
+<h2 id="%F0%9F%93%A6-what-to-back-up">📦 What to Back Up</h2>
+<table>
+<thead>
+<tr>
+<th>File/Folder</th>
+<th>Location</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>~/.ssh/</code></td>
+<td><code>C:\Users\&lt;YourUser&gt;\.ssh\</code></td>
+<td>SSH keys and configuration</td>
+</tr>
+<tr>
+<td><code>~/.gitconfig</code></td>
+<td><code>C:\Users\&lt;YourUser&gt;\.gitconfig</code></td>
+<td>Global Git configuration</td>
+</tr>
+<tr>
+<td>Any included configs</td>
+<td><code>~/git/</code> or elsewhere (if it exists)</td>
+<td>Custom Git profiles (may not exist yet)</td>
+</tr>
+<tr>
+<td>VSCode settings <em>(optional)</em></td>
+<td><code>%APPDATA%\Code\User\settings.json</code></td>
+<td>If you've customized Git behavior in VSCode</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip</strong>: You can quickly navigate to your home folder in Git Bash using <code>cd ~</code></p>
+</blockquote>
+<hr>
+<h2 id="%F0%9F%93%A5-backup-script-git-bash">📥 Backup Script (Git Bash)</h2>
+<pre class="hljs"><code><div><span class="hljs-comment"># Create a backup folder</span>
+mkdir -p ~/git-backup-before-multiple-accounts
+
+<span class="hljs-comment"># Backup SSH folder</span>
+cp -r ~/.ssh ~/git-backup-before-multiple-accounts/ssh
+
+<span class="hljs-comment"># Backup global git config</span>
+cp ~/.gitconfig ~/git-backup-before-multiple-accounts/gitconfig
+
+<span class="hljs-comment"># Backup git identity configs if they exist</span>
+<span class="hljs-keyword">if</span> [ -d ~/git ]; <span class="hljs-keyword">then</span>
+  cp -r ~/git ~/git-backup-before-multiple-accounts/git-identities
+<span class="hljs-keyword">fi</span>
+
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"✅ Backup completed at ~/git-backup-before-multiple-accounts"</span>
+</div></code></pre>
+<hr>
+<h2 id="%F0%9F%94%81-how-to-restore-rollback">🔁 How to Restore (Rollback)</h2>
+<p>To undo everything and return to your original state:</p>
+<pre class="hljs"><code><div><span class="hljs-comment"># Restore SSH</span>
+cp -r ~/git-backup-before-multiple-accounts/ssh ~/.ssh
+
+<span class="hljs-comment"># Restore global git config</span>
+cp ~/git-backup-before-multiple-accounts/gitconfig ~/.gitconfig
+
+<span class="hljs-comment"># Restore identity configs if needed</span>
+cp -r ~/git-backup-before-multiple-accounts/git-identities ~/git
+</div></code></pre>
+<blockquote>
+<p>🚨 Be sure to <strong>exit all Git Bash / VSCode sessions</strong> before restoring, and restart them afterward.</p>
+</blockquote>
+<hr>
+<h2 id="%F0%9F%A7%A0-about-your-current-setup">🧠 About Your Current Setup</h2>
+<p>From your existing files:</p>
+<pre class="hljs"><code><div>-rw-r--r-- 1 erich 197609 419 Mar 20 09:40 id_ed25519
+-rw-r--r-- 1 erich 197609 104 Mar 20 09:40 id_ed25519.pub
+</div></code></pre>
+<ul>
+<li>These are your <strong>existing SSH keys</strong> — likely tied to your <strong>work account</strong>, especially if that’s what’s currently working.</li>
+<li><code>known_hosts</code> is fine — it just stores SSH fingerprints of remote hosts you’ve connected to.</li>
+<li>You do <strong>not</strong> currently have an <code>~/.ssh/config</code> file, so adding one is safe and non-destructive.</li>
+<li>Your <strong>personal GitHub</strong> doesn’t work on this machine — that’s what we’ll fix.</li>
+</ul>
+<hr>
+<h2 id="%F0%9F%A7%AD-suggested-game-plan-for-you">🧭 Suggested Game Plan for You</h2>
+<p>Since your <strong>work account works</strong>, and we want to <strong>add personal support without breaking anything</strong>:</p>
+<ol>
+<li><strong>Back up</strong> as described above (do this now).</li>
+<li>Leave your current <code>id_ed25519</code> (work key) <strong>as-is</strong>.</li>
+<li>Generate a new personal key and configure it with a <strong>new host alias</strong>.</li>
+<li>Update SSH config to explicitly route connections through the right key.</li>
+</ol>
+<p>This way, your work identity will continue working without interruption, and your personal account will start working <strong>side-by-side</strong>.</p>
+<hr>
+<h2 id="%F0%9F%91%87-next-steps">👇 Next Steps</h2>
+<p>You can now proceed with the main guide starting from:</p>
+<blockquote>
+<p>🧑‍💻 Step 1: Generate SSH Keys for Each Account</p>
+</blockquote>
+<p>Just be sure to:</p>
+<ul>
+<li><strong>Name the new key something like</strong> <code>id_ed25519_personal</code></li>
+<li><strong>Use a new SSH host alias</strong>, like <code>github-personal</code></li>
+</ul>
+<p>This avoids any interference with your existing work key (<code>id_ed25519</code>), and your work GitHub setup stays untouched.</p>
+<hr>
+<p>Would you like me to <strong>update the original guide</strong> to integrate this as <strong>Step 0</strong> properly? I can provide the updated full Markdown file if that’s easier for you to work from.</p>
+<hr>
+<h2 id="%E2%9C%85-revision-history">✅ Revision History</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Author</th>
+<th>Changes Made</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>2025-09-11</td>
+<td>Eric L. Hepperle</td>
+<td>Initial draft created</td>
+</tr>
+</tbody>
+</table>
+<hr>
+
+</body>
+</html>
