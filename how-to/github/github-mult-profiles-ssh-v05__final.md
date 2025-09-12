@@ -76,13 +76,12 @@ We'll use the following structure:
 
 ---
 
-# 🧯 Step 0: Backup Existing Git & SSH Configs (Recommended Before Anything Else)
+## ⚠️ Step 0: Backup Your Current Git & SSH Setup (Recommended)
 
 Before making any changes to your system, it's **strongly recommended** to back up your current Git and SSH configurations. This allows you to **restore a working setup** if something goes wrong. Think of it as version control for your system setup 😉
 
----
 
-## 📦 What to Back Up
+### 📦 What to Back Up
 
 | File/Folder                  | Location                             | Purpose                                     |
 | ---------------------------- | ------------------------------------ | ------------------------------------------- |
@@ -91,26 +90,12 @@ Before making any changes to your system, it's **strongly recommended** to back 
 | Any included configs         | `~/git/` or elsewhere (if it exists) | Custom Git profiles (may not exist yet)     |
 | VSCode settings *(optional)* | `%APPDATA%\Code\User\settings.json`  | If you've customized Git behavior in VSCode |
 
+<br>
+
 > 💡 **Tip**: You can quickly navigate to your home folder in Git Bash using `cd ~`
 
----
 
-## 📥 Backup Script (Git Bash)
-
-
-## 🔢 Step 0: Backup Your Current Git & SSH Setup (Recommended)
-
-Before making any changes, **back up your current configuration** so you can restore / rollback it if something goes wrong.
-
-### 📦 What to Back Up
-
-| File/Folder               | Purpose                                       |
-| ------------------------- | --------------------------------------------- |
-| `~/.ssh/`                 | Your existing SSH keys and config             |
-| `~/.gitconfig`            | Your global Git identity settings             |
-| `~/git/` *(if it exists)* | Any prior per-profile Git configs you’ve made |
-
-### ✅ Backup Script (Git Bash)
+### 📥 Backup Script (Git Bash)
 
 ```bash
 cd ~
@@ -168,9 +153,9 @@ ssh-keygen -t ed25519 -C "your_personal_email@example.com" -f ~/.ssh/id_ed25519_
 
 ### Should You Use a Passphrase?
 
-| Consideration               | Recommendation                                   |
-| --------------------------- | ------------------------------------------------ |
-| 🧑‍💻 Personal laptop only  | Skip passphrase for convenience                  |
+| Consideration              | Recommendation                                   |
+| -------------------------- | ------------------------------------------------ |
+| 🧑‍💻 Personal laptop only     | Skip passphrase for convenience                  |
 | 💼 Work laptop or shared PC | Use passphrase for extra security                |
 | 🔐 Extra security needed    | Use passphrase with `ssh-agent` to avoid prompts |
 
@@ -198,13 +183,13 @@ ssh-add ~/.ssh/id_ed25519_personal    # New personal key
 
 ## 🧷 Step 4: Add Keys to GitHub Accounts
 
-### 1. Copy the public key:
+#### 1. Copy the public key:
 
 ```bash
 cat ~/.ssh/id_ed25519_personal.pub
 ```
 
-### 2. Add it to your **personal GitHub** account:
+#### 2. Add it to your **personal GitHub** account:
 
 * Go to: **GitHub → Settings → SSH and GPG keys → New SSH key**
 * Paste the key and name it (e.g., *"Windows Laptop - Personal"*)
@@ -249,9 +234,9 @@ Host github-personal
 
 ## 🧑‍🔧 Step 6: Set Up Isolated Git Identities
 
-### 1. Create Per-Account Git Config Files
+#### 1. Create Per-Account Git Config Files
 
-#### Work:
+##### Work:
 
 ```bash
 mkdir -p ~/git
@@ -266,7 +251,7 @@ nano ~/git/work.gitconfig
     sshCommand = ssh -i ~/.ssh/id_ed25519 -F /dev/null
 ```
 
-#### Personal:
+##### Personal:
 
 ```bash
 nano ~/git/personal.gitconfig
@@ -282,7 +267,7 @@ nano ~/git/personal.gitconfig
 
 ---
 
-### 2. Update Your Global Git Config to Use Conditional Includes
+#### 2. Update Your Global Git Config to Use Conditional Includes
 
 Tell Git to use different identities based on folder path:
 
@@ -297,13 +282,13 @@ git config --global includeIf.gitdir:~/Projects/Personal/.path ~/git/personal.gi
 
 ## 📦 Step 7: Clone Repositories with SSH Aliases
 
-### Personal Account:
+#### Personal Account:
 
 ```bash
 git clone git@github-personal:yourusername/your-personal-repo.git
 ```
 
-### Work Account:
+#### Work Account:
 
 ```bash
 git clone git@github-work:yourcompany/work-repo.git
@@ -366,7 +351,7 @@ graph TD
 
 ## 🧹 Troubleshooting & Gotchas
 
-| ❗ Problem                       | 💡 Solution                                                     |
+| ❗ Problem                       | 💡 Solution                                                      |
 | ------------------------------- | --------------------------------------------------------------- |
 | GitHub says permission denied   | Check you’re using `git@github-personal:` or `git@github-work:` |
 | Wrong Git identity in repo      | Check with `git config user.email` and relocate repo if needed  |
@@ -384,7 +369,7 @@ Now you can easily work with multiple GitHub accounts, with clean isolation of i
 ---
 
 <!-- 📚 References (Optional) -->
-### References / See Also:
+## References / See Also:
 
 - [Placeholder 1](#)
 - [Placeholder 2](#)
@@ -421,7 +406,7 @@ Now you can easily work with multiple GitHub accounts, with clean isolation of i
 <!-- SECTION: Tags for short related (1-3 word phrase per tag) concepts (long titled articles belong in the References / See Also section above) -->
 <section id="sec-tags">
 
-### Tags:
+## Tags:
 
 - [Tag 1](#)
 - [Tag 2](#)
