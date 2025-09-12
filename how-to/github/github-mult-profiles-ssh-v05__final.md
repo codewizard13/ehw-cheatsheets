@@ -324,37 +324,59 @@ git clone git@github-work:yourcompany/work-repo.git
 
 ## 🧪 Step 8: Verify and Test Everything
 
-| ✅ Check                    | Command                                         |
-| -------------------------- | ----------------------------------------------- |
-| SSH connection (personal)  | `ssh -T git@github-personal`                    |
-| SSH connection (work)      | `ssh -T git@github-work`                        |
-| Current Git user (in repo) | `git config user.name && git config user.email` |
-| Test clone (personal)      | `git clone git@github-personal:user/repo.git`   |
-| Test clone (work)          | `git clone git@github-work:company/repo.git`    |
 
 > You should see a welcome message from GitHub for the correct user after each SSH test.
 
 ## 🧪 Final Testing Checklist
 
-| ✅ Task                           | Command Example                                   |
-| -------------------------------- | ------------------------------------------------- |
-| Verify SSH connection (personal) | `ssh -T git@github-personal`                      |
-| Verify SSH connection (work)     | `ssh -T git@github-work`                          |
-| Verify Git user in repo          | `git config user.name && git config user.email`   |
-| Test cloning repo                | `git clone git@github-personal:username/repo.git` |
+| ✅ Task                           | Command Example                                 |
+| -------------------------------- | ----------------------------------------------- |
+| Verify SSH connection (personal) | `ssh -T git@github-personal`                    |
+| Verify SSH connection (work)     | `ssh -T git@github-work`                        |
+| Verify Git user in repo          | `git config user.name && git config user.email` |
+| Test clone (personal)            | `git clone git@github-personal:user/repo.git`   |
+| Test clone (work)                | `git clone git@github-work:company/repo.git`    |
 
 ---
 
 ## 🧹 Troubleshooting Tips
 
-| Problem                              | Fix                                                                       |
-| ------------------------------------ | ------------------------------------------------------------------------- |
-| SSH key not being used               | Check `~/.ssh/config` and use `ssh -vT git@github-xxx` to debug           |
-| Wrong identity in Git                | Verify with `git config user.email` in repo                               |
-| Cannot clone                         | Make sure the SSH public key is added to the right GitHub account         |
-| SSH key passphrase prompt every time | Use an SSH agent or consider setting up `ssh-agent` in your shell profile |
+### SSH key always prompts for passphrase
+- **The Issue:** Git asks for your passphrase every time because the key isn’t cached in memory.  
+- **Why it matters:** It slows down your workflow as you must retype it constantly.  
+- **Solution:** Use `ssh-agent` so you only type it once.
+
+### Cannot clone
+- **The Issue:** Cloning a repo fails when GitHub doesn’t recognize your SSH key.  
+- **Why it matters:** Without fixing this, you can’t download or work with the project at all.  
+- **Solution:** Add your SSH public key to GitHub.
+
+### GitHub says permission denied
+- **The Issue:** “Permission denied” appears if you use the wrong SSH alias for your account.  
+- **Why it matters:** You’ll be locked out of the repo until you use the right identity.  
+- **Solution:** Use `git@github-personal` or `git@github-work`.
+
+### SSH key not being used
+- **The Issue:** Git ignores your key because the SSH config is wrong or missing.  
+- **Why it matters:** GitHub won’t know who you are and access will fail.  
+- **Solution:** Check `~/.ssh/config` or debug with `ssh -vT`.
+
+### Wrong identity in Git
+- **The Issue:** Commits show the wrong name or email if Git picks the wrong profile.  
+- **Why it matters:** Your commit history will mix work and personal info.  
+- **Solution:** Run `git config user.email` to verify identity.
 
 ---
+
+## 🪲 Common GitHub SSH Issues and Quick Fixes
+
+| ❗ Problem                        | 💡 Solution                                                      |
+|---------------------------------|-----------------------------------------------------------------|
+| SSH key always prompts for passphrase | Use `ssh-agent` to cache your passphrase per session.           |
+| Cannot clone                    | Make sure the SSH public key is added to the right GitHub account. |
+| GitHub says permission denied    | Check you’re using `git@github-personal:` or `git@github-work:`. |
+| SSH key not being used           | Check `~/.ssh/config` and use `ssh -vT git@github-xxx` to debug. |
+| Wrong identity in Git            | Verify with `git config user.email` in repo.                     |
 
 
 ---
@@ -373,22 +395,9 @@ graph TD
 
 ---
 
-## 🧹 Troubleshooting & Gotchas
-
-| ❗ Problem                       | 💡 Solution                                                      |
-| ------------------------------- | --------------------------------------------------------------- |
-| GitHub says permission denied   | Check you’re using `git@github-personal:` or `git@github-work:` |
-| Wrong Git identity in repo      | Check with `git config user.email` and relocate repo if needed  |
-| SSH key not being used          | Use `ssh -vT git@github-personal` to debug SSH key selection    |
-| Asked for passphrase every time | Use `ssh-agent` to cache your key                               |
-
----
-
 ## 🎉 You’re All Set!
 
-You now have a **fully isolated**, **configurable**, and **rollback-safe** setup for using **multiple GitHub profiles** on a single Windows machine using **Git Bash + VSCode**.
-
-Now you can easily work with multiple GitHub accounts, with clean isolation of identities and SSH keys—all without conflicts or headaches. Happy coding!
+You now have a **fully isolated**, **configurable**, and **rollback-safe** setup for using **multiple GitHub profiles** on a single Windows machine using **Git Bash + VSCode** with clean isolation of identities and SSH keys—all without conflicts or headaches. Happy coding!
 
 ---
 
