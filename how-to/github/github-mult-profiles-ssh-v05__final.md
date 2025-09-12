@@ -94,21 +94,25 @@ Before making any changes to your system, it's **strongly recommended** to back 
 
 > 💡 **Tip**: You can quickly navigate to your home folder in Git Bash using `cd ~`
 
+> 💡 **Tip**: Create `~/git-tools/` folder if doesn't already exist to store scripts
+
 
 ### 📥 Backup Script (Git Bash)
 
 ```bash
-cd ~
-mkdir -p ~/git-backup-before-multiple-accounts
+# file: ~/git-tools/backup-git-config.sh
 
-cp -r ~/.ssh ~/git-backup-before-multiple-accounts/ssh
-cp ~/.gitconfig ~/git-backup-before-multiple-accounts/gitconfig
+cd ~
+mkdir -p ~/bkp__git-config
+
+cp -r ~/.ssh ~/bkp__git-config/ssh
+cp ~/.gitconfig ~/bkp__git-config/gitconfig
 
 if [ -d ~/git ]; then
-  cp -r ~/git ~/git-backup-before-multiple-accounts/git-identities
+  cp -r ~/git ~/bkp__git-config/git-identities
 fi
 
-echo "✅ Backup completed at ~/git-backup-before-multiple-accounts"
+echo "✅ Backup completed at ~/bkp__git-config"
 ```
 
 ### 🔁 Restore (Rollback)
@@ -116,9 +120,11 @@ echo "✅ Backup completed at ~/git-backup-before-multiple-accounts"
 If needed, run:
 
 ```bash
-cp -r ~/git-backup-before-multiple-accounts/ssh ~/.ssh
-cp ~/git-backup-before-multiple-accounts/gitconfig ~/.gitconfig
-cp -r ~/git-backup-before-multiple-accounts/git-identities ~/git
+# file: ~/git-tools/restore-git-config.sh
+
+cp -r ~/bkp__git-config/ssh ~/.ssh
+cp ~/bkp__git-config/gitconfig ~/.gitconfig
+cp -r ~/bkp__git-config/git-identities ~/git
 ```
 
 ---
@@ -145,13 +151,24 @@ We’ll:
 
 ## 🔐 Step 2: Generate a Personal SSH Key
 
-In Git Bash:
+
+Before adding multiple GitHub accounts, you need a dedicated SSH key for each one. Your existing key is likely tied to your work account, so generating a separate personal key ensures clean separation between profiles. This avoids authentication conflicts, keeps repositories linked to the correct identity, and makes it easy to manage both accounts without interfering with each other.
+
+
+
+**In Git Bash:**
 
 ```bash
 ssh-keygen -t ed25519 -C "your_personal_email@example.com" -f ~/.ssh/id_ed25519_personal
 ```
 
+
+
 ### Should You Use a Passphrase?
+
+Using no passphrase provides the smoothest workflow since your key unlocks automatically, making cloning, pushing, and pulling frictionless. The downside is that if someone gains access to your private key file, they can use it without restriction. Adding a passphrase protects the key if it’s stolen but introduces a prompt on first use, unless you leverage `ssh-agent` to cache it in memory. 
+
+**Takeaway**: skipping a passphrase maximizes convenience but reduces security, while using one slightly slows setup but significantly improves key safety.
 
 | Consideration              | Recommendation                                   |
 | -------------------------- | ------------------------------------------------ |
@@ -159,11 +176,14 @@ ssh-keygen -t ed25519 -C "your_personal_email@example.com" -f ~/.ssh/id_ed25519_
 | 💼 Work laptop or shared PC | Use passphrase for extra security                |
 | 🔐 Extra security needed    | Use passphrase with `ssh-agent` to avoid prompts |
 
-**You can add a passphrase later** using:
+**You can always add a passphrase later** using:
 
 ```bash
 ssh-keygen -p -f ~/.ssh/id_ed25519_personal
 ```
+
+
+The `ssh-keygen -p` flag allows you to change or set a passphrase on an existing key, while the `-f` flag specifies which key file to act on. This way, you don’t need to regenerate new keys just to tighten or update security. 
 
 ---
 
@@ -177,7 +197,7 @@ ssh-add ~/.ssh/id_ed25519              # Existing work key
 ssh-add ~/.ssh/id_ed25519_personal    # New personal key
 ```
 
-> If you used a passphrase, you'll be prompted for it here. This stores the key in memory for the session.
+> 💡 **Tip**:  If you used a passphrase, you'll be prompted for it here. This stores the key in memory for the session.
 
 ---
 
@@ -204,6 +224,11 @@ cat ~/.ssh/id_ed25519.pub
 
 ## ⚙️ Step 5: Create an SSH Config for Host Aliases
 
+> 🎯 This lets you reference `github-work` or `github-personal` instead of `github.com`, which tells SSH which key to use.
+
+
+When creating an SSH config with host aliases, the goal is to avoid conflicts and make workflows simpler. By assigning custom names like `github-work` and `github-personal`, you can precisely tell SSH which key to use without manually passing `-i` flags each time. This _**makes switching between accounts effortless**_ and ensures the right identity is chosen automatically when working with different repositories.
+
 Run:
 
 ```bash
@@ -228,7 +253,6 @@ Host github-personal
     IdentitiesOnly yes
 ```
 
-> 🎯 This lets you reference `github-work` or `github-personal` instead of `github.com`, which tells SSH which key to use.
 
 ---
 
