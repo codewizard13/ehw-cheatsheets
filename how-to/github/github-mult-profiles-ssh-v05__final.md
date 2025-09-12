@@ -5,7 +5,7 @@
 ![Site Logo](/_pix/logos/2022_ElijahStreams-Logo_Hz-FullColor_226x29.png)
 
 <!-- 📝 Title -->
-# HOW-TO: 📘 Using Multiple GitHub Profiles on One Machine
+# HOW-TO: 📘 Using Multiple GitHub Profiles on One Machine (SSH)
 
 
 > Optimized for: VSCode on Windows 11 + Git Bash (SSH)
@@ -19,37 +19,33 @@
 | **Author**:        | Eric L. Hepperle    |
 | ------------------ | ------------------- |
 | **Date Created**:  | 2025-09-11          |
-| **Date Updated**:  | 2025-09-11          |
+| **Date Updated**:  | 2025-09-12          |
 | **AI Assistance**: | ChatGPT, Perplexity |
 
----
-
-<!-- 📚 References (Optional) -->
-### References / See Also:
-
-- [Placeholder 1](#)
-- [Placeholder 2](#)
 
 ---
 
 
 <!-- 🔍 Content Section Heading -->
-Managing multiple GitHub accounts (e.g., **personal** and **work**) on the same machine can be a challenge, especially with SSH keys, Git config, and identity settings. This guide will walk you through a foolproof method to set it all up **step-by-step**, without skipping anything.
-
----
-
-## 🛠️ Prerequisites
-
-| Tool     | Required Version | Install Link                                            |
-| -------- | ---------------- | ------------------------------------------------------- |
-| Git      | Latest           | [git-scm.com](https://git-scm.com/)                     |
-| VSCode   | Latest           | [code.visualstudio.com](https://code.visualstudio.com/) |
-| Git Bash | Latest           | Comes with Git on Windows                               |
-| GitHub   | Two accounts     | e.g., personal & work profiles                          |
-
----
 
 ## 📌 Overview
+
+
+Managing multiple GitHub accounts (e.g., **work** and **personal**) on the same machine can get messy with conflicting SSH keys and identities. This guide provides a complete, foolproof way to isolate each account and switch between them cleanly.
+
+Both **SSH** and **HTTPS** are secure, but they differ in convenience and management:
+
+- **SSH**: Ideal for long-term setups and daily development. Once keys are configured, it enables passwordless authentication and integrates well with frequent commits, pushes, and automation. The drawback is that juggling multiple SSH keys across different accounts requires extra configuration.  
+- **HTTPS**: Better for temporary setups or when you prefer per-account isolation without touching SSH configs. With personal access tokens and credential caching, it can be nearly as smooth, but it often involves re-authentication.  
+
+In short, use **SSH** if you work on GitHub regularly and need a fast, persistent setup. Choose **HTTPS** if you’re on a shared or temporary machine, lean toward token-based authentication, or want simpler account switching.
+
+
+### Setup
+
+**Setup:** Windows 11 · Git Bash · VSCode
+
+### File / Folder Structure
 
 We'll use the following structure:
 
@@ -66,11 +62,17 @@ We'll use the following structure:
 │   └── work.gitconfig
 ```
 
+
 ---
 
-**Setup:** Windows 11 · Git Bash · VSCode
+## 🛠️ Prerequisites
 
-Managing both **personal** and **work** GitHub accounts on the same machine can get messy with conflicting SSH keys and identities. This guide provides a complete, foolproof way to isolate each account and switch between them cleanly.
+| Tool     | Required Version | Install Link                                            |
+| -------- | ---------------- | ------------------------------------------------------- |
+| Git      | Latest           | [git-scm.com](https://git-scm.com/)                     |
+| VSCode   | Latest           | [code.visualstudio.com](https://code.visualstudio.com/) |
+| Git Bash | Latest           | Comes with Git on Windows                               |
+| GitHub   | Two accounts     | e.g., personal & work profiles                          |
 
 ---
 
@@ -378,6 +380,58 @@ graph TD
 You now have a **fully isolated**, **configurable**, and **rollback-safe** setup for using **multiple GitHub profiles** on a single Windows machine using **Git Bash + VSCode**.
 
 Now you can easily work with multiple GitHub accounts, with clean isolation of identities and SSH keys—all without conflicts or headaches. Happy coding!
+
+---
+
+<!-- 📚 References (Optional) -->
+### References / See Also:
+
+- [Placeholder 1](#)
+- [Placeholder 2](#)
+
+---
+
+
+<style>
+#sec-tags {
+    /* border: solid brown;
+    border-radius: .6rem;
+    padding: .8rem; */
+}
+#sec-tags ul {
+    list-style: none;
+    display: flex;
+    padding: 0 !important;
+}
+#sec-tags ul li {
+    background: #E6E6FA;
+    padding: .1rem .66rem;
+    margin: .4rem;
+    border-radius: .4rem;
+}
+
+#sec-tags ul li a {
+    color: #000080;
+}
+</style>
+
+
+
+
+<!-- SECTION: Tags for short related (1-3 word phrase per tag) concepts (long titled articles belong in the References / See Also section above) -->
+<section id="sec-tags">
+
+### Tags:
+
+- [Tag 1](#)
+- [Tag 2](#)
+- [Tag 3](#)
+- [Tag 4](#)
+
+
+</section>
+
+
 
 
 ---
