@@ -10,7 +10,6 @@
 
 > Optimized for: VSCode on Windows 11 + Git Bash (SSH)
 > 
-(Version: 005)
 
 <!-- 🧭 Navigation -->
 ### [🏚️ Home](../README.md) | [📁 How-To](index.md)
