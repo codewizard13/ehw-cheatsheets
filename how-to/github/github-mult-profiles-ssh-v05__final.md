@@ -1,8 +1,17 @@
 <!-- 🔗 Custom Stylesheet -->
 <link rel="stylesheet" href="/_css/main.css">
 
+<style>
+img[alt="Site Logo"] {
+  background: green !important!;
+}
+
+</style>
+
 <!-- 🖼️ Site Logo -->
-![Site Logo](/_pix/logos/2022_ElijahStreams-Logo_Hz-FullColor_226x29.png)
+![Site Logo](/_pix/logos/logo-ehw-kb.svg){height=40}
+
+<img src="../../_pix/logos/logo-ehw-kb.svg" style="height: 40px;" alt="Site Logo for: EricHepperle.com Knowledgebase"/>
 
 <!-- 📝 Title -->
 # HOW-TO: 📘 Using Multiple GitHub Profiles on One Machine (SSH)
