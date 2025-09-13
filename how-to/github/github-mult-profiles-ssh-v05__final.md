@@ -63,9 +63,7 @@ We'll use the following structure:
 ```
 
 
----
-
-## 🛠️ Prerequisites
+### 🛠️ Prerequisites
 
 | Tool     | Required Version | Install Link                                            |
 | -------- | ---------------- | ------------------------------------------------------- |
@@ -76,10 +74,31 @@ We'll use the following structure:
 
 ---
 
-## ⚠️ Step 0: Backup Your Current Git & SSH Setup (Recommended)
+## 🧭 Step 1: Understand and Prepare Your Setup
+
+Before we dive into generating keys and configuring SSH, it's important to take stock of your current Git and SSH environment. Many developers already have a GitHub account set up for work, but want to add a personal one without disrupting anything. This step gives you the full picture of what’s already in place, what needs to change, and how to do it cleanly. By understanding your setup first, you'll prevent mistakes and ensure both profiles can coexist seamlessly.
+
+### Your Current Situation
+
+* You already have a key: `~/.ssh/id_ed25519` (likely used for your **work** GitHub account).
+* Your **work account works** on this machine.
+* Your **personal account does not** (yet).
+* You want to add your **personal GitHub profile** cleanly **without breaking** your work setup.
+
+### ✅ Plan
+
+We’ll:
+
+* Add a **new SSH key** for your personal account.
+* Use a **custom SSH host alias** to differentiate them.
+* Create **isolated Git identity configs** per project.
+* Route Git traffic through the appropriate key **based on the repo’s folder**.
+
+---
+
+## ⚠️ Step 2: Backup Your Current Git & SSH Setup (Recommended)
 
 Before making any changes to your system, it's **strongly recommended** to back up your current Git and SSH configurations. This allows you to **restore a working setup** if something goes wrong. Think of it as version control for your system setup 😉
-
 
 ### 📦 What to Back Up
 
@@ -95,7 +114,6 @@ Before making any changes to your system, it's **strongly recommended** to back 
 > 💡 **Tip**: You can quickly navigate to your home folder in Git Bash using `cd ~`
 
 > 💡 **Tip**: Create `~/git-tools/` folder if doesn't already exist to store scripts
-
 
 ### 📥 Backup Script (Git Bash)
 
@@ -129,27 +147,7 @@ cp -r ~/bkp__git-config/git-identities ~/git
 
 ---
 
-## 🧭 Step 1: Understand and Prepare Your Setup
-
-### Your Current Situation
-
-* You already have a key: `~/.ssh/id_ed25519` (likely used for your **work** GitHub account).
-* Your **work account works** on this machine.
-* Your **personal account does not** (yet).
-* You want to add your **personal GitHub profile** cleanly **without breaking** your work setup.
-
-### ✅ Plan
-
-We’ll:
-
-* Add a **new SSH key** for your personal account.
-* Use a **custom SSH host alias** to differentiate them.
-* Create **isolated Git identity configs** per project.
-* Route Git traffic through the appropriate key **based on the repo’s folder**.
-
----
-
-## 🔐 Step 2: Generate a Personal SSH Key
+## 🔐 Step 3: Generate a Personal SSH Key
 
 
 Before adding multiple GitHub accounts, you need a dedicated SSH key for each one. Your existing key is likely tied to your work account, so generating a separate personal key ensures clean separation between profiles. This avoids authentication conflicts, keeps repositories linked to the correct identity, and makes it easy to manage both accounts without interfering with each other.
@@ -187,7 +185,7 @@ The `ssh-keygen -p` flag allows you to change or set a passphrase on an existing
 
 ---
 
-## 🔓 Step 3: Add SSH Keys to SSH Agent
+## 🔓 Step 4: Add SSH Keys to SSH Agent
 
 Run the following:
 
@@ -201,7 +199,7 @@ ssh-add ~/.ssh/id_ed25519_personal    # New personal key
 
 ---
 
-## 🧷 Step 4: Add Keys to GitHub Accounts
+## 🧷 Step 5: Add Keys to GitHub Accounts
 
 #### 1. Copy the public key:
 
@@ -222,7 +220,7 @@ cat ~/.ssh/id_ed25519.pub
 
 ---
 
-## ⚙️ Step 5: Create an SSH Config for Host Aliases
+## ⚙️ Step 6: Create an SSH Config for Host Aliases
 
 > 🎯 This lets you reference `github-work` or `github-personal` instead of `github.com`, which tells SSH which key to use.
 
@@ -256,7 +254,7 @@ Host github-personal
 
 ---
 
-## 🧑‍🔧 Step 6: Set Up Isolated Git Identities
+## 🧑‍🔧 Step 7: Set Up Isolated Git Identities
 
 #### 1. Create Per-Account Git Config Files
 
@@ -304,7 +302,7 @@ git config --global includeIf.gitdir:~/Projects/Personal/.path ~/git/personal.gi
 
 ---
 
-## 📦 Step 7: Clone Repositories with SSH Aliases
+## 📦 Step 8: Clone Repositories with SSH Aliases
 
 #### Personal Account:
 
@@ -322,12 +320,12 @@ git clone git@github-work:yourcompany/work-repo.git
 
 ---
 
-## 🧪 Step 8: Verify and Test Everything
+## 🧪 Step 9: Verify and Test Everything
 
 
 > You should see a welcome message from GitHub for the correct user after each SSH test.
 
-## 🧪 Final Testing Checklist
+#### 📋 Final Testing Checklist
 
 | ✅ Task                           | Command Example                                 |
 | -------------------------------- | ----------------------------------------------- |
