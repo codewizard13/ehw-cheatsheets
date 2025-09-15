@@ -26,7 +26,7 @@ Here you will find links to all the other documents in this folder.
 
 ### 📂 [Git](/coding/git.md)
 
-- [HOW-TO: 📘 Switch Between Multiple GitHub Profiles in VSCode on Windows 11 + Git Bash](/how-to/github-mult-profiles.md)
+- [HOW-TO: 📘 Switch Between Multiple GitHub Profiles in VSCode on Windows 11 + Git Bash (SSH)](/how-to/github-mult-profiles-ssh.md)
   
 ### 📂 [JavaScript](/coding/javascript.md)
 
