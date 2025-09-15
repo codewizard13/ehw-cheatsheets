@@ -2,7 +2,8 @@
 <link rel="stylesheet" href="/_css/main.css">
 
 <!-- 🖼️ Site Logo -->
-![Site Logo](/_pix/logos/2022_ElijahStreams-Logo_Hz-FullColor_226x29.png)
+![Site Logo](/_pix/logos/logo-ehw-kb.svg){height=32}
+
 
 <!-- 📝 Title -->
 # SOP: 🧾 How to Create a Standard Markdown Header for Technical Docs
@@ -52,7 +53,7 @@ Use the following template **at the very top** of your Markdown files:
 <link rel="stylesheet" href="/_css/main.css">
 
 <!-- 🖼️ Site Logo -->
-![Site Logo](/_pix/logos/2022_ElijahStreams-Logo_Hz-FullColor_226x29.png)
+![Site Logo](/_pix/logos/logo-ehw-kb.svg){height=32}
 
 <!-- 📝 Title -->
 # [DOC_TYPE]: [EMOJI] [Descriptive Title]
