@@ -1,5 +1,5 @@
 <!-- 🔗 Custom Stylesheet -->
-<link rel="stylesheet" href="../_css/main.css">
+<link rel="stylesheet" href="/_css/main.css">
 
 <!-- 🖼️ Site Logo -->
 ![Site Logo](/_pix/logos/logo-ehw-kb.svg){height=32}
@@ -24,23 +24,6 @@
 
 ---
 
-<!-- SECTION: Tags for short related (1-3 word phrase per tag) concepts (long titled articles belong in the References / See Also section above) -->
-<section id="sec-tags">
-
-## Tags:
-
-- [Tag 1](#)
-- [Tag 2](#)
-- [Tag 3](#)
-- [Tag 4](#)
-
-
-</section>
-
-
-
-
----
 
 <!-- 🔍 Content Section Heading -->
 
@@ -424,7 +407,49 @@ You now have a **fully isolated**, **configurable**, and **rollback-safe** setup
 ---
 
 
+<style>
+#sec-tags {
+    /* border: solid brown;
+    border-radius: .6rem;
+    padding: .8rem; */
+}
+#sec-tags ul {
+    list-style: none;
+    display: flex;
+    padding: 0 !important;
+}
+#sec-tags ul li {
+    background: #E6E6FA;
+    padding: .1rem .66rem;
+    margin: .4rem;
+    border-radius: .4rem;
+}
 
+#sec-tags ul li a {
+    color: #000080;
+}
+</style>
+
+
+
+
+<!-- SECTION: Tags for short related (1-3 word phrase per tag) concepts (long titled articles belong in the References / See Also section above) -->
+<section id="sec-tags">
+
+## Tags:
+
+- [Tag 1](#)
+- [Tag 2](#)
+- [Tag 3](#)
+- [Tag 4](#)
+
+
+</section>
+
+
+
+
+---
 
 ## ✅ Revision History
 

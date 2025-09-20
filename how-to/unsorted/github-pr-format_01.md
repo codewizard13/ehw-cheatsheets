@@ -1,11 +1,13 @@
 <!-- 🔗 Custom Stylesheet -->
-<link rel="stylesheet" href="../_css/main.css">
+<link rel="stylesheet" href="/_css/main.css">
 
 <!-- 🖼️ Site Logo -->
 ![Site Logo](/_pix/logos/logo-ehw-kb.svg){height=32}
 
 <!-- 📝 Title -->
-# HOW-TO: 📘 Using Multiple GitHub Profiles on One Machine (SSH)
+# HOW-TO: 📘 Github: Generate formatted pull request
+
+**Version:** 1.0
 
 
 > Optimized for: VSCode on Windows 11 + Git Bash (SSH)
@@ -15,46 +17,22 @@
 ### [🏚️ Home](../README.md) | [📁 How-To](index.md)
 
 <!-- 👤 Metadata -->
-| **Author**:        | Eric L. Hepperle    |
-| ------------------ | ------------------- |
-| **Date Created**:  | 2025-09-11          |
-| **Date Updated**:  | 2025-09-13          |
-| **AI Assistance**: | ChatGPT, Perplexity |
+| **Author**:        | Eric L. Hepperle |
+| ------------------ | ---------------- |
+| **Date Created**:  | 2025-08-27       |
+| **Date Updated**:  | --               |
+| **AI Assistance**: | ChatGPT          |
 
 
 ---
 
-<!-- SECTION: Tags for short related (1-3 word phrase per tag) concepts (long titled articles belong in the References / See Also section above) -->
-<section id="sec-tags">
-
-## Tags:
-
-- [Tag 1](#)
-- [Tag 2](#)
-- [Tag 3](#)
-- [Tag 4](#)
-
-
-</section>
-
-
-
-
----
 
 <!-- 🔍 Content Section Heading -->
 
 ## 📌 Overview
 
 
-Managing multiple GitHub accounts (e.g., **work** and **personal**) on the same machine can get messy with conflicting SSH keys and identities. This guide provides a complete, foolproof way to isolate each account and switch between them cleanly.
-
-Both **SSH** and **HTTPS** are secure, but they differ in convenience and management:
-
-- **SSH**: Ideal for long-term setups and daily development. Once keys are configured, it enables passwordless authentication and integrates well with frequent commits, pushes, and automation. The drawback is that juggling multiple SSH keys across different accounts requires extra configuration.  
-- **HTTPS**: Better for temporary setups or when you prefer per-account isolation without touching SSH configs. With personal access tokens and credential caching, it can be nearly as smooth, but it often involves re-authentication.  
-
-In short, use **SSH** if you work on GitHub regularly and need a fast, persistent setup. Choose **HTTPS** if you’re on a shared or temporary machine, lean toward token-based authentication, or want simpler account switching.
+// ADD CONTENT
 
 
 ### Setup
@@ -384,13 +362,13 @@ git clone git@github-work:yourcompany/work-repo.git
 
 ## 🪲 Common GitHub SSH Issues and Quick Fixes
 
-| ❗ Problem                        | 💡 Solution                                                      |
-|---------------------------------|-----------------------------------------------------------------|
-| SSH key always prompts for passphrase | Use `ssh-agent` to cache your passphrase per session.           |
-| Cannot clone                    | Make sure the SSH public key is added to the right GitHub account. |
-| GitHub says permission denied    | Check you’re using `git@github-personal:` or `git@github-work:`. |
-| SSH key not being used           | Check `~/.ssh/config` and use `ssh -vT git@github-xxx` to debug. |
-| Wrong identity in Git            | Verify with `git config user.email` in repo.                     |
+| ❗ Problem                             | 💡 Solution                                                         |
+| ------------------------------------- | ------------------------------------------------------------------ |
+| SSH key always prompts for passphrase | Use `ssh-agent` to cache your passphrase per session.              |
+| Cannot clone                          | Make sure the SSH public key is added to the right GitHub account. |
+| GitHub says permission denied         | Check you’re using `git@github-personal:` or `git@github-work:`.   |
+| SSH key not being used                | Check `~/.ssh/config` and use `ssh -vT git@github-xxx` to debug.   |
+| Wrong identity in Git                 | Verify with `git config user.email` in repo.                       |
 
 
 ---
@@ -424,7 +402,49 @@ You now have a **fully isolated**, **configurable**, and **rollback-safe** setup
 ---
 
 
+<style>
+#sec-tags {
+    /* border: solid brown;
+    border-radius: .6rem;
+    padding: .8rem; */
+}
+#sec-tags ul {
+    list-style: none;
+    display: flex;
+    padding: 0 !important;
+}
+#sec-tags ul li {
+    background: #E6E6FA;
+    padding: .1rem .66rem;
+    margin: .4rem;
+    border-radius: .4rem;
+}
 
+#sec-tags ul li a {
+    color: #000080;
+}
+</style>
+
+
+
+
+<!-- SECTION: Tags for short related (1-3 word phrase per tag) concepts (long titled articles belong in the References / See Also section above) -->
+<section id="sec-tags">
+
+## Tags:
+
+- [Tag 1](#)
+- [Tag 2](#)
+- [Tag 3](#)
+- [Tag 4](#)
+
+
+</section>
+
+
+
+
+---
 
 ## ✅ Revision History
 
