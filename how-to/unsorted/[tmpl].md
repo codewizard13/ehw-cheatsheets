@@ -54,7 +54,8 @@
 ---
 
 <!-- 📚 References (Optional) -->
-## References / See Also:
+## 📚 References / See Also
+
 
 - [Placeholder 1](#)
 - [Placeholder 2](#)
