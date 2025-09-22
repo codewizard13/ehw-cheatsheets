@@ -7,6 +7,9 @@
 <!-- 📝 Title -->
 # HOW-TO: 📧 Business Communication: Concise email / instant message samples and templates
 
+### Alternate titles:
+- Business Communication Examples: Purchase Requests & Announcements
+
 **Version:** 1.0
 
 
@@ -20,7 +23,7 @@
 | **Author**:        | Eric L. Hepperle |
 | ------------------ | ---------------- |
 | **Date Created**:  | 2025-09-04       |
-| **Date Updated**:  | 2025-09-20               |
+| **Date Updated**:  | 2025-09-20       |
 | **AI Assistance**: | ChatGPT          |
 
 
@@ -31,9 +34,10 @@
 
 ## Tags:
 
-- [Pull Requests](#)
-- [GitHub](#)
-- [Markdown](#)
+- [Business Communication](#)
+- [Email Templates](#)
+- [AI Prompts](#)
+- [AI Assistance](#)
 
 
 </section>
@@ -48,142 +52,74 @@
 
 ## 📌 Overview
 
-
-````
-Perfect — thanks for the context. Based on that, here's a **more casual and natural-sounding version** of your email that smoothly incorporates the idea that Todd (and the team) might benefit too, without overstating it.
+This article provides practical business email writing examples, including purchase request drafts and course completion announcements. These samples can be used as templates or inspiration for professional communications with supervisors, managers, or colleagues when justifying training purchases or sharing learning achievements.
 
 ---
 
-**Subject:** Request for Boot.dev Subscription – Backend Skills Development
+## 📝 Purchase Request Email Examples
 
-Hi \[Boss's Name],
+### Sample 1: Request for Boot.dev Subscription
 
-I’d like to request a yearly subscription to **Boot.dev** (\$348/year per user for team plans, with discounts for 3+ users). It’s a hands-on, gamified platform focused on backend technologies like **Python, TypeScript, SQL, Docker, and CI/CD**—which makes the learning process more engaging and easier to retain.
+```
+Subject: Request for Boot.dev Yearly Subscription – Hands-On Learning Advantage
 
-Unlike passive video platforms like LinkedIn Learning, Boot.dev emphasizes real-time coding and structured, skill-building paths. It’s tailored specifically for backend development—exactly the kind of tooling and architecture **Todd mentioned** when talking through ideas for the next iteration of **OUR-SITE** (like moving away from WordPress and incorporating TypeScript, Docker, etc.).
+Hi [Boss's Name],
 
-The main value for now would be helping me level up in those areas and get more in sync with the direction we’re heading. That said, with team pricing and just the two of us on dev right now, it could be a useful resource for Todd as well—especially since he's always looking to explore new tools and approaches.
+I’d like to request a yearly subscription to **Boot.dev** ($348/year per user for team plans, with discounts for 3+ users). It’s a hands-on platform focused on backend development using Python, TypeScript, SQL, Docker, and CI/CD—all highly relevant to our work.
+
+Compared to LinkedIn Learning, Boot.dev is far more interactive. Instead of passive videos, it offers structured, project-based learning with real-time coding. The Backend Developer Track includes:
+
+- 16 courses: Python, Git, OOP, Functional Programming, Data Structures, TypeScript, SQL, HTTP, Docker, CI/CD, and more.
+- 8 projects: Build a Pokedex, AI Agent, Static Site Generator, Blog Aggregator, and a final Capstone.
+
+These projects help reinforce skills and create a tangible portfolio—something LinkedIn Learning doesn't offer.
+
+I believe this will be a high-ROI investment in deeper technical growth. Happy to discuss or demo if needed.
+
+Best,  
+[Your Name]
+```
+
+### Sample 2: Alternative Purchase Justification
+
+```
+Subject: PURCHASE REQUEST for Boot.dev Subscription – Backend Skills Development
+
+Hi [Boss's Name],
+
+I’d like to request a yearly subscription to **Boot.dev** ($348/year per user for team plans, with discounts for 3+ users). It’s a hands-on, gamified platform focused on backend technologies like Python, TypeScript, SQL, Docker, and CI/CD—which makes learning more engaging and easier to retain.
+
+Unlike passive video-based platforms like LinkedIn Learning, Boot.dev emphasizes real-time coding and structured, skill-building paths. It’s specifically geared toward backend development—matching our upcoming technology plans.
+
+This subscription would help me level up in these areas and align with our evolving tech stack.
 
 Happy to share more or demo the platform if helpful.
 
-Best,
-\[Your Name]
-````
-
-
-
-### 09/03/25
-
-````
-**Resolution Statement:**
-
-The issue with email delivery failures from `elijahstreams.com`—specifically messages being blocked by Gmail due to failed SPF authentication—was resolved by updating the domain's SPF record. After consulting with IONOS support, it was confirmed that the existing SPF record was misconfigured. The record was corrected by removing unnecessary includes and replacing the old entry:
-
+Best,  
+[Your Name]
 ```
-v=spf1 include:zoho.com include:_spf.perfora.net include:_spf-us.ionos.com include:_spf.kundenserver.de ~all
-```
-
-with the simplified and accurate version:
-
-```
-v=spf1 include:_spf.perfora.net include:_spf.kundenserver.de -all
-```
-
-This change was made via Cloudflare DNS management. The updated record properly authenticates the sending IPs used by IONOS, aligning with Gmail’s requirements. Propagation was expected to take up to an hour, after which email functionality was tested and confirmed to be working.
-````
-
-### 09/04/25
-
-
-## #AI_PROMPT ##
-
-> Business Communication - Purchase Request: Draft an email to my BOSS justifying a yearly subscription to Boot.dev. Explain why it is a better hands-on learning resource than LinkedIn Learning
-
 
 ---
 
+## 🎉 Course Completion Announcement Sample
 
-## #AI_REPLY ##
+```
+🎉 Proud to share that I’ve completed the Plesk Complete Installation and Configuration course on Udemy!
 
+This course took me through setting up and managing private virtual servers with Plesk, empowering me to deploy and maintain websites smoothly on cloud servers. A key step to mastering scalable, secure hosting solutions beyond shared hosting.
 
-Here's a professional and persuasive email you can send to your boss to justify the purchase of a yearly Boot.dev subscription:
+Excited to apply these skills for stronger web performance and enhanced security.
+
+What’s the next skill you’re tackling?
+
+Check out the course here:
+
+https://www.udemy.com/course/plesk-complete-installation-and-configuration/
+
+#CloudHosting #ServerManagement #Plesk #ContinuousLearning
+```
 
 ---
-
-````
-**Subject:** Request for Boot.dev Yearly Subscription – Hands-On Learning Advantage
-
-Dear \[Boss's Name],
-
-I hope you're doing well. I’d like to request approval for a yearly subscription to **Boot.dev**, a platform focused on backend development and computer science fundamentals through hands-on coding.
-
-While we currently have access to platforms like LinkedIn Learning, I believe Boot.dev offers a significantly more **practical and immersive learning experience**, particularly for developing deeper technical skills. Here’s why:
-
-1. **Hands-On, Interactive Learning**
-   Unlike many video-based platforms, Boot.dev emphasizes learning by doing. It uses real-time coding exercises and projects that simulate actual development work, which helps reinforce concepts much more effectively than passive video watching.
-
-2. **Backend-Focused Curriculum**
-   The curriculum is tailored specifically for backend development (Go, Python, JavaScript, Data Structures, Algorithms), which aligns with the skills I’m aiming to strengthen. This specialization is more relevant to our team's goals and tech stack than the broader, more generalized content found on LinkedIn Learning.
-
-3. **Structured, Project-Based Progression**
-   Boot.dev offers a clear, structured path with built-in assessments and real-world projects. This makes it easier to track progress and apply newly learned skills immediately to work-related tasks or internal tools.
-
-4. **Better ROI for Deep Technical Growth**
-   While LinkedIn Learning is a great resource for soft skills and introductory overviews, Boot.dev is better suited for **developing practical, job-ready programming skills**—which I believe will result in a stronger ROI in terms of productivity and long-term capability.
-
-The annual subscription cost is \[insert amount], and I believe it would be a valuable investment in my continued growth and in enhancing our team's technical capacity.
-
-Please let me know if you need more details or would like to see a demo of the platform. I’d be happy to provide more info or explore a short trial first if that’s preferable.
-
-Thank you for considering this request.
-
-Best regards,
-\[Your Name]
-````
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ---
 
@@ -199,9 +135,10 @@ Best regards,
 ## ✅ Revision History
 
 
-| Version | Date       | Author           | Changes Made                                     |
-| ------- | ---------- | ---------------- | ------------------------------------------------ |
-| 1.00    | 2025-09-04  | Eric L. Hepperle | Initial draft created                            |
-| 1.02    | 2025-09-20 | Eric L. Hepperle | Draft formatted as KB article clone of [tmpl].md |
+| Version | Date       | Author           | Changes Made                                                  |
+| ------- | ---------- | ---------------- | ------------------------------------------------------------- |
+| 1.00    | 2025-09-04 | Eric L. Hepperle | Initial draft created                                         |
+| 1.02    | 2025-09-20 | Eric L. Hepperle | Draft formatted as KB article clone of [tmpl].md              |
+| 1.03    | 2025-09-22 | Eric L. Hepperle | Added multiple AI prompt examples and expanded content layout |
 
 ---
