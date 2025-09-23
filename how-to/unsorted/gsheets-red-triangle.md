@@ -8,7 +8,7 @@
 # HOW-TO: 📘 GOOGLE SHEETS: Fixing Red Triangle Error in Google Sheets Dropdown Validation Without Rebuilding
 
 
-**Version:** 1.01
+**Version:** 1.02
 
 
 > Optimized for: VSCode on Windows 11 + Git Bash (SSH)
@@ -18,11 +18,11 @@
 ### [🏚️ Home](../README.md) | [📁 How-To](index.md)
 
 <!-- 👤 Metadata -->
-| **Author**:        | Eric L. Hepperle |
-| ------------------ | ---------------- |
-| **Date Created**:  | 2025-09-23       |
-| **Date Updated**:  | --               |
-| **AI Assistance**: | ChatGPT          |
+| **Author**:        | Eric L. Hepperle    |
+| ------------------ | ------------------- |
+| **Date Created**:  | 2025-09-23          |
+| **Date Updated**:  | 2025-09-23          |
+| **AI Assistance**: | ChatGPT, Perplexity |
 
 
 ---
@@ -133,7 +133,56 @@ To isolate whether the issue stems from legacy formatting or cell errors:
 
 If no red triangle appears here, the original validation is correct and the problem is limited to the original column's formatting or error state.
 
+---
+
+## 🚩 Real-World Scenario: Complex Workbook Named Range Conflict
+
+
+### ✅ Situation
+
+
+You manage a complex Google Sheets workbook with named ranges and data validation, tracking version history and system changes. After copying tabs from a source workbook to a destination workbook (which already had similarly named tabs), a dropdown validation using a named range `LogCats` began rejecting valid inputs.
+
+
 ***
+
+### ⚠️ Obstacle
+
+
+- Validation rejected valid inputs with “Reject input” error.
+- Red triangles persisted despite reapplying validation rules.
+- Broken named ranges (`#REF!`) existed in the workbook.
+- Issue was limited to specific tabs, indicating scope-specific conflicts.
+- Rebuilding the whole system was not feasible due to complexity.
+
+
+***
+
+### 🔧 Action Taken
+
+
+- Deleted all broken named ranges with `#REF!` errors to clear hidden conflicts.
+- Verified `LogCats` named range was valid and contained clean values.
+- Reapplied data validation referencing the named range.
+- Switched validation mode to “Show warning” in a new column to test behavior.
+- After successful test, reverted to “Reject input” which then worked correctly.
+- Diagnosed issue as hidden metadata/cache conflict from copying tabs with overlapping names.
+
+
+***
+
+### 🚀 Result
+
+
+- Data validation works as expected with strict enforcement.
+- Maintained workbook structure without rebuilding.
+- Identified a Google Sheets internal bug with metadata/cache handling post-copy.
+- Developed a reliable workaround for future incidents.
+- Reinforced best practices around copying sheets with named ranges.
+
+
+
+---
 
 
 ## ✅ Summary of the No-Rebuild Fix
@@ -178,9 +227,10 @@ If no red triangle appears here, the original validation is correct and the prob
 ## ✅ Revision History
 
 
-| Version | Date       | Author           | Changes Made                                     |
-| ------- | ---------- | ---------------- | ------------------------------------------------ |
-| 1.00    | 2025-09-05 | Eric L. Hepperle | Initial draft created                            |
-| 1.01    | 2025-09-23 | Eric L. Hepperle | Draft formatted as KB article clone of [tmpl].md |
+| Version | Date       | Author           | Changes Made                                                  |
+| ------- | ---------- | ---------------- | ------------------------------------------------------------- |
+| 1.00    | 2025-09-05 | Eric L. Hepperle | Initial draft created                                         |
+| 1.01    | 2025-09-23 | Eric L. Hepperle | Draft formatted as KB article clone of [tmpl].md              |
+| 1.02    | 2025-09-23 | Eric L. Hepperle | Added real-world scenario: named range conflict post-tab copy |
 
 ---
