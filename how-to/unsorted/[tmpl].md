@@ -19,8 +19,8 @@
 <!-- 👤 Metadata -->
 | **Author**:        | Eric L. Hepperle |
 | ------------------ | ---------------- |
-| **Date Created**:  | 2025-08-27       |
-| **Date Updated**:  | 2025-09-20       |
+| **Date Created**:  | 2025-09-23       |
+| **Date Updated**:  | --               |
 | **AI Assistance**: | ChatGPT          |
 
 
@@ -38,11 +38,7 @@
 
 </section>
 
-
-
-
 ---
-
 
 <!-- 🔍 Content Section Heading -->
 
