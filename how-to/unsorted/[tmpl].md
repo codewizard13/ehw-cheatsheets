@@ -68,7 +68,7 @@
 
 | Version | Date       | Author           | Changes Made                                     |
 | ------- | ---------- | ---------------- | ------------------------------------------------ |
-| 1.00    | 2025-????  | Eric L. Hepperle | Initial draft created                            |
-| 1.02    | 2025-09-23 | Eric L. Hepperle | Draft formatted as KB article clone of [tmpl].md |
+| 1.00    | 2025-09-   | Eric L. Hepperle | Initial draft created                            |
+| 1.01    | 2025-09-23 | Eric L. Hepperle | Draft formatted as KB article clone of [tmpl].md |
 
 ---
