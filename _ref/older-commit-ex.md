@@ -430,6 +430,66 @@ docs(ref, gitignore): add pull request library, update gitignore, and expand com
 
 
 
+---
+# 09/15/25
+
+docs: refine GitHub SSH multi-profile guide v1.5.0  
+
+**how-to/github/**  
+
+**`github-mult-profiles-ssh.md`**  
+- Updated filename, title, and Overview to emphasize SSH focus and streamline intro, tags, and references.  
+- Standardized step order, headings, and formatting for clearer flow.  
+- Expanded key management and backup/restore guidance, with new SSH config tips for multi-profile use.  
+- Consolidated and restructured troubleshooting into an issue–impact–solution format with a quick fixes section.  
+
+**Other Changes**  
+
+- Deleted `main.css.pdf` and `github-mult-profiles.md`.  
+- Standardized logo branding by adding `logo-ehw-kb.svg` to `sop/sop-create-kb-header.md` and `github-mult-profiles.md`.  
+
+⚠️ **Notes & Caveats:**  
+- Future: Embedded CSS should be migrated to an external file for maintainability.  
+- Future: `{height=32}` logo attribute does not render properly on GitHub; use static 32px-high logo images.  
+
+
+---
+
+# 09/27/25
+
+docs(how-to): add stubs folder with unformatted drafts and update commit examples  
+
+**how-to/stubs**  
+- Added 30 unformatted documentation drafts as rough content for future formatting and finalization.  
+- Organized drafts in a dedicated subfolder to keep work-in-progress materials separate from published guides.  
+
+**_ref**  
+- **`older-commit-ex.md`**  
+  - Added new commit message example reflecting addition of stubs folder and draft aggregation.  
+
+⚠️ **Notes & Caveats:**  
+- Drafts in `how-to/stubs` require thorough review and formatting before publication.  
+- Plan future iterations to convert stubs into finalized how-to articles.  
+
+
+---
+
+
+docs(how-to): add stubs folder with unformatted drafts and update commit examples  
+
+**how-to/stubs**  
+- Added 30 unformatted documentation drafts as rough content for future formatting and finalization.  
+- Organized drafts in a dedicated subfolder to keep work-in-progress materials separate from published guides.  
+
+**_ref**  
+- **`older-commit-ex.md`**  
+  - Added new commit message examples including one for "docs: refine GitHub SSH multi-profile guide v1.5.0" and another for adding stubs folder and draft aggregation.  
+
+⚠️ **Notes & Caveats:**  
+- Drafts in `how-to/stubs` require thorough review and formatting before publication.  
+- Plan future iterations to convert stubs into finalized how-to articles.  
+
+
 
 
 
