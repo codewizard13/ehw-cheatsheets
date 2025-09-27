@@ -1,3 +1,11 @@
+# Git Commit Libary (started : 2025-09-27)
+
+
+
+---
+
+
+
 
 # ELIJAH-THEME:
 
@@ -375,11 +383,50 @@ docs(ref): add commit msg library and new resized logo
 
 ---
 
+docs(lib-pull-requests): add pull request library and update gitignore  
+
+**_ref**  
+- **`lib-pull-request.md`**  
+  - Added initial library of pull request templates and examples for future reference.  
+  - Prepared structure for users to contribute, sort, and finalize standardized pull request formats.  
+
+**`.gitignore`**  
+  - Updated header comments for creation and update dates, author, and file version.  
+  - Added `_sb/` to ignored sandboxes and junk files for improved directory hygiene.  
+  - Removed commented-out and redundant ignore rules to streamline configuration.  
+  - Appended entries for Playwright test results and cache folders to prevent accidental commits.  
+
+⚠️ **Notes & Caveats:**  
+- Pull request library in `_ref/lib-pull-request.md` is an initial draft and will be refined before integration with contributor docs.  
+- Changes to `.gitignore` should be validated on new and existing branches to ensure no essential files are omitted from commits.  
+- Future updates may further separate legacy versus new sandbox folder conventions.  
 
 
 
 
+---
 
+
+docs(ref, gitignore): add pull request library, update gitignore, and expand commit example archive  
+
+**_ref**  
+- **`lib-pull-request.md`**  
+  - Added initial library of pull request templates and examples for future reference.  
+  - Prepared structure for users to contribute, sort, and finalize standardized pull request formats.  
+- **`older-commit-ex.md`**  
+  - Added section header marking this as a Git Commit Library with a start date.  
+  - Appended latest commit example for "add pull request library and update gitignore" matching current changeset.  
+  - Improved discoverability and reuse potential by explicitly documenting recent commit message patterns.  
+
+**`.gitignore`**  
+  - Updated header comments for creation and update dates, author, and file version.  
+  - Added `_sb/` to ignored sandboxes and junk files for improved directory hygiene.  
+  - Removed commented-out and redundant ignore rules to streamline configuration.  
+  - Appended entries for Playwright test results and cache folders to prevent accidental commits.  
+
+⚠️ **Notes & Caveats:**  
+- Pull request library in `_ref/lib-pull-request.md` is an initial draft and will be refined before integration with contributor docs.  
+- Added commit message examples to `older-commit-ex.md` reflect only recent changes; further curation needed for legacy entries.  
 
 
 
