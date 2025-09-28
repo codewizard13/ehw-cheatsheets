@@ -1,6 +1,7 @@
 # Git Commit Libary (started : 2025-09-27)
 
-
+⚠️ **#CAVEATS**:
+- Organize into Commit Prompts and Commit Message examples
 
 ---
 
@@ -491,9 +492,170 @@ docs(how-to): add stubs folder with unformatted drafts and update commit example
 
 
 
+---
+
+# 09/20/25
+
+
+Generate a detailed yet succinct conventional commit message formatted as follows:  
+- Use type `docs` unless clearly another type, with scope equal to the **top-level affected folder** only (e.g., if file is in `guides/github/index.md`, use scope `guides`).  
+- If no folder is given or detected for scope, default to `how-to`.  
+- Summary line ≤70 chars, concise, explaining what and why.  
+- If file paths are explicitly provided in the input, group them under their **full relative folder path** (e.g., **guides/github**) as a heading, and list only the filenames beneath.  
+- If *no files are specified*, skip the folder and file listing entirely.  
+- Everything below the summary line that is not a heading (e.g., all file bullets or changes) must be formatted as bullet items.  
+- For each listed file, add up to 6 concise bullet items starting with *Added, Updated, Corrected, Removed, Refactored,* etc., describing the changes.  
+- Optionally include a final section prefixed with ⚠️ **Notes & Caveats:** for warnings, caveats, or follow-up tasks.  
+- Maintain consistent blank lines and indentation for readability.  
+
+
+---
+
+
+# 09/24/25
+
+
+PROMPT:
+
+Generate a detailed yet succinct **conventional commit message** for wordpress theme code changes formatted as follows:  
+- Determine `type(scope)` - favor clarity of purpose or section (e.g., if the changes are about wells page then scope should be 'wells', if changes are primarily wpadmin dashboard config then scope = 'wpadmin', etc.) 
+- If no folder is given or detected for scope, default to `how-to`.  
+- Summary line ≤70 chars, concise, explaining what and why.  
+- If file paths are explicitly provided in the input, group them under their **full relative folder path** (e.g., **guides/github**) as a heading, and list only the filenames beneath.  
+- If *no files are specified*, skip the folder and file listing entirely.  
+- Everything below the summary line that is not a heading (e.g., all file bullets or changes) must be formatted as bullet items.  
+- For each listed file, add up to 6 concise bullet items starting with *Added, Updated, Corrected, Removed, Refactored,* etc., describing the changes.  
+- Optionally include a final section prefixed with ⚠️ **Notes & Caveats:** for warnings, caveats, or follow-up tasks if warranted.  
+- Maintain consistent blank lines and indentation for readability.:
 
 
 
+CONTENT:
+
+
+---
+
+
+# 09/25/25
+
+Give the current #changes in the #codebase provide a conventional commit in the following format:
+
+Generate a clear, concise conventional commit message after determining what the main content type of this repo is (wordpress theme, plugin, python script, gist, kb docs, etc.):
+
+If the codebase is mostly .md files, then safe to assume 'docs' is the type. Otherwise, determine the likely type based on the codebase content
+
+Summary: Use type(scope) with a scope reflecting main change area (e.g., wells, wpadmin, default how-to); summary line ≤70 characters explaining what and why.
+
+File & Folder Paths: If file paths given, group by full folder (e.g., guides/github), list only bolded filenames; omit file listing if none specified.
+
+Details: Use hyphen (-) bullets for details; For each file, up to 4 hyphen bullets starting with Added, Updated, Corrected, Refactored, etc.
+
+Technical Nouns: Backtick filenames, functions, classes, sections, variables.
+
+⚠️ Notes & Caveats:: for warnings, follow-ups.
+
+📋 Codebase Annotations section: Extract all comment annotations like TODO, MAYBE, FIXME, etc., case-insensitively (e.g., todo, TODO, @TODO) into a final 📋 Codebase Annotations section, formatting each as a one-line hyphen bullet with their label (e.g., TODO: filename (function): note or MAYBE: filename: note), omitting function parentheses if not present, keeping the list concise and uniform.
+
+Other Layout / Formatting: No horizontal rules between sections; - Maintain consistent blank lines and indentation.
+
+
+
+
+---
+
+
+Here’s your refined prompt updated so that **📋 Codebase Annotations only appears if actual annotations are found during a scan**. This prevents empty or misleading sections from being generated.  
+
+***
+
+### Refined Prompt (with Annotations Validation)  
+
+Generate a clear, concise conventional commit message after determining what the main content type of this repo is (e.g., WordPress theme, plugin, Python script, gist, knowledge base docs).  
+
+- If the codebase is mostly `.md` files, assume type = `docs`.  
+- Otherwise, determine the likely type based on the contents.  
+
+### Commit Message Format  
+
+Use the format:  
+`type(scope): summary`  
+- *type* = conventional commit type (feat, fix, docs, refactor, style, chore, etc.)  
+- *scope* = main change area (e.g., wells, wpadmin, default-howto, course-notes, etc.)  
+- *summary* = one-line, ≤70 characters, explains what and why.  
+
+### Change Log Structure  
+
+For changed files, always group them by their **folder**, and under each folder list **only the bolded filenames**. Each file must then have up to **4 bullet points** describing its changes.  
+
+**Example structure:**  
+
+```
+refactor(wells): add date constants, refine FAQ usage
+
+**inc**
+
+- `theme-constants.php`  
+  - Added `DT` array with `current_year` and `first_of_cur_yr`.  
+  - Added `faq_since_date` key to `WELLS_STATS`.  
+
+- `admin.php`  
+  - Added TODO for possible deletion or wiki relocation.  
+
+**template-parts/section**
+
+- `pg-wells-faq.php`  
+  - Updated FAQ verbiage using dynamic wells stats.  
+  - Added TODO to explore accordion FAQ with <details>.
+```
+
+### Additional Sections  
+
+After listing all file changes:  
+
+- **⚠️ Notes & Caveats**: Global notes, risks, or follow‑up actions.  
+
+- **📋 Codebase Annotations**:  
+  - Only include this section *if and only if* actual annotations like `TODO`, `FIXME`, `MAYBE`, `HACK`, or `NOTE` were found in a codebase scan.  
+  - Format each as:  
+    - `TODO: filename (function if given): note`  
+    - `FIXME: filename: note`  
+  - If no annotations are detected, omit the entire section.  
+
+### Critical Rule  
+
+- Do not collapse all details into one "Details" section.  
+- Every listed file must have its **own change bullets**.  
+- Only omit a file entirely if no concrete changes are known.  
+- Omit the **📋 Codebase Annotations** section entirely if no annotations are found during scan.  
+
+
+
+---
+
+docs(courses): restructure folder layout and update course notes styling
+
+**_css/**
+
+- `main.css`  
+  - Restyled bookmark anchor to a soft blue rounded button with a bookmark emoji prefix.  
+  - Updated `.code-filename` prefix icon background to slategray and changed icon to document emoji 📄 for better compatibility.
+
+**courses/**
+
+- `purpose.txt`  
+  - Updated to align with new `courses/` folder structure.
+
+- `01_Python/01.00__Intro.md`  
+  - Added starter page for chapter 1 course notes.
+
+- `01_Python/index.md`  
+  - Updated relative stylesheet link to `main.css`.  
+  - Adjusted file name in metadata table.  
+  - Added tentative chapters table with placeholder hyperlinks.
+
+⚠️ **Notes & Caveats**:  
+- Course notes repo architecture is mostly finalized but expected to evolve with future tweaks.  
+- Continue revising and improving chapter table formatting as needed.
 
 
 
