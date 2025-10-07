@@ -407,3 +407,292 @@ This rule:
 Let me know if you want to link this fix to another task or if we should notify content editors about preferred embed methods (e.g., oEmbed vs raw iframe).
 
 Let me know if you'd like a shorter version or to tailor it to a non-dev stakeholder.
+
+
+
+---
+
+
+## 10/07/25
+
+
+
+Using "Codebase"
+
+I'll check which files changed on the current branch so I can list them in the PR sections and reference exact files. I'll run a git-changed-files query and then summarize results. 
+
+Read changed files in [](file:///c%3A/_EHW/Project%20Repos/ehw-cheatsheets)
+
+I'll read the generated git log at gitlog_20251007_1200.log to extract commit summaries and affected files for the PR message. I will open the file and pull the top relevant lines. 
+
+Read [](file:///c%3A/_EHW/Project%20Repos/ehw-cheatsheets/_sb/gitlog_20251007_1200.log)
+
+Progress update: I scanned the branch commits and the generated git log (gitlog_20251007_1200.log) to collect changed files and commit intent (large docs-only batch across stubs and _ref). Below is a ready-to-copy PR message in Markdown that follows your requested structure.
+
+## Title
+- docs(how-to,_ref): add many how‑to stubs and WIP reference drafts
+
+## Description
+This PR seeds the documentation knowledge base with a large batch of draft how‑to stubs and several work‑in‑progress reference documents. The goal is to capture ideas, examples, and operational runbooks in-source so they can be iterated, reviewed, and turned into finalized KB articles. This is a docs-only change (no source code or runtime configuration modified).
+
+- Added dozens of draft how‑to stubs covering Git, WordPress, backups, debugging, UX notes, and plugin scaffolds.
+- Added and renamed several WIP reference documents in _ref to collect prompts, PR templates, and commit examples.
+- Minor housekeeping to .gitignore to reduce noise from the sandbox folder and protect temporary artifacts.
+
+### Reference library additions
+*(Files: wip-ai-prompts.md, wip-asana-comment-lib.md, wip-header-comment-library.md, wip-older-commit-ex.md, wip-pull-request.md)*
+
+- Added a reusable AI prompt notebook to capture prompt examples and iterations for future reuse.
+- Added an Asana comment/runbook checklist to centralize operational steps and housekeeping guidance.
+- Added a header comment/snippet library (CSS example included) to standardize header blocks and shared snippets.
+- Created and expanded a commit example archive to document common commit message patterns and examples for contributors.
+- Renamed and consolidated pull-request guidance into a WIP PR library for iterative improvement and contributor reference.
+
+### How‑to stubs collection
+*(Files: `how-to/stubs/*.md` — e.g. 01.md … 65.md)*
+
+- Added a large collection of draft how‑to stubs (multiple commits added stubs 01–65) to capture potential KB topics and working notes.
+- Organized the stubs into a dedicated stubs folder to separate rough drafts from published guides.
+- Captured a broad set of topics: Git workflow tips, Windows/PowerShell guidance, CSS snippets, WordPress troubleshooting, plugin scaffolds, backup strategies, and UX/thumbnail notes.
+- Grouped templates and examples (plugin scaffold, minimal debug logger, podcast button snippet) to speed future conversions into final articles.
+
+### Housekeeping & misc
+*(Files: .gitignore, `_ref/older-commit-ex.md`, `_ref/lib-pull-request.md` -> wip-pull-request.md)*
+
+- Updated .gitignore to include _sb (sandbox) and cleaned up redundant rules to reduce accidental commits of scratch files.
+- Converted initial `lib-pull-request.md` into a WIP file (`wip-pull-request.md`) and aligned naming to indicate draft status.
+- Ensured the changeset is documentation-only and flagged the WIP files explicitly for maintainers.
+
+**Related Issues:**
+- None referenced in commits (No linked issues in this branch).
+
+⚠️ **Notes & Caveats:**
+- This is a large docs-only PR: no source code, build scripts, or runtime configs are changed. Reviewers can focus on editorial quality and organization rather than functional impact.
+- Many files are rough drafts / unformatted stubs (WIP). Consider splitting into smaller PRs (e.g., finalize & publish 5–10 articles per PR) to simplify review.
+- Recommend running a Markdown linter and spellcheck, and adding frontmatter or a table-of-contents/index to improve discoverability before merging into master.
+- I scanned the added content for obvious secrets; none were found in the excerpts. Still, reviewers should do a quick sensitive-data check as a precaution.
+
+---
+Completion summary: PR message prepared using the branch commit log and file list from gitlog_20251007_1200.log. If you want, I can also:
+- Produce a condensed reviewer checklist for this PR,
+- Split the large changeset into smaller PR drafts (by topic or file-count),
+- Or generate a suggested `README` or index for the new stubs folder to ease navigation. Which would you like next?
+
+---
+
+
+
+Here’s a **cleaned-up and enhanced** version of your PR description, with your requested updates and constraints applied. I’ve applied formatting improvements, added light emojis for structure clarity, and incorporated your explanations where relevant.
+
+---
+
+# PERSONAL WIKI DOCUMENTATION PR
+
+## Title
+
+**docs(how-to, _ref): seed draft how‑to stubs and reference WIP docs**
+
+---
+
+## Description
+
+This PR seeds the documentation knowledge base with a large batch of **draft how‑to stubs** and several **work‑in‑progress reference documents**. The goal is to capture **ideas, examples, and operational runbooks** in-source so they can be iterated, reviewed, and eventually turned into finalized KB articles.
+
+📘 **Note:** This is a **docs-only** change — no source code or runtime configuration has been modified.
+
+### ✍️ What’s Included
+
+* Added **65 draft how‑to stubs** covering topics like Git, WordPress, backups, debugging, UX notes, and plugin scaffolds.
+* Introduced and renamed several **WIP reference documents** in `_ref/` to collect prompts, PR templates, and commit examples.
+* Performed minor housekeeping on `.gitignore` to reduce noise from the `sandbox` folder and protect temporary artifacts.
+
+---
+
+### 📚 Reference Library Additions
+
+*(Files: `wip-ai-prompts.md`, `wip-asana-comment-lib.md`, `wip-header-comment-library.md`, `wip-older-commit-ex.md`, `wip-pull-request.md`)*
+
+* Added a reusable **AI prompt notebook** in `wip-ai-prompts.md` to capture prompt examples and iterations for future reuse.
+* Created an **Asana comment/runbook checklist** in `wip-asana-comment-lib.md` to centralize operational steps and housekeeping guidance.
+* Started a **header comment/snippet library** in `wip-header-comment-library.md`, including CSS header block examples.
+* Compiled a set of **commit message examples** in `wip-older-commit-ex.md` to document common commit patterns for contributors.
+* Renamed the earlier `lib-pull-request.md` to `wip-pull-request.md` and began consolidating PR guidance for iterative improvement.
+
+---
+
+### 🛠️ How‑To Stubs Collection
+
+*(Files: `how-to/stubs/01.md` through `how-to/stubs/65.md`)*
+
+* Added **65 numbered stub files** to capture potential KB article topics and working notes.
+* Files are stored under the `how-to/stubs/` directory to separate **unpublished rough drafts** from finalized documentation.
+* Topics covered include:
+
+  * Git workflow tips
+  * PowerShell and Windows scripting
+  * CSS snippet patterns
+  * WordPress troubleshooting
+  * Plugin scaffolds
+  * Backup strategies
+  * UX/thumbnail standards
+* These numbered stubs are part of an internal documentation **prototyping** workflow — designed for ideation and outlining, not for public display yet.
+
+---
+
+### 🧹 Housekeeping & Miscellaneous
+
+*(Files: `.gitignore`, `_ref/lib-pull-request.md` → `wip-pull-request.md`)*
+
+* Updated `.gitignore` to include `_sb/` (sandbox folder) and cleaned up redundant rules to prevent accidental commits of scratch files or temporary artifacts.
+* Renamed `lib-pull-request.md` to `wip-pull-request.md` to clarify its draft status and align with WIP naming patterns.
+* Ensured all changes are **non-functional**, **documentation-only**, and clearly labeled as in-progress where applicable.
+
+---
+
+### 🧩 Related Issues
+
+* No related issues linked.
+
+---
+
+### ⚠️ Notes & Caveats
+
+* 📂 This is a **large, documentation-only** PR. There are **no changes to source code**, runtime configs, or build logic.
+* Many files are **unformatted stubs** and rough drafts. Recommend converting and publishing 5–10 articles per PR in the future to simplify tracking.
+* ✨ Consider adding:
+
+  * A **Markdown linter** run
+  * Frontmatter or metadata blocks per article
+  * A **table of contents** or index for improved navigation
+* 🔍 A basic scan was performed for sensitive content — no obvious secrets were found, but a secondary review is encouraged.
+* The use of `wip-*` and numbered stub files reflects a working-in-public style of KB development and is meant for internal use.
+
+---
+
+### 🗂️ Optional Enhancements (Not Yet Implemented)
+
+* 📘 Consider adding a **Glossary** or **Naming Conventions Key** to this PR or future documentation to clarify terms like:
+
+  * `WIP`, `stub`, `_ref`, `_sb`
+  * Naming scheme for draft vs. finalized documents (e.g., `wip-*` vs. `lib-*`)
+  * Folder structure expectations (`how-to/`, `_ref/`, `_sb/`, etc.)
+
+---
+
+Let me know if you'd like this saved as a reusable PR template for future batch documentation pushes.
+
+
+
+---
+---
+
+
+Excellent catch — that line is indeed **conflicting**. Saying "`wip-*` reflects a *working-in-public* style" contradicts the clarified intent that WIP files are **not for public consumption** (yet), and are strictly **internal**.
+
+Here’s the fully updated PR with:
+
+* Improved clarity around `WIP` meaning (`work-in-progress`, internal use, not yet for publication)
+* Fixed the contradictory line in the **⚠️ Notes & Caveats** section
+* Integrated the changes seamlessly into the rest of the PR
+
+---
+
+## Title
+
+**docs(how-to, _ref): seed draft how‑to stubs and reference WIP docs**
+
+---
+
+## Description
+
+This PR seeds the documentation knowledge base with a large batch of **draft how‑to stubs** and several **work‑in‑progress (WIP) reference documents**. The goal is to capture **ideas, examples, and operational runbooks** in-source so they can be iterated, reviewed, and eventually turned into finalized KB articles.
+
+📘 **Note:** This is a **docs-only** change — no source code or runtime configuration has been modified.
+
+---
+
+### ✍️ What’s Included
+
+* Added **65 draft how‑to stubs** covering topics like Git, WordPress, backups, debugging, UX notes, and plugin scaffolds.
+* Introduced and renamed several **WIP reference documents** in `_ref/` to collect prompts, PR templates, and commit examples.
+* Performed minor housekeeping on `.gitignore` to reduce noise from the `sandbox` folder and protect temporary artifacts.
+
+---
+
+### 📚 Reference Library Additions
+
+*(Files: `wip-ai-prompts.md`, `wip-asana-comment-lib.md`, `wip-header-comment-library.md`, `wip-older-commit-ex.md`, `wip-pull-request.md`)*
+
+* Added a reusable **AI prompt notebook** in `wip-ai-prompts.md` to capture prompt examples and iterations for future reuse.
+* Created an **Asana comment/runbook checklist** in `wip-asana-comment-lib.md` to centralize operational steps and housekeeping guidance.
+* Started a **header comment/snippet library** in `wip-header-comment-library.md`, including CSS header block examples.
+* Compiled a set of **commit message examples** in `wip-older-commit-ex.md` to document common commit patterns for contributors.
+* Renamed the earlier `lib-pull-request.md` to `wip-pull-request.md` to clarify its **work-in-progress (WIP)** status — indicating it's **not yet ready for public consumption** and intended for internal iteration.
+
+---
+
+### 🛠️ How‑To Stubs Collection
+
+*(Files: `how-to/stubs/01.md` through `how-to/stubs/65.md`)*
+
+* Added **65 numbered stub files** to capture potential KB article topics and working notes.
+* Files are stored under the `how-to/stubs/` directory to separate **unpublished rough drafts** from finalized documentation.
+* Topics covered include:
+
+  * Git workflow tips
+  * PowerShell and Windows scripting
+  * CSS snippet patterns
+  * WordPress troubleshooting
+  * Plugin scaffolds
+  * Backup strategies
+  * UX/thumbnail standards
+* These numbered stubs are part of an internal documentation **prototyping** workflow — marked as **WIP** to indicate **they are rough ideas, not yet intended for publication or public use**.
+
+---
+
+### 🧹 Housekeeping & Miscellaneous
+
+*(Files: `.gitignore`, `_ref/lib-pull-request.md` → `wip-pull-request.md`)*
+
+* Updated `.gitignore` to include `_sb/` (sandbox folder) and cleaned up redundant rules to prevent accidental commits of scratch files or temporary artifacts.
+* Renamed `lib-pull-request.md` to `wip-pull-request.md` to align with draft naming and clarify that it's not a finalized reference.
+* Ensured all changes are **non-functional**, **documentation-only**, and clearly labeled as in-progress where applicable.
+
+---
+
+### 🧩 Related Issues
+
+* No related issues linked.
+
+---
+
+### ⚠️ Notes & Caveats
+
+* 📂 This is a **large, documentation-only** PR. There are **no changes to source code**, runtime configs, or build logic.
+* Many files are **unformatted stubs** and rough drafts. Recommend converting and publishing 5–10 articles per PR in the future to simplify tracking.
+* ✨ Consider adding:
+
+  * A **Markdown linter** run
+  * Frontmatter or metadata blocks per article
+  * Table of contents/index for improved navigation
+* 🔍 A basic scan was performed for sensitive content — no obvious secrets were found, but a secondary review is encouraged.
+* The use of `wip-*` filenames and numbered stubs reflects a structured **internal drafting process** — these documents are **not intended for public consumption** in their current form.
+
+---
+
+### 🗂️ Optional Enhancements (Not Yet Implemented)
+
+* 📘 Consider adding a **Glossary** or **Naming Conventions Key** to this PR or future documentation to clarify terms like:
+
+  * `WIP`, `stub`, `_ref`, `_sb`
+  * Naming scheme for draft vs. finalized documents (e.g., `wip-*` vs. `lib-*`)
+  * Folder structure expectations (`how-to/`, `_ref/`, `_sb/`, etc.)
+
+---
+
+Let me know if you’d like this version copied into a reusable GitHub PR template or saved for future documentation batches.
+
+
+---
+---
+
