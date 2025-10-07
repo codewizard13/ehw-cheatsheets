@@ -180,3 +180,230 @@ This PR consolidates all custom styles into a single organized stylesheet, remov
 
 ⚠️ **Notes & Caveats:**  
 - `_sb/` files remain excluded from version control to prevent clutter.  
+
+---
+
+
+
+# 09/29/25
+
+
+docs(courses/01_Python): add Chapter 2 Variables notes with F-string and styling
+
+### 🎓 Course: [Boot.dev] - Learn to Code in Python  
+
+Adds comprehensive notes for **Chapter 2** of the Boot.dev Python course, covering variables, F-string examples, and dynamic typing. Introduces new styling variables and a per-chapter references section to improve clarity and consistency.
+
+- Added Lessons 1–19 in `courses/01_Python/01.02__Variables.md` with expanded coverage of variable concepts and learning tools.  
+- Enhanced `_css/main.css` with a light lavender color variable and featured inline section styles.  
+- Updated chapter navigation and file naming for better alignment with Boot.dev structure.
+
+### Variables Chapter Notes  
+*(Files: `courses/01_Python/01.02__Variables.md`, `courses/01_Python/index.md`)*  
+- Expanded lessons to include F-strings, NoneType, dynamic typing, and multi-variable declarations.  
+- Included learning tools Boots and Spellbook, and added a curated References section.
+
+### Styling Enhancements  
+*(Files: `_css/main.css`)*  
+- Added `--clr-lt-lavender` color variable and `.boot-dev-op-sec` class for featured inline sections.
+
+**Related Issues:**  
+- None directly linked  
+
+⚠️ **Notes & Caveats:**  
+- Chapter 2 is complete; work on Chapter 3 will follow.  
+- Consider consolidating `.ehw-doc-descr` styles into `.boot-dev-op-sec` for consistency.  
+- Per-chapter References section is a newly introduced pattern for future adoption.  
+
+
+
+---
+
+
+feat(banner): optimize Charlie Kirk banner button for mobile, refactor CTA styles, & bump theme version
+
+This PR refactors the Charlie Kirk memorial banner by migrating inline styles to SCSS for better maintainability and enhancing mobile responsiveness. The banner button is made visually prominent with larger text and improved layout. Additionally, new SCSS files consolidate CTA and banner styles, and the theme version is updated to reflect these changes.
+
+- Removed inline banner styles and cleaned up markup for improved responsiveness and visual appeal.  
+- Made banner button more dominant with larger text, refined hover effects, and mobile-friendly layout.  
+- Added new `_banners.scss` for banner and CTA styles and removed redundant CTA styles from `_blockquotes.scss`.  
+- Bumped theme version in `package.json`, `README.md`, and `style.css` to 3.05 marking these style updates.
+
+### Banner Markup & Styles  
+*(Files: `template-parts/banner/charlie-kirk-memorial.php`, `src/_banners.scss`, `src/_blockquotes.scss`)*  
+- Refactored banner markup and moved styles to SCSS for maintainability and consistency.  
+- Optimized button appearance and fixed hover selector issues.  
+- Removed conflicting styles from blockquotes SCSS and added focused banner style rules.
+
+### Theme & Packaging Updates  
+*(Files: `package.json`, `README.md`, `style.css`)*  
+- Updated theme version from 3.04 to 3.05 to track style changes.
+
+**Related Issues:**  
+- None directly linked  
+
+⚠️ **Notes & Caveats:**  
+- Inline styles replaced by SCSS to ease future modifications.  
+- Banner styles now follow a new starter template pattern with left-aligned CTA buttons.  
+- Temporary banner backup files should be removed before final merge.  
+- Consider further extracting hard-coded values into theme config constants for flexibility.  
+
+
+
+----
+
+
+
+feat(charlie-kirk-banner): add memorial banner & refactor CTA styles
+
+This PR introduces a new **Charlie Kirk memorial banner** with a responsive layout and styled CTA, while also refactoring existing CTA styles into a dedicated partial for improved maintainability. Theme metadata was updated to reflect version 3.05 in line with these style changes. This creates a cleaner style architecture and adds a high-visibility banner for memorial video promotion.
+
+Key highlights:  
+- New memorial banner with overlay, button, and responsive refinements.  
+- CTA styles extracted from `_blockquotes.scss` into `_banners.scss` and imported cleanly in `app.scss`.  
+- Theme version bumped to 3.05 to track the new features and refactor.  
+
+### Home Page Charlie Kirk Banner
+
+*(Files: `front-page.php`, `template-parts/banner/charlie-kirk-memorial.php`)*  
+
+- Added memorial banner above top video using `get_template_part`.  
+- Created dedicated template part with:  
+  - Overlay background and responsive grid layout.  
+  - CTA button linking to memorial video.  
+  - Relative paths for URLs (cross-environment safe).  
+
+### Banner & CTA Styles
+
+*(Files: `src/_banners.scss`, `src/_blockquotes.scss`, `src/app.scss`)*  
+
+- Moved all CTA-related styles from `_blockquotes.scss` into a new `_banners.scss`.  
+- Updated `app.scss` imports to include `_banners.scss`.  
+- Introduced fallback brick-red background color matching the memorial image tones for graceful degradation.  
+
+### Theme Metadata
+
+*(Files: `package.json`, `README.md`, `style.css`)*  
+
+- Updated theme version from 3.04 → 3.05.  
+- Synced version references across package metadata, stylesheet, and project README.  
+
+### Temp/Backup Files
+
+*(Files: `template-parts/banner/charlie-kirk-memorial.bkp.php`, `template-parts/banner/tmpl_del.php`)*  
+
+- Leftover backup and demo template files added in squashed history.  
+- Recommended to delete for housekeeping since excluded from build process already.  
+
+⚠️ **Notes & Caveats:**  
+- Banner button text requires final editorial approval.  
+- Backup PHP files are currently excluded from build but should be cleaned up at repo level.  
+- Ensure cache busting/CDN purge after deploy so stylesheet refactor (banners/CTAs) propagates correctly.  
+
+🔖 **Closes Asana Tix:** [520](https://app.asana.com/1/818686982630211/project/1211397676880813/task/1211507865266053), [521](https://app.asana.com/1/818686982630211/project/1211397676880813/task/1211507865266069) 
+
+
+
+
+----
+
+
+
+# 10/01/25
+
+
+fix(wells): scope Vimeo iframe CSS to single video posts preventing wells map layout breakage
+
+This PR addresses a layout bug on the wells page where the Vimeo video carousel was overlapping the Google Map and preventing it from displaying full width. The issue stemmed from a global CSS rule intended to fix spacing around Vimeo iframes, which inadvertently affected unrelated content areas site-wide.
+
+**Key Highlights:**
+
+- Fixes layout breakage on the wells page caused by overly broad CSS
+- Scopes Vimeo iframe wrapper fix to `.single-videos` context only
+- Prevents global override of layout styles outside single video posts
+
+
+### Vimeo Wrapper CSS Fix  
+*(Files: `src/cpt/_videos.scss`)*  
+- Updated selector to only apply padding and positioning resets to iframe wrappers inside `.single-videos` pages
+- Added detailed code comment explaining the reasoning, scope, and limitations of the rule for maintainability
+
+
+**Related Issues:**  
+- Closes [522](https://app.asana.com/1/818686982630211/project/1211397676880813/task/1211520904887569) (Wells page map layout broken by Vimeo embed styling)
+
+
+⚠️ **Notes & Caveats:**  
+- Original issue was introduced in commit `53e39bd1c985` targeting Vimeo padding fixes
+- Change does not impact global styles beyond `.single-videos` scope
+- Vimeo embeds using raw iframe markup outside `.single-videos` may still require custom classes
+- No PHP or layout templates were changed in this PR
+
+
+---
+
+Absolutely — here’s a **detailed and professional Asana comment entry** that summarizes the bug, cause, fix, and includes relevant code snippets and test info. It’s structured to be easy for teammates or stakeholders to understand the issue and resolution.
+
+---
+
+### ✅ Vimeo Layout Bug – FIXED
+
+**Issue Summary:**
+The **wells page** layout was broken — the video carousel was overlapping the Google Map, and the map was not rendering at full width. This was caused by a **Vimeo-specific CSS rule** introduced earlier to remove spacing from iframes, which unintentionally affected other content (like the map) due to an overly broad selector.
+
+---
+
+**Root Cause:**
+The following CSS rule was globally applied and matched **any `div` containing an `iframe`**, regardless of context:
+
+```scss
+/* Previous (too broad) selector */
+div:not(.single-vid-iframe-wrapper):has(> iframe) {
+  padding: 0 !important;
+  position: absolute !important;
+}
+```
+
+This caused divs on unrelated pages (like `.wells-map`) to collapse or overlap content, since the selector wasn’t limited to just video embeds.
+
+---
+
+**Fix Summary:**
+We scoped the CSS rule to **only apply inside `.single-videos`**, which is used on single video post templates. This ensures the Vimeo fix is preserved where it’s needed, without affecting layout elsewhere.
+
+```scss
+/* ✅ Updated selector (scoped fix) */
+.single-videos div:not(.single-vid-iframe-wrapper):has(> iframe) {
+  padding: 0 !important;
+  position: absolute !important;
+}
+```
+
+This rule:
+
+* Targets only divs inside `.single-videos` pages
+* Excludes elements with the `.single-vid-iframe-wrapper` class
+* Prevents the fix from breaking layout on pages like `/wells/`
+
+---
+
+**Test & Verification:**
+
+* Fix tested on branch: `testing_revert/on_53e39bd1c985`
+* Verified on both:
+
+  * `/wells/` — layout restored, map renders full-width below carousel
+  * Single video post — Vimeo spacing fix still works correctly
+
+---
+
+**Commit Reference:**
+
+* PR: `fix(wells,cpt): scope Vimeo iframe CSS to single video posts`
+* Related commit: `53e39bd1c985` (source of the original bug)
+
+---
+
+Let me know if you want to link this fix to another task or if we should notify content editors about preferred embed methods (e.g., oEmbed vs raw iframe).
+
+Let me know if you'd like a shorter version or to tailor it to a non-dev stakeholder.

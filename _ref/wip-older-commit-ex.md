@@ -660,6 +660,554 @@ docs(courses): restructure folder layout and update course notes styling
 
 
 
+---
+
+
+# 09/29/25
+
+docs(courses/01_Python): add ch2 Variables notes with F-string examples and style update  
+
+### 🎓 Course: [Boot.dev] - Learn to Code in Python  
+
+**_css**  
+- **`main.css`**  
+  - Added `--clr-lt-lavender` color variable for a light purple highlight.  
+  - Added section 9 with `.boot-dev-op-sec` class for featured inline section styling.  
+
+**courses/01_Python**  
+- **`01.02__Variables.md`**  
+  - Added Lessons 10-19 covering F-strings, NoneType, dynamic typing, multi-variable declaration, and learning tools Boots and Spellbook.  
+  - Expanded dynamic typing concepts and type safety with TypeScript examples.  
+  - Introduced per-chapter References section in Chapter 2 with curated external resources, planned for all chapters.  
+
+⚠️ **Notes & Caveats:**  
+- Chapter 2 complete; next up is Chapter 3.  
+- Consider moving `.ehw-doc-descr` styles into section 9 for consistency.  
+- Chapter includes **Boots** and **Spellbook** instructions for future reference.  
+- Added chapter-specific References section, intended for adoption in all chapters.
+
+
+---
+
+
+Here is your revised prompt integrating the stronger instructions for more accurate commit type and scope determination:
+
+***
+
+Generate a clear, concise conventional commit message after thoroughly analyzing the main content type of this repo based on the actual changed files.
+
+- Inspect the list of changed files and their extensions carefully before deciding on the commit type.
+- If the majority of changed files are `.md` documentation or wiki files, use type = `docs`.
+- Otherwise, determine the commit type based on the predominant file types and folder structures:
+  - For WordPress theme or plugin PHP/template files, prefer `feat`, `fix`, `style`, or `refactor` with appropriate scope.
+  - For Python scripts, use `feat`, `fix`, or `refactor`.
+  - For configuration or project files, use `chore`.
+- Do not make assumptions or default to `docs` if file evidence points otherwise.
+- Explicitly mention the main affected folders and filename patterns as scope.
+- Use the format:
+
+```
+type(scope): concise summary ≤70 characters
+
+**folder1**
+
+- `filename1`  
+  - explanation of changes up to 4 bullet points.
+
+**folder2**
+
+- `filename2`  
+  - explanation of changes up to 4 bullet points.
+
+⚠️ Notes & Caveats:
+- summary of global notes or follow-up actions.
+
+📋 Codebase Annotations:
+- Include only if any TODO, FIXME, or NOTE annotations were found.
+```
+
+- Keep each listed file's change bullets distinct and specific.
+- Omit the annotations section if no annotations are found.
+
+This approach ensures commit messages are accurate, descriptive, and correctly scoped by grounding decisions in the actual repo content and changes.
+
+***
+
+Would you like me to also generate an example commit message using this revised prompt and your recent context?
+
+[1](https://wpbestpractices.dev/version-control/commit-messages/)
+[2](https://dev.to/wallacefreitas/best-practices-to-make-a-good-commit-writing-clean-effective-commit-messages-5eg9)
+[3](https://axolo.co/blog/p/git-commit-messages-best-practices-examples)
+[4](https://cbea.ms/git-commit/)
+[5](https://docs.wpvip.com/development-workflow/write-a-good-commit-message/)
+[6](https://make.wordpress.org/core/handbook/best-practices/commit-messages/)
+[7](https://stackoverflow.com/questions/15324900/standard-to-follow-when-writing-git-commit-messages)
+[8](https://www.reddit.com/r/git/comments/f502nz/how_to_write_a_good_commit_message_focus_on/)
+
+---
+
+
+feat(banner): add Charlie Kirk memorial banner with quick inline styles
+
+**template-parts/banner**
+
+- `charlie-kirk-memorial.php`  
+  - Cloned from `cta/donate-img.php` as a quick-start banner template.  
+  - Added inline CSS and custom URL variables for banner layout, styling, and video button with overlay.
+
+**front-page.php**
+
+- Inserted Charlie Kirk memorial banner above top video section.
+
+⚠️ **Notes & Caveats:**  
+- Styles require migration to CSS stylesheet for maintainability.  
+- Refactor hard-coded values into configuration constants.  
+- Consider consolidating this template part into "cta" folder for consistency.  
+- Extract banner background color to SASS variable.
+
+---
+
+feat(banner): refactor Charlie Kirk memorial banner styles and button
+
+**template-parts/banner**
+
+- `charlie-kirk-memorial.php`  
+  - Updated button text color to burlywood and added border color on hover with rounded corners for better aesthetics.  
+  - Fixed banner opacity by correcting hover selector from `.charlie-banner:hover` to `.charlie-vid-btn:hover`.  
+  - Modified Bootstrap classes to improve button width and prevent wrapping on mobile devices.
+
+⚠️ Notes & Caveats:  
+- Styles should be migrated to a CSS stylesheet for maintainability.  
+- Consider further refactoring hard-coded values into config constants.  
+- Created temporary backups of `charlie-kirk-memorial.php` versions for easy diffing. Remove before PR squash.
+
+
+---
+
+
+# 09/30/25
+
+
+Here’s a revised commit message and changelog, highlighting shared formatting updates across all specified files, with the initialization of chapter 3 as the focus:
+
+***
+
+**docs(courses/01_Python): initialize ch3 and align ch1-2 with new chapter starter template**
+
+**courses/01_Python**
+
+- `01.03__Functions.md`  
+  - Initialized Chapter 3 notes with all section headings and updated formatting.
+- `01.01__Intro.md`, `01.02__Variables.md`  
+  - Standardized lesson headings and section names as H3 with ▶️ emoji.
+  - Inserted lesson notes start/end HTML comments.
+  - Updated "In this Folder" to "In this Chapter".
+  - Refreshed in-chapter section placeholders.
+
+**_tmpl**
+
+- Deleted: `_orig_awk.md`, `_stub-article.md`, `_stub-command.md`, `_stub-index.md` (legacy template cleanup).
+- Added: `starter_chapter_01.md` – includes standardized formatting and ready-to-use section comments.
+
+⚠️ Notes & Caveats:
+- Remember to delete any backup or temporary files before merge.
+
+***
+
+This ensures equal visibility for all files that received the formatting and section updates, while Chapter 3 initialization remains the headline change.
+
+[1](https://realpython.com/documenting-python-code/)
+[2](https://readthedocs.org/projects/py-template/downloads/pdf/latest/)
+[3](https://www.pyopensci.org/python-package-guide/package-structure-code/python-package-structure.html)
+[4](https://jinja.palletsprojects.com/en/stable/templates/)
+[5](https://docs.python.org/3/tutorial/datastructures.html)
+[6](https://docs.python-guide.org/writing/structure/)
+[7](https://peps.python.org/pep-0008/)
+[8](https://stackoverflow.com/questions/3898572/what-are-the-most-common-python-docstring-formats)
+[9](https://devguide.python.org/documentation/start-documenting/)
+
+
+
+---
+
+
+Generate a clear, concise conventional commit message after thoroughly analyzing the main content type of this repo based on the actual changed files.
+Inspect the list of changed files and their extensions carefully before deciding on the commit type.
+If the majority of changed files are .md documentation or wiki files, use type = docs.
+Otherwise, determine the commit type based on the predominant file types and folder structures:
+For WordPress theme or plugin PHP/template files, prefer feat, fix, style, or refactor with appropriate scope.
+For Python scripts, use feat, fix, or refactor.
+For configuration or project files, use chore.
+Do not make assumptions or default to docs if file evidence points otherwise.
+Explicitly mention the main affected folders and filename patterns as scope.
+Use the format:
+text
+type(scope): concise summary ≤70 characters
+
+**folder1**
+
+- `filename1`  
+  - explanation of changes up to 4 bullet points.
+
+**folder2**
+
+- `filename2`  
+  - explanation of changes up to 4 bullet points.
+
+⚠️ Notes & Caveats:
+- summary of global notes or follow-up actions.
+
+📋 Codebase Annotations:
+- Include only if any TODO, FIXME, or NOTE annotations were found.
+
+Keep each listed file's change bullets distinct and specific.
+Omit the annotations section if no annotations are found.
+This approach ensures commit messages are accurate, descriptive, and correctly scoped by grounding decisions in the actual repo content and changes.
+
+
+
+---
+
+DRAFT:
+
+
+---
+
+
+
+docs(courses/01_Python): add chapter intro paragraphs and update tags for ch1-3
+
+### 🎓 Course: [Boot.dev] - Learn to Code in Python  
+
+**courses/01_Python**
+
+- `01.01__Intro.md`  
+  - Included tags: Course Basics, Coding 101.  
+
+- `01.02__Variables.md`  
+  - Included tags: Variables, Data Types, String Interpolation, Dynamic Typing.
+
+- `01.03__Functions.md`  
+  - Included tags: Functions, Parameters, Modular Code, Scope.
+
+
+---
+
+
+
+docs(_css): add callout styles for verbatim content sections
+
+### 🎓 Course: [Boot.dev] - Learn to Code in Python  
+
+
+**_css**
+
+- `main.css`  
+  - Added `.callout` container style with pale ivory background and warm amber border.  
+  - Styled code blocks inside callouts with subtle blue-gray background and blue info cue border.  
+  - Created `.label-verbatim` class with soft yellow background and amber text, preceded by a scissors icon.  
+  - Added CSS rule to remove extra paragraph spacing when wrapped around `.label-verbatim`.
+
+⚠️ Notes & Caveats:  
+- Styles enhance readability of verbatim text blocks in markdown rendering, gracefully degrading on GitHub.
+
+***
+
+This commit message follows conventional commit guidelines, uses the `docs` type to indicate documentation/styling changes, scopes to the `_css` folder, and accurately describes the new callout styles added.
+
+[1](https://www.conventionalcommits.org/en/v1.0.0/)
+[2](https://github.com/pvdlg/conventional-commit-types)
+[3](https://kapeli.com/cheat_sheets/Conventional_Commits.docset/Contents/Resources/Documents/index)
+[4](https://graphite.dev/guides/understanding-using-conventional-commits)
+[5](https://www.conventionalcommits.org/en/v1.0.0-beta.2/)
+[6](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13)
+[7](https://dev.to/itxshakil/commit-like-a-pro-a-beginners-guide-to-conventional-commits-34c3)
+[8](https://www.bavaga.com/blog/2025/01/27/my-ultimate-conventional-commit-types-cheatsheet/)
+[9](https://platform.uno/docs/articles/uno-development/git-conventional-commits.html)
+
+
+---
+
+
+doc(courses/01_Python): finalize notes with detailed L2 function breakdown
+
+### 🎓 Course: [Boot.dev] - Learn to Code in Python  
+
+**courses/01_Python**
+
+- `01.03__Functions.md`  
+  - Expanded Lesson 2 notes with detailed line-by-line function explanation.  
+  - Added a verbatim copied callout from the Boot.dev course for clarity.  
+  - Included example code demonstrating function definition, reuse, and output.
+
+⚠️ Notes & Caveats:
+- These updates enhance chapter 3 lesson 2 notes for improved understanding of Python functions.
+
+***
+
+This commit message clearly scopes documentation changes in the Python course folder, concisely summarizes the specific content additions, and includes a notes section for context.
+
+[1](https://www.conventionalcommits.org/en/v1.0.0/)
+[2](https://www.conventionalcommits.org/en/v1.0.0-beta.4/)
+[3](https://dev.to/itxshakil/commit-like-a-pro-a-beginners-guide-to-conventional-commits-34c3)
+[4](https://hemdan.hashnode.dev/conventional-commits)
+[5](https://www.enlume.com/blogs/mastering-commit-messages-a-guide-to-conventional-commits-and-best-practices/)
+[6](https://graphite.dev/guides/understanding-using-conventional-commits)
+[7](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13)
+[8](https://kapeli.com/cheat_sheets/Conventional_Commits.docset/Contents/Resources/Documents/index)
+[9](https://platform.uno/docs/articles/uno-development/git-conventional-commits.html)
+
+
+
+---
+
+
+feat(banner): optimize Charlie Kirk banner for mobile and refactor CTA styles
+
+**template-parts/banner**
+
+- `charlie-kirk-memorial.php`  
+  - Removed inline banner styles and cleaned up markup for better mobile responsiveness and visual appeal.
+
+**src**
+
+- `_blockquotes.scss`  
+  - Removed CTA styles to enable style refactor.
+- `_banners.scss` (new)  
+  - Added extracted CTA and Charlie Kirk banner styles with responsive design media queries.
+
+**root**
+
+- `package.json`, `README.md`, `style.css`  
+  - Bumped theme version from 3.04 to 3.05 reflecting style updates.
+
+⚠️ Notes & Caveats:  
+- Banner styles converted from inline PHP to SCSS for maintainability.  
+- This refactor creates a new starter template for similar banners with left-aligned CTA buttons.
+
+***
+
+This message clearly scopes changes, categorizes them by file/folder, concisely summarizes and follows conventional commit standards.
+
+[1](https://www.conventionalcommits.org/en/v1.0.0/)
+[2](https://thoughtbot.com/blog/the-art-of-writing-meaningful-git-commit-messages)
+[3](https://julien.ponge.org/blog/the-power-of-conventional-commits/)
+[4](https://www.conventionalcommits.org/en/v1.0.0-beta.2/)
+[5](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13)
+[6](https://www.reddit.com/r/git/comments/12560kf/which_conventional_commit_type_to_use_when_just_w/)
+[7](https://stackoverflow.com/questions/61262376/questions-about-conventional-commit-messages-in-git)
+[8](https://platform.uno/docs/articles/uno-development/git-conventional-commits.html)
+[9](https://graphite.dev/guides/understanding-using-conventional-commits)
+
+
+---
+
+
+fix(template-parts/banner, src/_banners.scss, src/_blockquotes.scss, css, package.json, README.md): restyle Charlie Kirk banner for better mobile responsiveness and update theme version
+
+**template-parts/banner**
+
+- Moved inline Charlie Kirk banner styles to new Sass partial _banners.scss  
+- Updated banner markup to correct button group class and streamline structure  
+- Removed embedded style block from PHP template for cleaner separation of concerns
+
+**src/_banners.scss**
+
+- Added new _banners.scss file to hold Charlie Kirk banner and CTA styles  
+- Introduced responsive media queries for improved mobile and tablet layout  
+- Defined consistent styling for banner height, button colors, hover states, and layout margins
+
+**src/_blockquotes.scss**
+
+- Removed Charlie Kirk related CTA styles to encourage reuse via _banners.scss  
+- Cleaned up redundant styles to simplify existing blockquote styling
+
+**css/app.css, style.css**
+
+- Updated compiled styles reflecting SCSS banner style changes  
+
+**package.json, README.md**
+
+- Incremented theme version from 3.04 to 3.05 in package and style metadata  
+- Updated README to document new banner styling approach  
+
+⚠️ Notes & Caveats:  
+- This commit lays groundwork for future similarly styled banners with left-aligned CTA buttons.  
+- Follow-up refactors may further modularize banner and CTA styles for reusability.  
+
+This commit cleanly separates styling from template code, improves mobile responsiveness, and documents version increment to enhance maintainability and clarity.
+
+[1](https://wpbestpractices.dev/version-control/commit-messages/)
+[2](https://www.conventionalcommits.org/en/v1.0.0/)
+[3](https://cbea.ms/git-commit/)
+[4](https://make.wordpress.org/core/handbook/best-practices/commit-messages/)
+[5](https://docs.wpvip.com/development-workflow/write-a-good-commit-message/)
+[6](https://make.wordpress.org/core/2023/11/10/an-update-to-the-core-commit-message-format/)
+[7](https://stackoverflow.com/questions/15324900/standard-to-follow-when-writing-git-commit-messages)
+[8](https://news.ycombinator.com/item?id=43059920)
+[9](https://www.reddit.com/r/git/comments/f502nz/how_to_write_a_good_commit_message_focus_on_w/)
+[10](https://tommcfarlin.com/git-commit-messages/)
+
+
+
+
+
+---
+
+### Squashed Commit:
+
+feat(banner): add Charlie Kirk memorial banner with quick inline styles
+
+**template-parts/banner**
+
+- `charlie-kirk-memorial.php`
+  - Cloned from `cta/donate-img.php` as a quick-start banner template.
+  - Added inline CSS and custom URL variables for banner layout, styling, and video button with overlay.
+
+**front-page.php**
+
+- Inserted Charlie Kirk memorial banner above top video section.
+
+⚠️ **Notes & Caveats:**
+- Styles require migration to CSS stylesheet for maintainability.
+- Refactor hard-coded values into configuration constants.
+- Consider consolidating this template part into "cta" folder for consistency.
+- Extract banner background color to SASS variable.
+
+feat(banner): refactor Charlie Kirk memorial banner styles and button
+
+**template-parts/banner**
+
+- `charlie-kirk-memorial.php`
+  - Updated button text color to burlywood and added border color on hover with rounded corners for better aesthetics.
+  - Fixed banner opacity by correcting hover selector from `.charlie-banner:hover` to `.charlie-vid-btn:hover`.
+  - Modified Bootstrap classes to improve button width and prevent wrapping on mobile devices.
+
+⚠️ Notes & Caveats:
+- Styles should be migrated to a CSS stylesheet for maintainability.
+- Consider further refactoring hard-coded values into config constants.
+- Created temporary backups of `charlie-kirk-memorial.php` versions for easy diffing. Remove before PR squash.
+
+feat(banner): optimize Charlie Kirk banner button for mobile and refactor CTA styles
+
+**template-parts/banner**
+
+- `charlie-kirk-memorial.php`
+  - Removed inline banner styles and cleaned up markup for better mobile responsiveness and visual appeal.
+  - Made button visually dominant and text as large as feasible on all screens
+
+**src**
+
+- `_blockquotes.scss`
+  - Removed CTA styles to enable style refactor.
+- `_banners.scss` (new)
+  - Added extracted CTA and Charlie Kirk banner styles with responsive design media queries.
+
+**root**
+
+- `package.json`, `README.md`, `style.css`
+  - Bumped theme version from 3.04 to 3.05 reflecting style updates.
+
+⚠️ Notes & Caveats:
+- Banner styles converted from inline PHP to SCSS for maintainability.
+- This refactor creates a new starter template for similar banners with left-aligned CTA buttons.
+
+---
+
+
+### Squashed Commit: Ver. 2
+
+
+feat(charlie-kirk-banner): add memorial banner & refactor CTA styles
+
+(Squashed commits)
+
+**front-page.php**
+- Added memorial banner above top video using reusable `charlie-kirk-memorial.php` template
+
+**template-parts/banner/**
+- `charlie-kirk-memorial.php`
+  - Created new template part with overlay, CTA button, and responsive layout
+  - Replaced hardcoded URLs with relative paths for cross-environment compatibility
+- Temporary files to delete: `charlie-kirk-memorial.bkp.php`, `tmpl_del.php`
+
+**src/**
+
+*(Files: `blockquotes.scss`, `_banners.scss`, `app.scss`)*
+
+  - Moved CTA styles from `blockquotes.scss` into new `_banners.scss`and updated `app.scss` imports
+
+**theme metadata**
+
+*(Files: `package.json`, `README.md`, `style.css`)*
+
+- Updated theme version from 3.04 to 3.05 to track style changes.
+
+⚠️ **Notes & Caveats:**
+- Button text requires editorial approval
+- Backup files excluded by webpack config, but should be deleted for housekeeping
+- Banner background color matches brick-red image tone for elegant fallback
+
+🔖 **Closes Asana Tix:** [520](https://app.asana.com/1/818686982630211/project/1211397676880813/task/1211507865266053), [521](https://app.asana.com/1/818686982630211/project/1211397676880813/task/1211507865266069)
+
+
+---
+
+
+# 10/01/25
+
+
+docs(courses/01_Python): finalize ch3 L1-13 notes; refine banners, info styles, and shape ref; add screenshot
+
+### 🎓 Course: [Boot.dev] - Learn to Code in Python  
+
+**courses/01_Python/**
+
+- `01.03__Functions.md`  
+  - Completed detailed notes up to Lesson 13, including verbatim copied sections and new example code.
+- `01.02__Variables.md`  
+  - Added definitions of spellbook, compendium, and XP.
+
+**_css/**
+
+- `main.css`  
+  - Refactored `.fat-heading` class replacing `h4` styles to allow normal `h4` use.  
+  - Updated `.info-banner`, `.success-banner`, `.error-banner` styles for improved headings and error code formatting.  
+  - Enhanced `.label-verbatim` styling and improved placement inside `.callout` sections.  
+  - Updated `.boot-dev-op-sec` style with medium purple border.
+
+**_pix/screens**
+
+- `screen-boot-dev-010-discord.png`  
+  - Added screenshot showing the "Community" button in Boot.dev platform.
+
+**_ref/shape_lib**
+
+- `index.md`  
+  - Expanded shape library reference with entries for info, Boot.dev operations, error, verbatim copy, and lesson titles.  
+
+⚠️ **Notes & Caveats**:  
+- Will resume course starting at lesson 14
+- `.label-verbatim` works best when placed inline with `.callout` open tag for consistent styling effect.  
+- Banner and status section styles improve clarity and accessibility in markdown renders.  
+- New lesson examples and meta instruction callouts increase documentation usability and interactivity.
+
+📋 **Codebase Annotations**:
+- CONSIDER: `main.css` - Refactor to group labels with their associated sections? 
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
 
 
 
