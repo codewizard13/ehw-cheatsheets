@@ -51,16 +51,20 @@ Each numbered file represents a potential documentation seed. Some may contain w
 
 <!-- Titles added for quick scan -->
 
-- [01.md](./01.md) — GitHub Multi‑Profile SSH and HTTPS Workflow
-- [02.md](./02.md) — Git Credential Helper Gotchas on Windows
-- [03.md](./03.md) — Using LocalWP for Non‑WordPress Sites
-- [04.md](./04.md) — Markdown Header Styles & Templates
-- [05.md](./05.md) — Standard Markdown Header SOP
-- [06.md](./06.md) — Markdown Frontmatter Template (SOP)
-- [07.md](./07.md) — Git Multi‑Account Test Checklist
-- [08.md](./08.md) — Merge Types Explained (Manual / Git / Conflict)
-- [09.md](./09.md) — Color Swatch & Style Vibe Samples
-- [10.md](./10.md) — Heading Normalization & Commit Message Template
+- [01_a.md](./01_a.md) — Ensure /images/ Folder is Preserved During PROD Theme Migration
+- [01_b.md](./01_b.md) — Backup LocalWP Extension Settings and Site Registry
+- [02.md](./02.md) — Multiple GitHub Accounts with HTTPS - WordPress Focus
+- [03.md](./03.md) — Understanding the Git Profile Switch Error
+- [04.md](./04.md) — LocalWP: Without WordPress
+- [05.md](./05.md) — Example Markdown Header Files for Prompt Seeding
+- [06.md](./06.md) — Markdown Frontmatter Template (KB, SOP, Checklists, Technical docs)
+- [07.md](./07.md) — SOP: Markdown Header for Technical Documents (copy-paste ready)
+- [08.md](./08.md) — Markdown Table Samples
+- [09.md](./09.md) — Comparing Merge Strategies: Manual, Git Merge, and Conflict Resolution
+- [10.md](./10.md) — HTML Color Swatch Template
+
+> ⚠️ **TODO**!  1-10 have been titled correctly, but _**the bottom titles here need to be fixed still**_ (Eric 10/08/25) 
+
 - [11.md](./11.md) — CSS Prototyping for VSCode Markdown Preview
 - [12.md](./12.md) — Dell XPS / USB‑C Thunderbolt Multi‑Monitor Troubleshooting
 - [13.md](./13.md) — Safe Git Squash Workflow with Backup Branch
