@@ -70,7 +70,7 @@ Here is a fillable **Team Roles and Responsibilities Template** with placeholder
 | Team Member Name | Role Title     | Key Responsibilities                    | Notes                    |
 | ---------------- | -------------- | --------------------------------------- | ------------------------ |
 | Eric H           | Lead Developer | - Architect and author 90%+ of the code | Primary technical lead   |
-| Todd W           | Developer      | - Assisted with remaining code, testing | Supported lead developer |
+| JOHN S           | Developer      | - Assisted with remaining code, testing | Supported lead developer |
 
 ***
 
@@ -81,7 +81,7 @@ Here is a fillable **Team Roles and Responsibilities Template** with placeholder
 | Team Member Name | Role Title   | Key Responsibilities                 | Notes                       |
 | ---------------- | ------------ | ------------------------------------ | --------------------------- |
 | Eric H           | Co-Developer | - Equal split of bug fixes, features | Collaborative equal partner |
-| Todd W           | Co-Developer | - Equal split of bug fixes, features | Collaborative equal partner |
+| JOHN S           | Co-Developer | - Equal split of bug fixes, features | Collaborative equal partner |
 
 ***
 
@@ -92,7 +92,7 @@ Here is a fillable **Team Roles and Responsibilities Template** with placeholder
 | Team Member Name | Role Title           | Key Responsibilities                            | Notes                             |
 | ---------------- | -------------------- | ----------------------------------------------- | --------------------------------- |
 | Eric H           | Supporting Developer | - Assisting in development, testing MVP modules | Supporting role                   |
-| Todd W           | Lead Developer       | - Leading MVP design and implementation         | Driving new platform architecture |
+| JOHN S           | Lead Developer       | - Leading MVP design and implementation         | Driving new platform architecture |
 
 ***
 
@@ -176,7 +176,7 @@ Here is your updated and polished entry set based on the clarified project disti
 | Team Member Name | Role Title     | Key Responsibilities                                   | Notes                                                      |
 | ---------------- | -------------- | ------------------------------------------------------ | ---------------------------------------------------------- |
 | Eric H           | Lead Developer | - Architected, planned, and built 90%+ of the codebase | Primary visionary, setup dev workflow & project management |
-| Todd W             | Developer      | - Assisted with code development and testing           | Supported lead developer                                   |
+| JOHN S             | Developer      | - Assisted with code development and testing           | Supported lead developer                                   |
 
 ***
 
@@ -187,7 +187,7 @@ Here is your updated and polished entry set based on the clarified project disti
 | Team Member Name | Role Title   | Key Responsibilities                                     | Notes |
 | ---------------- | ------------ | -------------------------------------------------------- | ----- |
 | Eric H           | Co-Developer | - Jointly responsible for bug fixes, feature development |       |
-| Todd W             | Co-Developer | - Jointly responsible for bug fixes, feature development |       |
+| JOHN S             | Co-Developer | - Jointly responsible for bug fixes, feature development |       |
 
 ***
 
@@ -197,7 +197,7 @@ Here is your updated and polished entry set based on the clarified project disti
 
 | Team Member Name | Role Title           | Key Responsibilities                                    | Notes                                                                    |
 | ---------------- | -------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------ |
-| Todd W             | Lead Developer       | - Leading design and implementation of new architecture | Driving design and implementation of new system                          |
+| JOHN S             | Lead Developer       | - Leading design and implementation of new architecture | Driving design and implementation of new system                          |
 | Eric H           | Supporting Developer | - Assisting with code development and testing           | Providing development, project management, and quality assurance support |
 
 ***
