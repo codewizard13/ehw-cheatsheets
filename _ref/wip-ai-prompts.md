@@ -120,3 +120,211 @@ The changelog should be immediately useable in markdown format and provide value
 ---
 
 
+# 10/10/25
+
+
+**Prompt :**
+
+"Parse the following text and extract concise, action-oriented phrases useful for writing conventional commit messages. Focus on imperative verbs that describe what has been changed, added, fixed, removed, or improved, followed by a clear object or context. Avoid lengthy explanations, background stories, or vague language. Return a list of short phrases suitable as commit message subjects, such as 'Add user authentication', 'Fix null pointer error', or 'Refactor payment module'. Prioritize phrases that are clear, specific, and aligned with common commit message categories (feat, fix, docs, chore, test, etc.)."
+
+---
+
+CONTENT:
+
+---
+
+
+## Prompt: (orig 9/19/25)
+
+Give a comprehensive history of this chat as a single document for easy copy-paste
+
+---
+
+
+
+Here is a concise prompt to generate your desired WordPress admin dashboard banner with debug logs:
+
+***
+
+Create a WordPress custom dashboard widget that displays the following HTML only on the main admin dashboard:
+
+```html
+<div style="background:orange;padding:1rem;margin-bottom:1rem;margin-top:2.5rem;display:flex;justify-content:flex-end;">
+  <h3>Hey I love Apples!</h3>
+</div>
+```
+
+Use the hook `wp_dashboard_setup` and `wp_add_dashboard_widget()`. Include debug `error_log` statements inside the main function and the widget callback to confirm execution. Use a closure with `use()` or define the content in the correct scope to avoid "undefined variable" errors. Provide the PHP snippet suitable for placing in a theme’s `functions.php` or a custom plugin.
+
+***
+
+This will prompt the generation of the code you need including debugging and scope fixes.
+
+[1](https://rudrastyh.com/wordpress/dashboard-widgets.html)
+[2](https://www.wpbeginner.com/wp-themes/how-to-add-custom-dashboard-widgets-in-wordpress/)
+[3](https://developer.wordpress.org/apis/dashboard-widgets/)
+[4](https://www.youtube.com/watch?v=8cZZLMjnwuQ)
+[5](https://wpengine.com/resources/create-a-wordpress-custom-dashboard/)
+[6](https://www.elegantthemes.com/blog/wordpress/wordpress-dashboard-customizations)
+[7](https://kinsta.com/blog/wordpress-custom-dashboard/)
+[8](https://www.wpzoom.com/blog/wordpress-dashboard/)
+[9](https://wpadminify.com/wordpress-client-dashboard)
+
+
+
+---
+
+Prompt:
+
+
+Create a wiki-style kb in the given template format with the given source content with these requirements:
+
+Requirements:
+
+- Ensure everything is validated as accurate against today's date
+- Do not use any JavaScript in the resulting markdown document -- only markdown, inline CSS, and HTML are allowed
+- Create a working TOC that is collapsible and doesn't use any JavaScript (is there a native HTML tag as of today that does this?)
+- Indent the TOC appropriately
+- All bullets must be hyphen bullets only
+- Reorganize content for better logical flow
+- Expand the Overview/intro section
+- Wherever an image is required by missing use placeholder instead
+- Create a robust references section categorized by topic
+- Ensure every plugin or website name is hyperlinked
+
+
+### DATETIME: 09/24/25 7:32 AM
+
+
+Template format:
+
+
+<!-- 🔗 Custom Stylesheet -->
+<link rel="stylesheet" href="../../_css/main.css">
+
+
+<!-- 🖼️ Site Logo -->
+![Site Logo](/_pix/logos/logo-ehw-kb.svg){height=32}
+
+
+<!-- 📝 Title -->
+# HOW-TO: 📘 TOPIC: Title_Case_Title
+
+
+**Version:** 1.0
+
+
+
+> Optimized for: VSCode on Windows 11 + Git Bash (SSH)
+> 
+
+
+<!-- 🧭 Navigation -->
+### [🏚️ Home](../README.md) | [📁 How-To](index.md)
+
+
+<!-- 👤 Metadata -->
+| **Author**:        | Eric L. Hepperle |
+| ------------------ | ---------------- |
+| **Date Created**:  | 2025-09-23       |
+| **Date Updated**:  | --               |
+| **AI Assistance**: | ChatGPT          |
+
+
+
+---
+
+
+<!-- SECTION: Tags for short related (1-3 word phrase per tag) concepts (long titled articles belong in the References / See Also section above) -->
+<section id="sec-tags">
+
+
+## Tags:
+
+
+- [Topic2](#)
+- [Topic2](#)
+- [Topic3](#)
+
+
+
+</section>
+
+
+---
+
+
+<!-- 🔍 Content Section Heading -->
+
+
+## 📌 Overview
+
+
+// ADD_CONTENT
+
+
+
+---
+
+
+<!-- 📚 References (Optional) -->
+## 📚 References / See Also
+
+
+
+- [Placeholder 1](#)
+- [Placeholder 2](#)
+
+
+
+---
+
+
+## ✅ Revision History
+
+
+
+| Version | Date       | Author           | Changes Made                                     |
+| ------- | ---------- | ---------------- | ------------------------------------------------ |
+| 1.00    | 2025-09-   | Eric L. Hepperle | Initial draft created                            |
+| 1.01    | 2025-09-23 | Eric L. Hepperle | Draft formatted as KB article clone of [tmpl].md |
+
+
+---
+
+
+
+CONTENT:
+
+
+///CONTENT_HERE
+
+--- END content ---
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+---
+--- END
+
