@@ -1249,7 +1249,14 @@ refactor(how-to/stubs): rename & sort stub files into topical folders
 
 
 
+---
 
+
+
+# 10/10/25
+
+
+feat(site-logo): enable custom logo support & improve dark mode compatibility
 
 
 
