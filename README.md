@@ -16,6 +16,7 @@ This is the main index / directory / kiosk for navigating the rest of the files 
 - [Shell](/shell/index.md): Command line (CLI) and shell-scripting
 - [WordPress](/wp/index.md): WordPress CMS
 - [SOP](/sop/index.md): Standards, styleguides, documentation conventions, etc.
+- [Snippet Libraries](/_ref/): (WORK-IN-PROGRESS) `AI Prompts`, `Asana Comments`, `File Header Comments`, `Lorem Ipsum`, `Git Commit Messages`, `GitHub Pull Requests`, etc.
 
 ## Quick Links
 
