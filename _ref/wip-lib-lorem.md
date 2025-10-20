@@ -57,10 +57,19 @@ All snippets are **self‑contained**, **editable**, and **ready to copy**, rely
     - [⚠️ Rendering Caveat](#️-rendering-caveat)
   - [📘 Usage Guidelines](#-usage-guidelines)
   - [✍️ Text-Only Snippets](#️-text-only-snippets)
-    - [1.ingle Sentence](#1ingle-sentence)
-    - [2.hort Paragraph](#2hort-paragraph)
-    - [3.edium Paragraph](#3edium-paragraph)
-    - [4.wo Paragraphs](#4wo-paragraphs)
+    - [1. Single Sentence](#1-single-sentence)
+    - [2. Short Paragraph](#2-short-paragraph)
+    - [3. Medium Paragraph](#3-medium-paragraph)
+    - [4. Two Paragraphs](#4-two-paragraphs)
+    - [5. Three Paragraphs](#5-three-paragraphs)
+    - [6. One Line](#6-one-line)
+    - [7. Short Paragraph](#7-short-paragraph)
+    - [8. Five Paragraphs](#8-five-paragraphs)
+    - [9. Sentence Fragment](#9-sentence-fragment)
+    - [10. Four Paragraphs](#10-four-paragraphs)
+    - [11. Bullet List](#11-bullet-list)
+    - [12. Two Short Paragraphs](#12-two-short-paragraphs)
+    - [13. Short Placeholder Blurb](#13-short-placeholder-blurb)
   - [🧩 HTML Snippet Library](#-html-snippet-library)
     - [11. Feature Section with Figure](#11-feature-section-with-figure)
     - [12. Card Group Grid](#12-card-group-grid)
@@ -83,28 +92,28 @@ Reusable Lorem Ipsum text templates for prose placeholders, paragraph formatting
 
 ---
 
-### 1.ingle Sentence
+### 1. Single Sentence
 ```
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ```
 
 ---
 
-### 2.hort Paragraph
+### 2. Short Paragraph
 ```
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
 ```
 
 ---
 
-### 3.edium Paragraph
+### 3. Medium Paragraph
 ```
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...
 ```
 
 ---
 
-### 4.wo Paragraphs
+### 4. Two Paragraphs
 ```
 Lorem ipsum dolor sit amet, consectetur adipiscing elit...
 
@@ -113,7 +122,7 @@ Cras rutrum sapien vel lacus euismod, nec fermentum leo dignissim...
 
 ---
 
-@### 5. Three Paragraphs
+### 5. Three Paragraphs
 ```
 At vero eos et accusamus et iusto odio dignissimos ducimus...
 
@@ -124,21 +133,21 @@ Nam libero tempore, cum soluta nobis est eligendi optio...
 
 ---
 
-@### 6. One Line
+### 6. One Line
 ```
 Excepteur sint occaecat cupidatat non proident.
 ```
 
 ---
 
-@### 7. Short Paragraph
+### 7. Short Paragraph
 ```
 Donec at sapien justo. Aenean sit amet risus nec nisl convallis malesuada eget at nisl...
 ```
 
 ---
 
-@### 8. Five Paragraphs
+### 8. Five Paragraphs
 ```
 Lorem ipsum dolor sit amet, consectetur adipiscing elit...
 
@@ -147,14 +156,14 @@ Mauris dapibus nisl a tincidunt efficitur...
 
 ---
 
-@### 9. Sentence Fragment
+### 9. Sentence Fragment
 ```
 Velit esse cillum dolore.
 ```
 
 ---
 
-@### 10. Four Paragraphs
+### 10. Four Paragraphs
 ```
 Lorem ipsum dolor sit amet, consectetur adipiscing elit...
 
@@ -163,7 +172,7 @@ Proin tristique porta nunc, non fringilla elit malesuada non...
 
 ---
 
-@### 11. Bullet List
+### 11. Bullet List
 ```
 * Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 * Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -172,7 +181,7 @@ Proin tristique porta nunc, non fringilla elit malesuada non...
 
 ---
 
-@### 12. Two Short Paragraphs
+### 12. Two Short Paragraphs
 ```
 Curabitur tristique risus sit amet nibh malesuada, vitae tincidunt odio bibendum...
 
@@ -181,7 +190,7 @@ Pellentesque vitae lacus dignissim, rutrum est ac, condimentum sem...
 
 ---
 
-@### 13. Short Placeholder Blurb
+### 13. Short Placeholder Blurb
 ```
 Lorem ipsum blanda est. Quick brown dogs run in lorem fields.
 ```
@@ -197,6 +206,33 @@ These examples leverage elements like `<section>`, `<article>`, and `<aside>`, f
 ---
 
 ### 11. Feature Section with Figure
+
+<style>
+.lorem-feature {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+.lorem-feature img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.lorem-feature div { flex: 1; }
+</style>
+
+<section class="lorem-feature">
+  <img src="https://placehold.co/150" alt="Placeholder image">
+  <div>
+    <h2>Feature Highlight</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+  </div>
+</section>
+
+
 ```
 <style>
 .lorem-feature {
@@ -216,7 +252,7 @@ These examples leverage elements like `<section>`, `<article>`, and `<aside>`, f
 </style>
 
 <section class="lorem-feature">
-  <img src="https://via.placeholder.com/150" alt="Placeholder image">
+  <img src="https://placehold.co/150" alt="Placeholder image">
   <div>
     <h2>Feature Highlight</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
@@ -227,6 +263,30 @@ These examples leverage elements like `<section>`, `<article>`, and `<aside>`, f
 ---
 
 ### 12. Card Group Grid
+
+<style>
+.lorem-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+.lorem-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+</style>
+
+<section class="lorem-cards">
+  <div class="lorem-card"><h3>Card One</h3><p>Lorem ipsum dolor sit amet...</p></div>
+  <div class="lorem-card"><h3>Card Two</h3><p>Sed do eiusmod tempor...</p></div>
+  <div class="lorem-card"><h3>Card Three</h3><p>Ut enim ad minim veniam...</p></div>
+</section>
+
 ```
 <style>
 .lorem-cards {
@@ -255,6 +315,25 @@ These examples leverage elements like `<section>`, `<article>`, and `<aside>`, f
 ---
 
 ### 13. Article with Quote and Footer
+
+<style>
+.lorem-article-quote {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  border-left: 5px solid #555;
+  background: #fdfdfd;
+}
+footer { margin-top: 1rem; font-size: 0.9rem; text-align: right; color: #666; }
+</style>
+
+<article class="lorem-article-quote">
+  <h2>Design Philosophy</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <blockquote>“Simplicity is the soul of efficiency.”</blockquote>
+  <footer>— Austin Freeman</footer>
+</article>
+
 ```
 <style>
 .lorem-article-quote {
@@ -278,6 +357,29 @@ footer { margin-top: 1rem; font-size: 0.9rem; text-align: right; color: #666; }
 ---
 
 ### 14.️ Accordion Prototype
+
+<style>
+.lorem-accordion details {
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+}
+summary { font-weight: bold; cursor: pointer; }
+</style>
+
+<div class="lorem-accordion">
+  <details open>
+    <summary>Introduction</summary>
+    <p>Lorem ipsum dolor sit amet...</p>
+  </details>
+  <details>
+    <summary>More Information</summary>
+    <p>Ut enim ad minim veniam...</p>
+  </details>
+</div>
+
+
 ```
 <style>
 .lorem-accordion details {
@@ -304,6 +406,16 @@ summary { font-weight: bold; cursor: pointer; }
 ---
 
 ### 15. Embedded Map Frame
+
+<style>
+.lorem-map { display: block; margin: 2rem auto; max-width: 800px; }
+.lorem-map iframe { width: 100%; height: 400px; border: none; }
+</style>
+
+<div class="lorem-map">
+  <iframe src="https://maps.google.com/maps?q=New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+</div>
+
 ```
 <style>
 .lorem-map { display: block; margin: 2rem auto; max-width: 800px; }
@@ -318,6 +430,30 @@ summary { font-weight: bold; cursor: pointer; }
 ---
 
 ### 16. News Card Layout
+
+<style>
+.lorem-news {
+  display: flex;
+  gap: 1rem;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+.lorem-news img { width: 160px; border-radius: 8px; }
+.lorem-news-content { flex: 1; }
+</style>
+
+<article class="lorem-news">
+  <img src="https://placehold.co/160" alt="News thumbnail">
+  <div class="lorem-news-content">
+    <h2>Breaking News</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+  </div>
+</article>
+
 ```
 <style>
 .lorem-news {
@@ -335,7 +471,7 @@ summary { font-weight: bold; cursor: pointer; }
 </style>
 
 <article class="lorem-news">
-  <img src="https://via.placeholder.com/160" alt="News thumbnail">
+  <img src="https://placehold.co/160" alt="News thumbnail">
   <div class="lorem-news-content">
     <h2>Breaking News</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
@@ -346,6 +482,32 @@ summary { font-weight: bold; cursor: pointer; }
 ---
 
 ### 17. Information Callout with Icon
+
+<style>
+.lorem-info {
+  display: flex;
+  align-items: center;
+  background: #e9f5f5;
+  border-left: 4px solid #1abc9c;
+  padding: 1rem;
+  max-width: 700px;
+  margin: 2rem auto;
+  border-radius: 6px;
+}
+.lorem-info svg {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  fill: #1abc9c;
+}
+</style>
+
+<div class="lorem-info">
+  <svg viewBox="0 0 24 24"><rcle cx="12" cy="12" r="="10"/><text x="12" y="17" font-size="12" text-anchor="middle" fill="#fff">i</text></svg>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+</div>
+
 ```
 <style>
 .lorem-info {
@@ -376,6 +538,16 @@ summary { font-weight: bold; cursor: pointer; }
 ---
 
 ### 18. Minimal Sectioned Template
+
+<style>
+.lorem-section { padding: 1rem 2rem; border-bottom: 1px solid #eee; margin-bottom: 1rem; }
+</style>
+
+<section class="lorem-section">
+  <h3>Section Header</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+</section>
+
 ```
 <style>
 .lorem-section { padding: 1rem 2rem; border-bottom: 1px solid #eee; margin-bottom: 1rem; }
@@ -390,6 +562,36 @@ summary { font-weight: bold; cursor: pointer; }
 ---
 
 ### 19. Team Card Row
+
+<style>
+.lorem-team {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.lorem-member {
+  width: 180px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: center;
+  padding: 1rem;
+}
+.lorem-member img { width: 100%; border-radius: 50%; }
+</style>
+
+<section class="lorem-team">
+  <div class="lorem-member">
+    <img src="https://placehold.co/100" alt="Team member">
+    <p><strong>Jane Doe</strong><br>Designer</p>
+  </div>
+  <div class="lorem-member">
+    <img src="https://placehold.co/100" alt="Team member">
+    <p><strong>John Smith</strong><br>Developer</p>
+  </div>
+</section>
+
 ```
 <style>
 .lorem-team {
@@ -411,11 +613,11 @@ summary { font-weight: bold; cursor: pointer; }
 
 <section class="lorem-team">
   <div class="lorem-member">
-    <img src="https://via.placeholder.com/100" alt="Team member">
+    <img src="https://placehold.co/100" alt="Team member">
     <p><strong>Jane Doe</strong><br>Designer</p>
   </div>
   <div class="lorem-member">
-    <img src="https://via.placeholder.com/100" alt="Team member">
+    <img src="https://placehold.co/100" alt="Team member">
     <p><strong>John Smith</strong><br>Developer</p>
   </div>
 </section>
@@ -424,6 +626,33 @@ summary { font-weight: bold; cursor: pointer; }
 ---
 
 ### 20.️ Functional UI Mock Box
+
+<style>
+.lorem-ui-box {
+  padding: 1.5rem;
+  background: linear-gradient(120deg, #f0f0f0, #fafafa);
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+.lorem-ui-box button {
+  background-color: #007acc;
+  border: none;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+</style>
+
+<div class="lorem-ui-box">
+  <h3>Interactive Demo Box</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+  <button>Click Me</button>
+</div>
+
 ```
 <style>
 .lorem-ui-box {
