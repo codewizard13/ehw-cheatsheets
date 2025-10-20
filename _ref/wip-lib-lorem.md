@@ -690,6 +690,8 @@ summary { font-weight: bold; cursor: pointer; }
 | 1.00     | 2025-10-19 | Eric L. Hepperle | Initial compilation (text-only + HTML snippet sets). |
 | 1.10     | 2025-10-19 | Eric L. Hepperle | Added extended semantic and UI patterns.             |
 | 1.11     | 2025-10-19 | Eric L. Hepperle | Unified TOC, metadata, and revision consolidation.   |
+| 1.12    | 2025-10-20 | Eric L. Hepperle | Added rendered HTML snippets; fixed headings; updated placeholder URLs; improved snippet category coverage. |
+
 
 ---
 
