@@ -1201,10 +1201,62 @@ docs(courses/01_Python): finalize ch3 L1-13 notes; refine banners, info styles, 
 
 
 
+# 10/10/25
+
+
+refactor(how-to/stubs): rename & sort stub files into topical folders
+
+**how-to/stubs/** (new folders)
+
+* `ai/`: AI-related stub files.
+* `christ/`: Christian content.
+* `elsm/`: interim location for elsm-branded content; _**pending rebrand.**_
+* `gitbash/`: stub content related to Git, Bash, or the Git Bash environment.
+* `libs-n-styles/`: libraries, collections, and styles.
+* `scripts/`: code/script examples.
+* `servers-n-local/`: local dev and server setups (includes windows computing).
+* `tmpl/`: miscellaneous templates and reusable stub structures.
+* `wp/`: WordPress stubs.
+
+**how-to/stubs/** (naked files)
+
+* `bp-maybe-in-code-comments.md`: best-practice on using 'MAYBE' in code comments.
+* `css-styles-labels-msg-banner.md`: CSS message banner styles (error, info, warning, etc.).
+* `kb-emoji-conv-gotchas.md`: emoji conversion issues in markdown TOC.
+* `powershell-list-fonts.md`: how to list installed fonts in Powershell
+* `svg-term-confusion.md`: confusion with SVG image files vs code.
+* `tshoot-vscode-node-runtime-error.md`: VSCode + Node.js troubleshooting runtime errors.
+
+
+* `php-time-constants-wp.md`: renamed for clarity; focuses on PHP time constants in WordPress.
+
+
+**_ref/**
+
+* `wip-emoji-lib`: emoji library stub.
+* `wip-lib-vocab-phrases`: library of phrases/vocabulary usage stub.
+* `wip-ai-prompts.md`: add new prompts
+* `wip-older-commit-ex.md`: add new commits
+
+---
+
+⚠️ Notes & Caveats:
+
+* This renaming improves clarity but may require future revisions.
+* Some unsorted files remain and should be organized in a future pass.
+* `elsm/` folder content must be updated to remove brand-specific naming in favor of `ehw`-aligned terminology.
+* Work remains in progress; further refinement expected.
 
 
 
+---
 
+
+
+# 10/10/25
+
+
+feat(site-logo): enable custom logo support & improve dark mode compatibility
 
 
 

@@ -9,6 +9,7 @@ Orig Draft Date:
 
 ---
 
+# Comparing Merge Strategies: Manual, Git Merge, and Conflict Resolution
 
 
 Here’s a breakdown of the common understanding of the following terms among most developers, especially in the context of Git and **conventional commits** (although conventional commits themselves are more about commit message formatting):
