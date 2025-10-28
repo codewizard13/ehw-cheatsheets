@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../_css/main.css">
+<link rel="stylesheet" href="../../_css/main.css">
 
 # Index for: HOW TO / STUBS
 
