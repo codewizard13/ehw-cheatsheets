@@ -696,5 +696,57 @@ Let me know if you’d like this version copied into a reusable GitHub PR templa
 ## ===== 🚩 Section Start 🚩 =====
 
 
+docs(stubs,styleguides): expand how-to library with new templates & learning refs
 
+# Description  
+This PR significantly enhances the documentation stubs library by introducing new educational references, internal templates, and platform-specific style guides. The updates deepen the repository’s practical guidance for internal efficiency, code licensing awareness, and course-based documentation consistency.
+
+**Key Changes:**
+- Added new documentation templates for **employee and educational workflows**.
+- Introduced reference materials comparing **open-source licenses** (GNU vs MIT).
+- Expanded how-to stubs with specialized content on **WordPress layout consistency** and common **server hiccups**.
+- Improved internal doc navigation with stylesheet link corrections.
+
+### Employee Dashboard Template  
+(Files: `how-to/stubs/tmpl/empl-dashboard.md`)  
+- Added a comprehensive employment dashboard template for internal documentation.  
+- Structured daily workflow and document links into a structured, repeatable Markdown template.  
+- Established a base for internal tools and performance review tracking.  
+- Serves as a centralized hub for employment-related resources and documents.
+
+### Licensing References  
+(Files: `how-to/stubs/libs-n-styles/gnu-vs-mit-license-risks.md`)  
+- Added a clear comparison reference between GNU and MIT licenses.  
+- Highlighted legal and operational implications to guide project decisions.  
+- Designed for reuse across documentation and onboarding materials.
+
+### Styleguide & Course Integration  
+(Files: `how-to/stubs/libs-n-styles/edu-course-notes-boot-dev-styleguide.md`)  
+- Introduced Boot.dev course styleguide to align documentation tone and formatting.  
+- Supports consistent educational documentation patterns.
+
+### AI Knowledge Reference  
+(Files: `how-to/stubs/ai/ref-portable-knowledge-categories.md`)  
+- Added a new reference outlining portable AI knowledge categories.  
+- Aims to organize domain knowledge for reusable and transferable AI workflows.  
+
+### Server and WordPress Guides  
+(Files: `how-to/stubs/servers-n-local/cloudflare-ionos-hicccups.md`, `how-to/stubs/wp/wp-guide-consistent-load-more-grid-cols.md`)  
+- Added writeup on common Cloudflare–IONOS integration issues and resolutions.  
+- Created a WordPress grid column guide ensuring consistency when using load-more functions.  
+- Both documents enhance troubleshooting and layout optimization references.
+
+### Path Correction  
+(Files: `how-to/stubs/index.md`)  
+- Corrected stylesheet link path to ensure consistent rendering of stub documentation.  
+
+⚠️ **Notes & Caveats:**  
+- The new employee dashboard template uses placeholders; requires review for repo consistency.  
+- License comparison notes should be reviewed by legal/compliance before reuse.  
+- Course styleguide may introduce minor formatting differences in legacy docs.  
+- No proprietary or sensitive data introduced.
+
+
+--- -----------------------------------------------------
+## ===== 🚩 Section Start 🚩 =====
 
