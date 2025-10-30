@@ -1,10 +1,17 @@
 # Pull Request Libary (started : 2025-09-27)
 
-⚠️ **#CAVEATS**:
-- Organize into Pull Request **Prompts** and Pull **Request examples**
+> - TODO: *Organize into Pull Request **Prompts** and Pull **Request examples***
+> - TODO: Add the following section start header to the beginning of each pull request:
 
----
+**Section Start Header:**
 
+```md
+--- -----------------------------------------------------
+## ===== 🚩 Section Start 🚩 =====
+```
+
+--- -----------------------------------------------------
+## ===== 🚩 Section Start 🚩 =====
 
 # docs(ref, how-to): add commit message library, SOP & env config guides, and expanded troubleshooting
 
@@ -48,7 +55,8 @@ This PR expands the documentation library with a commit message example archive,
 # 09/24/25
 
 
-
+--- -----------------------------------------------------
+## ===== 🚩 Section Start 🚩 =====
 Generate a clear and well-structured **pull request** message with the following format and rules:
 
 # Title  
@@ -577,14 +585,10 @@ This PR seeds the documentation knowledge base with a large batch of **draft how
   * Naming scheme for draft vs. finalized documents (e.g., `wip-*` vs. `lib-*`)
   * Folder structure expectations (`how-to/`, `_ref/`, `_sb/`, etc.)
 
----
 
-Let me know if you'd like this saved as a reusable PR template for future batch documentation pushes.
+--- -----------------------------------------------------
+## 🚩 Section Start 🚩
 
-
-
----
----
 
 
 Excellent catch — that line is indeed **conflicting**. Saying "`wip-*` reflects a *working-in-public* style" contradicts the clarified intent that WIP files are **not for public consumption** (yet), and are strictly **internal**.
@@ -694,5 +698,7 @@ Let me know if you’d like this version copied into a reusable GitHub PR templa
 
 
 ---
+🚩 Section Start 🚩
 ---
+
 
