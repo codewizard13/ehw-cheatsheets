@@ -8,7 +8,7 @@
 
 ### Book Collection
 
-> :floppy_disk: [Full Book Catalog (CSV)](./data/my-book-catalog.csv)
+> 💾 [Full Book Catalog (CSV)](../resources/eh_catalog_books.csv)
 
 
 | #️⃣ | Book Title 📖 | Author ✍️ | Genre 🎭     | Subgenre 🔍           | Year 📅 | Pages 📄 | Language 🌐 | Status ✅/🔖 | Notes 🗒️           |
