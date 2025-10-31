@@ -11,10 +11,6 @@
 | #️⃣ | Book Title 📖 | Author ✍️ | Genre 🎭     | Subgenre 🔍           | Year 📅 | Pages 📄 | Language 🌐 | Status ✅/🔖 | Notes 🗒️           |
 | :-- | :------------ | :--------- | :----------- | :-------------------- | :----- | :-------| :---------- | :-----------| :------------------ |
 | 1   | Example Book  | Example Author | Fiction    | Mystery, Thriller      | 2020   | 320     | English     | ✅ Read     | Favorite classic    |
-| 2   |               |             |             |                       |        |         |             |             |                     |
-| 3   |               |             |             |                       |        |         |             |             |                     |
-| 4   |               |             |             |                       |        |         |             |             |                     |
-| 5   |               |             |             |                       |        |         |             |             |                     |
 
 ***
 
@@ -39,6 +35,18 @@
   - Religion / Spirituality  
   - Science / Technology  
   - Business / Economics  
+
+#### Bindings
+- **Case Binding**: Sewn sections in a hard cover, durable and premium.  
+- **Comb Binding**: Plastic comb inserted, removable pages.  
+- **Coptic Stitch**: Hand-sewn exposed spine, lays flat, artistic look.  
+- **Perfect Binding**: Pages glued to a soft cover, common for paperbacks.  
+- **Saddle Stitch**: Stapled sheets folded to form a booklet, cost-effective.  
+- **Smyth Sewn**: Sewn sections, strong, allows laying flat.  
+- **Spiral Binding**: Coil holds pages, lays flat, good for manuals.  
+- **Tape Binding**: Pages glued with adhesive tape, quick bind.  
+- **Thermal Binding**: Heat-glued spine, sleek for reports.
+- **VeloBind**: Plastic strips and rivets, flat and permanent.  
 
 ***
 
