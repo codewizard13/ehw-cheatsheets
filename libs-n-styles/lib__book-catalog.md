@@ -8,6 +8,9 @@
 
 ### Book Collection
 
+> :floppy_disk: [Full Book Catalog (CSV)](./data/my-book-catalog.csv)
+
+
 | #️⃣ | Book Title 📖 | Author ✍️ | Genre 🎭     | Subgenre 🔍           | Year 📅 | Pages 📄 | Language 🌐 | Status ✅/🔖 | Notes 🗒️           |
 | :-- | :------------ | :--------- | :----------- | :-------------------- | :----- | :-------| :---------- | :-----------| :------------------ |
 | 1   | Example Book  | Example Author | Fiction    | Mystery, Thriller      | 2020   | 320     | English     | ✅ Read     | Favorite classic    |
