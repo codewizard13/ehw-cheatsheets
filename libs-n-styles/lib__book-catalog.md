@@ -1,7 +1,8 @@
 ## 📚 Personal Book Catalog
 
-**Maintained by:** *[Your Name]* 👤    
-**Last updated:** *[Month Day, Year]* 📅    
+**Maintained by:** *Eric L. Hepperle* 👤    
+**Last updated:** *October 31, 2025* 📅    
+
 **Purpose:** This document lists all owned books by title, author, and key details including standardized genre and subgenre keys to facilitate quick reference and easy later conversion to a spreadsheet.
 
 ***
