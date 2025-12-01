@@ -1,10 +1,17 @@
 # Pull Request Libary (started : 2025-09-27)
 
-⚠️ **#CAVEATS**:
-- Organize into Pull Request **Prompts** and Pull **Request examples**
+> - TODO: *Organize into Pull Request **Prompts** and Pull **Request examples***
+> - TODO: Add the following section start header to the beginning of each pull request:
 
----
+**Section Start Header:**
 
+```md
+--- -----------------------------------------------------
+## ===== 🚩 Section Start 🚩 =====
+```
+
+--- -----------------------------------------------------
+## ===== 🚩 Section Start 🚩 =====
 
 # docs(ref, how-to): add commit message library, SOP & env config guides, and expanded troubleshooting
 
@@ -47,6 +54,9 @@ This PR expands the documentation library with a commit message example archive,
 
 # 09/24/25
 
+
+--- -----------------------------------------------------
+## ===== 🚩 Section Start 🚩 =====
 
 
 Generate a clear and well-structured **pull request** message with the following format and rules:
@@ -91,8 +101,9 @@ Additional Guidelines:
 - Use consistent blank lines before and after major sections or subsections for readability.  
 - Tailor the message to highlight key reviewer concerns and facilitate efficient code review.
 
----
 
+--- -----------------------------------------------------
+## ===== 🚩 Section Start 🚩 =====
 
 # docs(personal-notes): update docs, styles, and branding for starter repo
 
@@ -141,7 +152,9 @@ This PR updates the personal notes starter repository to improve documentation, 
 - Changes emphasize structure, metadata, and branding rather than actual note content.  
 - Legacy course/tutorial references were updated repo-wide; verify no missed instances remain.  
 
----
+
+--- -----------------------------------------------------
+## ===== 🚩 Section Start 🚩 =====
 
 
 refactor(style): consolidate styles into `_css/main.css` and add demo references
@@ -188,6 +201,10 @@ This PR consolidates all custom styles into a single organized stylesheet, remov
 # 09/29/25
 
 
+--- -----------------------------------------------------
+## ===== 🚩 Section Start 🚩 =====
+
+
 docs(courses/01_Python): add Chapter 2 Variables notes with F-string and styling
 
 ### 🎓 Course: [Boot.dev] - Learn to Code in Python  
@@ -216,8 +233,8 @@ Adds comprehensive notes for **Chapter 2** of the Boot.dev Python course, coveri
 - Per-chapter References section is a newly introduced pattern for future adoption.  
 
 
-
----
+--- -----------------------------------------------------
+## ===== 🚩 Section Start 🚩 =====
 
 
 feat(banner): optimize Charlie Kirk banner button for mobile, refactor CTA styles, & bump theme version
@@ -249,9 +266,8 @@ This PR refactors the Charlie Kirk memorial banner by migrating inline styles to
 - Consider further extracting hard-coded values into theme config constants for flexibility.  
 
 
-
-----
-
+--- -----------------------------------------------------
+## ===== 🚩 Section Start 🚩 =====
 
 
 feat(charlie-kirk-banner): add memorial banner & refactor CTA styles
@@ -310,6 +326,10 @@ Key highlights:
 
 
 # 10/01/25
+
+
+--- -----------------------------------------------------
+## ===== 🚩 Section Start 🚩 =====
 
 
 fix(wells): scope Vimeo iframe CSS to single video posts preventing wells map layout breakage
@@ -416,18 +436,9 @@ Let me know if you'd like a shorter version or to tailor it to a non-dev stakeho
 ## 10/07/25
 
 
+--- -----------------------------------------------------
+## ===== 🚩 Section Start 🚩 =====
 
-Using "Codebase"
-
-I'll check which files changed on the current branch so I can list them in the PR sections and reference exact files. I'll run a git-changed-files query and then summarize results. 
-
-Read changed files in [](file:///c%3A/_EHW/Project%20Repos/ehw-cheatsheets)
-
-I'll read the generated git log at gitlog_20251007_1200.log to extract commit summaries and affected files for the PR message. I will open the file and pull the top relevant lines. 
-
-Read [](file:///c%3A/_EHW/Project%20Repos/ehw-cheatsheets/_sb/gitlog_20251007_1200.log)
-
-Progress update: I scanned the branch commits and the generated git log (gitlog_20251007_1200.log) to collect changed files and commit intent (large docs-only batch across stubs and _ref). Below is a ready-to-copy PR message in Markdown that follows your requested structure.
 
 ## Title
 - docs(how-to,_ref): add many how‑to stubs and WIP reference drafts
@@ -472,19 +483,9 @@ This PR seeds the documentation knowledge base with a large batch of draft how�
 - Recommend running a Markdown linter and spellcheck, and adding frontmatter or a table-of-contents/index to improve discoverability before merging into master.
 - I scanned the added content for obvious secrets; none were found in the excerpts. Still, reviewers should do a quick sensitive-data check as a precaution.
 
----
-Completion summary: PR message prepared using the branch commit log and file list from gitlog_20251007_1200.log. If you want, I can also:
-- Produce a condensed reviewer checklist for this PR,
-- Split the large changeset into smaller PR drafts (by topic or file-count),
-- Or generate a suggested `README` or index for the new stubs folder to ease navigation. Which would you like next?
 
----
-
-
-
-Here’s a **cleaned-up and enhanced** version of your PR description, with your requested updates and constraints applied. I’ve applied formatting improvements, added light emojis for structure clarity, and incorporated your explanations where relevant.
-
----
+--- -----------------------------------------------------
+## ===== 🚩 Section Start 🚩 =====
 
 # PERSONAL WIKI DOCUMENTATION PR
 
@@ -577,14 +578,10 @@ This PR seeds the documentation knowledge base with a large batch of **draft how
   * Naming scheme for draft vs. finalized documents (e.g., `wip-*` vs. `lib-*`)
   * Folder structure expectations (`how-to/`, `_ref/`, `_sb/`, etc.)
 
----
 
-Let me know if you'd like this saved as a reusable PR template for future batch documentation pushes.
+--- -----------------------------------------------------
+## 🚩 Section Start 🚩
 
-
-
----
----
 
 
 Excellent catch — that line is indeed **conflicting**. Saying "`wip-*` reflects a *working-in-public* style" contradicts the clarified intent that WIP files are **not for public consumption** (yet), and are strictly **internal**.
@@ -693,6 +690,63 @@ This PR seeds the documentation knowledge base with a large batch of **draft how
 Let me know if you’d like this version copied into a reusable GitHub PR template or saved for future documentation batches.
 
 
----
----
+## 10/30/25
+
+--- -----------------------------------------------------
+## ===== 🚩 Section Start 🚩 =====
+
+
+docs(stubs,styleguides): expand how-to library with new templates & learning refs
+
+# Description  
+This PR significantly enhances the documentation stubs library by introducing new educational references, internal templates, and platform-specific style guides. The updates deepen the repository’s practical guidance for internal efficiency, code licensing awareness, and course-based documentation consistency.
+
+**Key Changes:**
+- Added new documentation templates for **employee and educational workflows**.
+- Introduced reference materials comparing **open-source licenses** (GNU vs MIT).
+- Expanded how-to stubs with specialized content on **WordPress layout consistency** and common **server hiccups**.
+- Improved internal doc navigation with stylesheet link corrections.
+
+### Employee Dashboard Template  
+(Files: `how-to/stubs/tmpl/empl-dashboard.md`)  
+- Added a comprehensive employment dashboard template for internal documentation.  
+- Structured daily workflow and document links into a structured, repeatable Markdown template.  
+- Established a base for internal tools and performance review tracking.  
+- Serves as a centralized hub for employment-related resources and documents.
+
+### Licensing References  
+(Files: `how-to/stubs/libs-n-styles/gnu-vs-mit-license-risks.md`)  
+- Added a clear comparison reference between GNU and MIT licenses.  
+- Highlighted legal and operational implications to guide project decisions.  
+- Designed for reuse across documentation and onboarding materials.
+
+### Styleguide & Course Integration  
+(Files: `how-to/stubs/libs-n-styles/edu-course-notes-boot-dev-styleguide.md`)  
+- Introduced Boot.dev course styleguide to align documentation tone and formatting.  
+- Supports consistent educational documentation patterns.
+
+### AI Knowledge Reference  
+(Files: `how-to/stubs/ai/ref-portable-knowledge-categories.md`)  
+- Added a new reference outlining portable AI knowledge categories.  
+- Aims to organize domain knowledge for reusable and transferable AI workflows.  
+
+### Server and WordPress Guides  
+(Files: `how-to/stubs/servers-n-local/cloudflare-ionos-hicccups.md`, `how-to/stubs/wp/wp-guide-consistent-load-more-grid-cols.md`)  
+- Added writeup on common Cloudflare–IONOS integration issues and resolutions.  
+- Created a WordPress grid column guide ensuring consistency when using load-more functions.  
+- Both documents enhance troubleshooting and layout optimization references.
+
+### Path Correction  
+(Files: `how-to/stubs/index.md`)  
+- Corrected stylesheet link path to ensure consistent rendering of stub documentation.  
+
+⚠️ **Notes & Caveats:**  
+- The new employee dashboard template uses placeholders; requires review for repo consistency.  
+- License comparison notes should be reviewed by legal/compliance before reuse.  
+- Course styleguide may introduce minor formatting differences in legacy docs.  
+- No proprietary or sensitive data introduced.
+
+
+--- -----------------------------------------------------
+## ===== 🚩 Section Start 🚩 =====
 

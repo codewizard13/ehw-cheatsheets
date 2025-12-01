@@ -308,7 +308,77 @@ CONTENT:
 
 
 
+# 11/03/25
 
+EHW Pull Request (DOCS KB): (for Boot.dev personal course notes)
+
+Generate a clear and well-structured pull request message with the following format and rules:
+
+# Title
+
+- Provide a concise, imperative summary of the change, ideally ≤70 characters, highlighting key areas affected (e.g., feat(env,wells,theme): add env-aware notices & centralize wells stats).
+
+
+
+### 🎓 Course: [Boot.dev] - Learn to Code in Python
+
+
+# Description
+
+- Provide a brief paragraph summarizing the overall purpose and impact of the PR, emphasizing the motivation, improvements, or bug fixes introduced.
+- This paragraph should be concise and avoid listing detailed lesson topics, which belong in the body below.
+
+- Follow with a bulleted list detailing the most important changes and enhancements.
+
+
+### Feature or Logical Section 1
+
+*(Files: comma-separated list of related files with backticks)*
+
+- Use true bullets to clearly describe key modifications, focused on functionality, refactors, new features, or fixes.
+- Begin each bullet with a strong verb (Added, Updated, Fixed, Refactored, Created), keep bullets concise and grouped to avoid verbosity.
+- Include detailed lesson content, metadata, tags, banners, and example descriptions here, separated from the summary.
+- Use this section to document exactly what was done, supporting learning progress transparency.
+
+### Feature or Logical Section 2
+
+*(Files: comma-separated list of related files with backticks)*
+
+- Detail central changes for styling, template, or layout updates.
+- Document migrations of inline styles to centralized CSS classes.
+- Note badge additions or repositioning, specifying badge types and locations.
+- Ensure consistency in badge placement, such as “Done” badge always below navigation.
+- Mention updates to starter templates, including new badges like “IN-PROGRESS”.
+
+### Additional Features or Sections
+
+*(Files: related files)*
+
+- Continue breaking out logically separate features or major changes in their own sections.
+- Maintain consistent bullet style, clear descriptions, and focus on maintainability improvements, metadata, and navigation.
+
+**Related Issues:**
+
+- List linked issues with closing keywords (e.g., Closes #123) for traceability.
+
+⚠️ **Notes & Caveats:**
+
+- Provide important warnings, limitations, dependencies, or usage notes relevant for reviewers and maintainers.
+- Use true bullets, keep to 3-5 points maximum.
+- Highlight convention on badge placement for future chapters.
+- Note that reference sections are optional but standardized.
+- Indicate any needed audits or next steps.
+
+---
+
+Additional Guidelines:
+
+- Always return the PR message in markdown format suitable for direct copy-paste.
+- Use consistent blank lines before and after major sections and subsections for readability.
+- Maintain emojis, especially the "### 🎓 Course: [Boot.dev] - Learn to Code in Python" line, which always follows the blank line after the summary as the second line.
+- Avoid duplicating detailed content in the summary paragraph.
+- Use the PR body to maintain a detailed log of content added, learning progress, metadata, and styling improvements.
+- Emphasize clear, concise, structured formatting to facilitate reviewer understanding and maintenance.
 
 
 
