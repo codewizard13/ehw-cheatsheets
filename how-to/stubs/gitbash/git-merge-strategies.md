@@ -1,0 +1,96 @@
+### #STUB: 
+
+Author: Eric L. Hepperle
+Orig Draft Date:
+09/11/25
+
+
+## CONTENT_BELOW: ##
+
+---
+
+# Comparing Merge Strategies: Manual, Git Merge, and Conflict Resolution
+
+
+Here’s a breakdown of the common understanding of the following terms among most developers, especially in the context of Git and **conventional commits** (although conventional commits themselves are more about commit message formatting):
+
+---
+
+### 1. **Manual Merge**
+
+**Meaning (general):**
+A **manual merge** refers to the process of combining changes from different branches or code versions **by hand**, outside of the automatic tools provided by Git.
+
+**Typical use case:**
+
+* Git couldn’t automatically merge changes due to a conflict.
+* The developer manually edits the conflicting files to resolve the conflict.
+* Sometimes done without even invoking `git merge`, just by copy-pasting code.
+
+**Developer understanding:**
+"Git couldn't figure this out for me. I had to step in and handle it manually."
+
+---
+
+### 2. **Cut-and-Paste Consolidation**
+
+**Meaning:**
+This is a **non-Git-assisted** merging method where a developer manually consolidates code from different branches or files by **copying and pasting** pieces of code to build a unified version.
+
+**Typical use case:**
+
+* Developers work outside of Git’s conflict resolution.
+* Used when branches diverge significantly.
+* Sometimes used for refactoring or combining similar files manually.
+
+**Developer understanding:**
+"I didn't trust Git to handle the merge or it was too messy, so I just pulled in what I needed by hand."
+
+**Note:** This is often seen as **error-prone** and **non-ideal**, especially in team environments.
+
+---
+
+### 3. **Git Merge**
+
+**Meaning:**
+`git merge` is the Git command that tries to combine the histories of two branches.
+
+**What it does:**
+
+* Attempts to automatically combine changes from a specified branch into the current branch.
+* If successful, creates a merge commit.
+* If not, results in a **conflict**.
+
+**Developer understanding:**
+"This is the standard, built-in way to bring another branch’s changes into mine. Sometimes it's smooth, sometimes not."
+
+---
+
+### 4. **Git Conflict Merge** (or **Merge Conflict Resolution**)
+
+**Meaning:**
+This refers to what happens when `git merge` fails to fully reconcile changes, resulting in **conflicts** that must be resolved **manually** before the merge can be completed.
+
+**What you see:**
+
+* Git marks conflicting sections in files (e.g., with `<<<<<<< HEAD` and `>>>>>>> branch-name`).
+* The developer must edit these files to choose which changes to keep (or how to combine them).
+* Once resolved, the developer marks them as resolved (`git add <file>`) and completes the merge (`git commit`).
+
+**Developer understanding:**
+"This is when Git says 'I don’t know how to combine this.' I have to go into the code and fix it myself before I can move forward."
+
+---
+
+### Summary Table
+
+| Term                            | Git-involved | Manual?      | Typical Use Case              | Common Dev Understanding                                  |
+| ------------------------------- | ------------ | ------------ | ----------------------------- | --------------------------------------------------------- |
+| **Manual Merge**                | Sometimes    | Yes          | Git conflict or non-Git merge | "I handled this outside of Git's automation."             |
+| **Cut-and-Paste Consolidation** | No           | Yes          | Manual code consolidation     | "I copied code pieces to combine things manually."        |
+| **Git Merge**                   | Yes          | No (usually) | Combining branches            | "Standard way to bring branches together."                |
+| **Git Conflict Merge**          | Yes          | Partially    | Handling merge conflicts      | "When Git can’t merge, I resolve the conflicts manually." |
+
+---
+
+Let me know if you’d like a **conventional commit message** that describes one of these actions, e.g., how to format a commit message after a manual merge.
