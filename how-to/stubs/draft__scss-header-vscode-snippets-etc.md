@@ -218,7 +218,7 @@ Here's a bundled file with **just the headers** for all your SCSS files. You can
 
    📄 FILE: _wells.scss
 
-   Description: Styles for Elijah's Wells donation page
+   Description: Styles for EMPLOYERS's Wells donation page
    Notes: Section layout and call-to-action blocks
 
 =========================================== */
@@ -562,7 +562,7 @@ Awesome — glad you’re happy with the emoji refinements! Below is your **full
 
    📄 FILE: _wells.scss
 
-   Description: Styles for Elijah's Wells donation page
+   Description: Styles for EMPLOYERS's Wells donation page
    Notes: Section layout and call-to-action blocks
 
 =========================================== */
