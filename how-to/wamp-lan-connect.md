@@ -30,7 +30,7 @@ When setting up Apache for local network access, the key is to allow the Apache 
    - On **Windows 10**, look for **Apache HTTP Server**.
    - On **Windows 11**, look for **httpd**.  
 
-![alt text](image-3.png)
+![alt text](../_pix/screens/screen--26--wamp-lan-connect-apache.png)
 
 
    If it’s not listed, you may need to add it manually:
