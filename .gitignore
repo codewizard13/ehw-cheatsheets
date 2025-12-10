@@ -87,9 +87,9 @@ node_modules/
 
 ### 7. LOGS, DATABASES & TEMP FILES ########################
 # Logs
-*.log
-/log/*.log
-/log/*.log*
+# *.log
+# /log/*.log
+# /log/*.log*
 /spec/reports
 /coverage
 
