@@ -9,20 +9,21 @@ Log in to IONOS.
 
 In the “Domains” section of the Control Panel, next to your domain, click the image ionos 1 icon and then select “DNS”.
 
-![alt text](image.png)
+![alt text](../_pix/screens/screen--23--plesk-migrate-dns-ionos.png)
 
 image ionos 2
 Add the following A records:
 
-|Type|Host Name|Points to|TTL|
-|-|-|-|-|
-|A|@|<your server IP>|1 hour|
-|A|www|<your server IP>|1 hour|
-|A|*|<your server IP>|1 hour|
+| Type | Host Name | Points to        | TTL    |
+| ---- | --------- | ---------------- | ------ |
+| A    | @         | <your server IP> | 1 hour |
+| A    | www       | <your server IP> | 1 hour |
+| A    | *         | <your server IP> | 1 hour |
 
 To do so, click Add Record, select the A type, specify the data, and then click Save. Repeat this step as many times as many A records you need to add.
 
-![alt text](image-1.png)
+![alt text](../_pix/screens/screen--24--plesk-migrate-dns-ionos.png)
+
 Note: IONOS adds the A record with the www hostname automatically unless you select not to add it.
 
 The A records you have added have various hostnames and they do the following:
@@ -44,7 +45,8 @@ Type	Host Name	Points to	Priority	TTL
 MX	@	<your server hostname>, for example, mail.example.com	10	1 Hour
 To do so, click Add Record, select the MX type, specify the data, and then click Save.
 
-![alt text](image-2.png)
+![alt text](../_pix/screens/screen--25--plesk-migrate-dns-ionos.png)
+
 
 You have configured DNS for mail. You can now use mail in Plesk.
 
