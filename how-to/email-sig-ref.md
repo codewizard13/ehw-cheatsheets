@@ -25,6 +25,7 @@
   - [📬 Client Support \& Testing](#-client-support--testing)
   - [🚀 Installation Instructions](#-installation-instructions)
   - [🧾 Legal \& Compliance](#-legal--compliance)
+  - [🧪 Layout, HTML, Testing](#-layout-html-testing)
   - [📚 References / See Also](#-references--see-also)
   - [✅ Revision History](#-revision-history)
 </details>
@@ -280,6 +281,32 @@ Key points:
 
 - Store the full legal disclaimer text in a separate, version-controlled document and reference it as `{{legal_disclaimer_short}}` or a dedicated disclaimer block.  
 - Ensure disclaimers meet current organizational and jurisdictional requirements, especially for regulated industries or cross-border communication.
+
+## 🧪 Layout, HTML, Testing
+
+- **Layout & HTML**
+  - Two-column table layout (image left, text right) using inline styles for better compatibility with Gmail and other clients.[3][4][5][6][7]
+  - Web-safe font (Arial) and fully qualified `https://` and `mailto:` links for consistent rendering and link handling.[8][6][7][3]
+  - Verified emojis that display correctly in modern Gmail and most current clients, with graceful degradation in older systems.[2][9][1]
+
+- **Gmail usage tip**
+  - Design or render the signature in a browser or Google Docs/Sheets using a two-column table, then copy–paste the rendered block into the Gmail signature editor instead of pasting raw HTML.[4][6][7][8]
+
+- **Testing checklist**
+  - Send test emails to Gmail (web and mobile), at least one Outlook user, and at least one Apple Mail user to confirm cross-client behavior.[5][6][7][3]
+  - Verify that the image loads over HTTPS, links are clickable, the layout stays two-column on desktop, and remains readable on mobile.[6][7][3][5]
+
+[1](https://www.emailsignaturerescue.com/blog/can-i-use-emojis-in-my-gmail-signature-and-are-they-visible-across-all-devices-and-clients)
+[2](https://bulksignature.com/blog/emojis-in-email-signatures-best-practices-and-examples)
+[3](https://www.revolgy.com/insights/blog/create-advanced-html-email-signatures-in-gmail)
+[4](https://tonicsiteshop.com/how-to-customize-your-gmail-email-signature-in-three-minutes/)
+[5](https://community.latenode.com/t/issue-with-html-email-signature-layout-in-gmail-mobile-app-right-column-overlaps-image-in-left-column/35301)
+[6](https://www.wisestamp.com/guides/gmail-html-signature/)
+[7](https://ask.revolgy.com/en/support/solutions/articles/11000116146-how-to-use-html-editor-of-gmail-signatures-best-practices)
+[8](https://clean.email/blog/email-signature/gmail-html-signature)
+[9](https://support.google.com/mail/thread/4640181/how-to-enter-emoji-on-gmail?hl=en)
+[10](https://support.google.com/mail/thread/289839710/cannot-accomplish-signature-with-2-column-format-image-on-left-3-line-identity-on-right?hl=en)
+
 
 ***
 
