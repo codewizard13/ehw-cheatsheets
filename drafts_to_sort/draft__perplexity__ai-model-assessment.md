@@ -1,0 +1,1 @@
+# 🤖 AI MODEL ASSESSMENT:  <span style="color:brown; font-style:oblique">Perplexity</span>
