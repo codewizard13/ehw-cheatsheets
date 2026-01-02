@@ -53,6 +53,7 @@
   - [📝 Writing Rules](#-writing-rules)
   - [🔗 Links Section](#-links-section)
   - [✅ Checklist](#-checklist)
+  - [� Social Media Templates (Copy/Paste Ready)](#-social-media-templates-copypaste-ready)
   - [📚 References / See Also](#-references--see-also)
   - [✅ Revision History](#-revision-history)
 
@@ -170,6 +171,70 @@ Facebook: Write LinkedIn × 20 (but keep punchy)
 - [ ] **Short link** used (bit.ly/tinyurl)
 - [ ] **Hashtags:** 2-3 relevant only
 - [ ] **Test preview** on each platform
+
+---
+
+## 📱 Social Media Templates (Copy/Paste Ready)
+
+<div class="social-templates" style="
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 3rem 0;
+">
+
+<h3 style="color: #212529; margin-top: 0;">📋 Ready-to-Post Templates</h3>
+
+<div style="display: grid; gap: 2rem;">
+
+<!-- LinkedIn -->
+<div style="background: #0077b5; color: white; padding: 1.5rem; border-radius: 8px;">
+<strong>📈 LinkedIn (Professional)</strong>
+<div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 6px; margin-top: 0.5rem; font-size: 0.9em; line-height: 1.5;">
+🚀 <strong>Portfolio Update:</strong> Transformed 3 GitHub Knowledge Base Repos<br>
+Just published my latest developer journal showcasing a complete <em>Markdown-to-landing-page</em> transformation across <code>ehd-kb-ohm</code>, <code>ehd-kb-tech</code>, and <code>ehd-kb-ministry</code>.<br><br>
+<strong>Key Technical Achievements:</strong><br>
+✅ Custom CSS responsive before/after tables (desktop 2-col → mobile stack)<br>
+✅ <code>table-layout: fixed</code> + media query mastery<br>
+✅ Pixel-perfect image scaling, zero plugins<br>
+✅ Professional repo documentation that converts<br><br>
+Live demo + full CSS: <a href="https://erichepperle.com/erics-developer-journal-updating-redesigning-my-github-repo-readmes/" style="color: #e3f2fd;">erichepperle.com/...</a><br><br>
+<strong>Open to collaboration</strong> on documentation systems, responsive design, or developer experience improvements.<br>
+#WebDevelopment #CSS #ResponsiveDesign #GitHub #DeveloperExperience #FrontEnd
+</div>
+</div>
+
+<!-- Twitter -->
+<div style="background: #1da1f2; color: white; padding: 1.5rem; border-radius: 8px;">
+<strong>🐦 Twitter/X (Dev Community)</strong>
+<div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 6px; margin-top: 0.5rem; font-size: 0.85em; line-height: 1.4; white-space: pre-wrap;">
+🔥 Markdown → Landing Page glow-up!
+3 GitHub KB repos: ehd-kb-ohm ehd-kb-tech ehd-kb-ministry
+
+Custom CSS tables:
+table-layout: fixed → 50/50 cols  
+display: block @768px → mobile stack
+Zero plugins. Pure responsive magic.
+
+Before/after screenshots + code 👇
+https://erichepperle.com/erics-developer-journal-updating-redesigning-my-github-repo-readmes/
+
+#CSS #WebDev #GitHub #ResponsiveDesign
+</div>
+<p style="font-size: 0.8em; opacity: 0.9; margin-top: 0.5rem;"><em>137 chars - FREE TIER PERFECT</em></p>
+</div>
+
+</div>
+
+<p style="text-align: center; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #dee2e6; color: #6c757d;">
+<strong>LinkedIn:</strong> Professional, detailed, collaboration-focused<br>
+<strong>Twitter:</strong> Short, technical, community hashtags<br>
+<em>Both drive traffic + position as CSS expert!</em> 🚀
+</p>
+
+</div>
+
 
 ---
 
